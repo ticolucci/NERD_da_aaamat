@@ -71,3 +71,44 @@ ActionController::RoutingError (No route matches "/" with {:method=>:get}):
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-14 21:37:04) [GET]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" [0m
+
+ActionView::MissingTemplate (Missing template subjects/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-14 21:48:01) [GET]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-14 21:48:49) [GET]
+  [4;35;1mSubject Load (0.6ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 10ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-14 21:50:19) [GET]
+  [4;36;1mSubject Load (0.6ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSubject Create (0.4ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-14 23:51:53', 'Jogos da Liga', '2009-11-14 23:51:53')[0m
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-14 21:51:55) [GET]
+  [4;35;1mSubject Load (0.7ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSubject Create (0.5ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-14 23:52:37', 'Papel Timbrado', '2009-11-14 23:52:37')[0m
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-14 21:52:39) [GET]
+  [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/]
