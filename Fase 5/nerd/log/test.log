@@ -1,0 +1,4 @@
+  [4;36;1mSubject Create (0.4ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-14 22:50:35', 'value for title', '2009-11-14 22:50:35')[0m
+  [4;36;1mSubject Create (0.5ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-14 22:52:00', 'value for title', '2009-11-14 22:52:00')[0m
+  [4;36;1mSubject Create (0.4ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-14 22:52:17', 'value for title', '2009-11-14 22:52:17')[0m
+  [4;36;1mSubject Create (0.4ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-14 22:52:18', 'value for title', '2009-11-14 22:52:18')[0m
