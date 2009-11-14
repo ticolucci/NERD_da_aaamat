@@ -46,3 +46,28 @@ Migrating to CreateSubjects (1)
 [0m
   [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
   [4;36;1mSQL (56.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 21:19:05) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-14 21:19:23) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+
+ActionView::MissingTemplate (Missing template subjects/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 21:19:37) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

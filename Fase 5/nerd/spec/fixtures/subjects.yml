@@ -1,7 +1,5 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+bife:
+  title: BIFE
 
-one:
-  title: MyString
-
-two:
-  title: MyString
+copa_usp:
+  title: "Copa USP"
