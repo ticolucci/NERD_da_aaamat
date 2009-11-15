@@ -112,3 +112,11 @@ Processing SubjectsController#index (for 127.0.0.1 at 2009-11-14 21:52:39) [GET]
   [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM "subjects" [0m
 Rendering subjects/index
 Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-14 22:01:14) [GET]
+
+ActionController::UnknownAction (No action responded to new. Actions: index):
+  
+
+Rendering rescues/layout (not_found)
