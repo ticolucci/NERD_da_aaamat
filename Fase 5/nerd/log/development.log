@@ -120,3 +120,8 @@ ActionController::UnknownAction (No action responded to new. Actions: index):
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-14 22:30:17) [GET]
+Rendering subjects/new
+Completed in 39ms (View: 32, DB: 0) | 200 OK [http://localhost/subjects/new]
