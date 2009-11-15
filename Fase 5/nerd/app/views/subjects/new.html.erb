@@ -1,0 +1,10 @@
+<h1>Novo Assunto</h1>
+
+<% form_for @subject do |form| %>
+  <%= form.error_messages %>
+  <%= form.label :title, "Título" %>
+  <%= form.text_field :title %>
+
+
+  <%= form.submit "Criar" %>  
+<% end %>

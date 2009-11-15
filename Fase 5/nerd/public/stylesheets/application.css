@@ -1,0 +1,20 @@
+.flash {
+	border: 2px solid;
+	padding: 3px;
+}
+#notice {
+	background-color: GreenYellow;
+	border-color: Green;
+}
+#error {
+	background-color: LightPink;
+	border-color: Red;
+}
+.errorExplanation {
+	border: 2px solid Red;
+	padding: 0px 5px;
+}
+.fieldWithErrors {
+  background-color: LightPink;
+	border-color: Red;
+}

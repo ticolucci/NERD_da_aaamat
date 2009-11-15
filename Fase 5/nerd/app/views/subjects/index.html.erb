@@ -1,0 +1,9 @@
+<h1>Assuntos</h1>
+
+<ul id="subjects">
+  <% @subjects.each do |subject| %>
+    <li id="<%= subject.id %>">
+      <%= subject.title %>
+    </li>
+  <% end %>
+</ul>
