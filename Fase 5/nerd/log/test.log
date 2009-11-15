@@ -669,3 +669,980 @@ Rendering subjects/new
 Rendering subjects/new
 Rendering subjects/new
 Rendering subjects/new
+Rendering subjects/new
+Rendering subjects/new
+Rendering subjects/new
+Rendering subjects/new
+Rendering subjects/new
+Rendering subjects/new
+Rendering subjects/new
+Rendering subjects/new
+Rendering subjects/new
+Rendering subjects/new
+  [4;36;1mSubject Create (0.5ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:40:48', 'value for title', '2009-11-15 00:40:48')[0m
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:40:49) [GET]
+Rendering subjects/new
+Completed in 5ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:40:49) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:40:49) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:40:49) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects]
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/new
+Rendering subjects/new
+  [4;36;1mSubject Create (0.5ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:43:44', 'value for title', '2009-11-15 00:43:44')[0m
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:43:44) [GET]
+Rendering subjects/new
+Completed in 5ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:43:44) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:43:44) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:43:44) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/new
+Rendering subjects/new
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 22:50:01) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+Rendering subjects/create
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:50:01) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:50:01) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:50:01) [GET]
+  [4;36;1mSubject Load (0.7ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:50:01) [GET]
+  [4;35;1mSubject Load (0.7ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 22:50:32) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+Rendering subjects/create
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:50:32) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:50:32) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:50:32) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:50:32) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 22:50:42) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+Rendering subjects/create
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:50:42) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:50:42) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:50:42) [GET]
+  [4;35;1mSubject Load (0.6ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:50:42) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;36;1mSubject Create (0.4ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:50:44', 'value for title', '2009-11-15 00:50:44')[0m
+  [4;35;1mSubject Load (0.8ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.6ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+Rendering subjects/new
+Rendering subjects/new
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 22:50:44) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+Rendering subjects/create
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:50:44) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:50:44) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:50:44) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:50:44) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 22:51:15) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+Rendering subjects/create
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:51:15) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:51:15) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:51:15) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:51:15) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 22:52:48) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Create (0.3ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:52:48', 'new subject', '2009-11-15 00:52:48')[0m
+Rendering subjects/create
+Completed in 17ms (View: 1, DB: 1) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:52:48) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:52:48) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:52:48) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:52:48) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;36;1mSubject Create (0.4ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:52:50', 'value for title', '2009-11-15 00:52:50')[0m
+  [4;35;1mSubject Load (0.8ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.6ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+Rendering subjects/new
+Rendering subjects/new
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 22:52:50) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;35;1mSubject Create (0.3ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:52:50', 'new subject', '2009-11-15 00:52:50')[0m
+Rendering subjects/create
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:52:50) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:52:50) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:52:50) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:52:50) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 22:54:01) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Create (0.3ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:54:01', 'new subject', '2009-11-15 00:54:01')[0m
+Rendering subjects/create
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 22:54:01) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+  [4;36;1mSubject Create (0.3ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:54:01', '', '2009-11-15 00:54:01')[0m
+Rendering subjects/create
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=]
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:54:01) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:54:01) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:54:01) [GET]
+  [4;36;1mSubject Load (0.6ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:54:01) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 22:54:14) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Create (0.3ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:54:14', 'new subject', '2009-11-15 00:54:14')[0m
+Rendering subjects/create
+Completed in 15ms (View: 1, DB: 1) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 22:54:14) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+  [4;36;1mSubject Create (0.3ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:54:14', '', '2009-11-15 00:54:14')[0m
+Rendering subjects/create
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:54:14) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:54:14) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:54:14) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:54:14) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 22:54:31) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Create (0.3ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:54:31', 'new subject', '2009-11-15 00:54:31')[0m
+Rendering subjects/create
+Completed in 17ms (View: 1, DB: 1) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:54:31) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:54:31) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:54:31) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:54:31) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;36;1mSubject Create (0.4ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:54:33', 'value for title', '2009-11-15 00:54:33')[0m
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+Rendering subjects/new
+Rendering subjects/new
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 22:54:33) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;35;1mSubject Create (0.3ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:54:33', 'new subject', '2009-11-15 00:54:33')[0m
+Rendering subjects/create
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:54:33) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:54:33) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:54:33) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:54:33) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;36;1mSubject Create (0.5ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:56:27', 'value for title', '2009-11-15 00:56:27')[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:56:27', '', '2009-11-15 00:56:27')[0m
+  [4;36;1mSubject Create (0.5ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:57:11', 'value for title', '2009-11-15 00:57:11')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSubject Create (0.4ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:57:33', 'value for title', '2009-11-15 00:57:33')[0m
+  [4;36;1mSubject Create (0.5ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:58:42', 'value for title', '2009-11-15 00:58:42')[0m
+  [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.7ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+Rendering subjects/new
+Rendering subjects/new
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 22:58:44) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Create (0.3ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:58:44', 'new subject', '2009-11-15 00:58:44')[0m
+Rendering subjects/create
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:58:44) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:58:44) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:58:44) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:58:44) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;36;1mSubject Create (0.3ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:58:44', 'value for title', '2009-11-15 00:58:44')[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 22:59:17) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Create (0.3ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:59:17', 'new subject', '2009-11-15 00:59:17')[0m
+Rendering subjects/create
+Completed in 13ms (View: 1, DB: 1) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 22:59:17) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+Rendering subjects/create
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:59:17) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 22:59:17) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:59:17) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 22:59:17) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:00:49) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Create (0.3ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 01:00:49', 'new subject', '2009-11-15 01:00:49')[0m
+Rendering subjects/create
+Completed in 13ms (View: 1, DB: 1) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:00:49) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+Rendering subjects/create
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:00:49) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:00:49) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:00:49) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:00:49) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:02:50) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Create (0.4ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 01:02:50', 'new subject', '2009-11-15 01:02:50')[0m
+Rendering subjects/create
+Completed in 14ms (View: 1, DB: 1) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:02:50) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+Rendering subjects/create
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:02:50) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:02:50) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:02:50) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:02:50) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects]
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:04:56) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Create (0.4ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 01:04:56', 'new subject', '2009-11-15 01:04:56')[0m
+Redirected to http://test.host/subjects.2089548104
+Completed in 10ms (DB: 1) | 302 Found [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:04:56) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+Rendering subjects/create
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:04:56) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:04:56) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:04:56) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:04:56) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:05:27) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Create (0.4ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 01:05:27', 'new subject', '2009-11-15 01:05:27')[0m
+Redirected to http://test.host/subjects/2089548104
+Completed in 13ms (DB: 1) | 302 Found [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:05:27) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+Rendering subjects/create
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:05:27) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:05:27) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:05:27) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:05:27) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.6ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+Rendering subjects/new
+Rendering subjects/new
+  [4;36;1mSubject Create (0.3ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 01:05:29', 'value for title', '2009-11-15 01:05:29')[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:05:29) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;35;1mSubject Create (0.3ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 01:05:29', 'new subject', '2009-11-15 01:05:29')[0m
+Redirected to http://test.host/subjects/2089548104
+Completed in 7ms (DB: 1) | 302 Found [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:05:29) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+Rendering subjects/create
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=]
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:05:29) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:05:29) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:05:29) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:05:29) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects]
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:06:46) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Create (0.4ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 01:06:46', 'new subject', '2009-11-15 01:06:46')[0m
+Redirected to http://test.host/subjects/2089548104
+Completed in 10ms (DB: 1) | 302 Found [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:06:47) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+Rendering subjects/create
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:06:47) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:06:47) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:06:47) [GET]
+  [4;35;1mSubject Load (0.6ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:06:47) [GET]
+  [4;36;1mSubject Load (0.6ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:07:16) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Create (0.3ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 01:07:16', 'new subject', '2009-11-15 01:07:16')[0m
+Redirected to http://test.host/subjects/2089548104
+Completed in 12ms (DB: 1) | 302 Found [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:07:16) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+Rendering subjects/new
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:07:16) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:07:16) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:07:16) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:07:16) [GET]
+  [4;36;1mSubject Load (0.6ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:08:06) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Create (0.4ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 01:08:06', 'new subject', '2009-11-15 01:08:06')[0m
+Redirected to http://test.host/subjects/2089548104
+Completed in 14ms (DB: 1) | 302 Found [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:08:06) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+Rendering subjects/new
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:08:06) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:08:06) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:08:06) [GET]
+  [4;35;1mSubject Load (0.6ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:08:06) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:09:25) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Create (0.3ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 01:09:25', 'new subject', '2009-11-15 01:09:25')[0m
+Redirected to http://test.host/subjects/2089548104
+Completed in 10ms (DB: 1) | 302 Found [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:09:25) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+Rendering subjects/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:09:25) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:09:25) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:09:25) [GET]
+  [4;35;1mSubject Load (0.6ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:09:25) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.7ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+Rendering subjects/new
+Rendering subjects/new
+  [4;36;1mSubject Create (0.3ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 01:09:27', 'value for title', '2009-11-15 01:09:27')[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:09:27) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;35;1mSubject Create (0.3ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 01:09:27', 'new subject', '2009-11-15 01:09:27')[0m
+Redirected to http://test.host/subjects/2089548104
+Completed in 7ms (DB: 1) | 302 Found [http://test.host/subjects?subject%5Btitle%5D=new+subject]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-14 23:09:27) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+Rendering subjects/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/subjects?subject%5Btitle%5D=]
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:09:27) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-14 23:09:27) [GET]
+Rendering subjects/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/subjects/new]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:09:27) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-14 23:09:27) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering subjects/index
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/subjects]
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/new
+Rendering subjects/new

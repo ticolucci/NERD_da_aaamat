@@ -11,4 +11,9 @@ describe Subject do
     subject = Subject.create!(@valid_attributes)
     subject.title.should == 'value for title'
   end
+
+  it "should not create a new instance given invalid attributes" do
+    subject = Subject.new(:title => "")
+    subject.save.should == false
+  end
 end

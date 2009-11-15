@@ -125,3 +125,185 @@ Rendering rescues/layout (not_found)
 Processing SubjectsController#new (for 127.0.0.1 at 2009-11-14 22:30:17) [GET]
 Rendering subjects/new
 Completed in 39ms (View: 32, DB: 0) | 200 OK [http://localhost/subjects/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 22:33:08) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"aPY2W1CFRsgtYQa0qwManO5ITY4PtJfjQCb0ukGlwB4=", "subject"=>{"title"=>"Depósito"}}
+
+ActionController::MethodNotAllowed (Only get requests are allowed.):
+  
+
+Rendered rescues/_trace (33.6ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (method_not_allowed)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 22:33:20) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"aPY2W1CFRsgtYQa0qwManO5ITY4PtJfjQCb0ukGlwB4=", "subject"=>{"title"=>"Depósito"}}
+
+ActionController::MethodNotAllowed (Only get requests are allowed.):
+  
+
+Rendered rescues/_trace (29.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (method_not_allowed)
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-14 22:34:53) [GET]
+Rendering subjects/new
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/subjects/new]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-14 22:34:54) [GET]
+Rendering subjects/new
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/subjects/new]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-14 22:36:20) [GET]
+Rendering subjects/new
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/subjects/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 22:37:55) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"aPY2W1CFRsgtYQa0qwManO5ITY4PtJfjQCb0ukGlwB4=", "subject"=>{"title"=>"Depósito"}}
+
+ActionController::MethodNotAllowed (Only get requests are allowed.):
+  
+
+Rendered rescues/_trace (62.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (method_not_allowed)
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-14 22:43:53) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"aPY2W1CFRsgtYQa0qwManO5ITY4PtJfjQCb0ukGlwB4=", "subject"=>{"title"=>"Depósito"}}
+
+ActionController::UnknownAction (No action responded to create. Actions: index and new):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-14 22:58:49) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"aPY2W1CFRsgtYQa0qwManO5ITY4PtJfjQCb0ukGlwB4=", "subject"=>{"title"=>"Depósito"}}
+  [4;35;1mSubject Create (0.4ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 00:58:49', 'Depósito', '2009-11-15 00:58:49')[0m
+
+ActionView::MissingTemplate (Missing template subjects/create.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-14 23:05:34) [GET]
+Rendering subjects/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/subjects/new]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-14 23:05:36) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"aPY2W1CFRsgtYQa0qwManO5ITY4PtJfjQCb0ukGlwB4=", "subject"=>{"title"=>"Depósito"}}
+  [4;36;1mSubject Create (0.3ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-15 01:05:36', 'Depósito', '2009-11-15 01:05:36')[0m
+Redirected to http://localhost:3000/subjects/2089548107
+Completed in 63ms (DB: 0) | 302 Found [http://localhost/subjects]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-14 23:05:36) [GET]
+  Parameters: {"id"=>"2089548107"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, index, and new):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-14 23:09:36) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"aPY2W1CFRsgtYQa0qwManO5ITY4PtJfjQCb0ukGlwB4=", "subject"=>{"title"=>""}}
+Rendering subjects/new
+Completed in 18ms (View: 8, DB: 0) | 200 OK [http://localhost/subjects]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-14 23:09:40) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"aPY2W1CFRsgtYQa0qwManO5ITY4PtJfjQCb0ukGlwB4=", "subject"=>{"title"=>""}}
+Rendering subjects/new
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/subjects]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-14 23:09:41) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"aPY2W1CFRsgtYQa0qwManO5ITY4PtJfjQCb0ukGlwB4=", "subject"=>{"title"=>""}}
+Rendering subjects/new
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/subjects]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-14 23:11:45) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 23ms (View: 14, DB: 0) | 200 OK [http://localhost/subjects/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 23:11:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-14 23:11:47) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"aPY2W1CFRsgtYQa0qwManO5ITY4PtJfjQCb0ukGlwB4=", "subject"=>{"title"=>""}}
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 20ms (View: 11, DB: 0) | 200 OK [http://localhost/subjects]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 23:11:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-14 23:13:05) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"aPY2W1CFRsgtYQa0qwManO5ITY4PtJfjQCb0ukGlwB4=", "subject"=>{"title"=>""}}
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 75ms (View: 13, DB: 0) | 200 OK [http://localhost/subjects]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-14 23:13:10) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 34ms (View: 8, DB: 0) | 200 OK [http://localhost/subjects/new]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-14 23:13:12) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"aPY2W1CFRsgtYQa0qwManO5ITY4PtJfjQCb0ukGlwB4=", "subject"=>{"title"=>""}}
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 21ms (View: 11, DB: 0) | 200 OK [http://localhost/subjects]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-14 23:14:38) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"aPY2W1CFRsgtYQa0qwManO5ITY4PtJfjQCb0ukGlwB4=", "subject"=>{"title"=>""}}
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 31ms (View: 20, DB: 0) | 200 OK [http://localhost/subjects]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-14 23:15:58) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"aPY2W1CFRsgtYQa0qwManO5ITY4PtJfjQCb0ukGlwB4=", "subject"=>{"title"=>""}}
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 24ms (View: 14, DB: 0) | 200 OK [http://localhost/subjects]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-14 23:16:21) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/subjects/new]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-14 23:16:23) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"aPY2W1CFRsgtYQa0qwManO5ITY4PtJfjQCb0ukGlwB4=", "subject"=>{"title"=>""}}
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 71ms (View: 61, DB: 0) | 200 OK [http://localhost/subjects]
