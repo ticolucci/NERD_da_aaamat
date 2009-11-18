@@ -10,9 +10,15 @@ class SubjectsController < ApplicationController
   def create
     @subject = Subject.new params[:subject]
     if @subject.save
-      redirect_to subject_path(@subject.id)
+      redirect_to(subject_path(@subject.id))
     else
       render :new
     end
+  end
+
+  def destroy
+    @subject = Subject.find params[:id]
+    @subject.delete
+    redirect_to(subjects_path)
   end
 end

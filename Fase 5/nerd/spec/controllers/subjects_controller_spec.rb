@@ -50,7 +50,14 @@ describe SubjectsController do
       Subject.find_by_title("").should be_nil
       response.should render_template(:new)
     end
+  end
 
+  context "DELETE destroy" do
+    it "should destroy a subject" do
+      delete :destroy, :id => subjects(:bife).id
+      lambda{Subject.find subjects(:bife)}.should raise_error(ActiveRecord::RecordNotFound)
+      response.should redirect_to(subjects_path)
+    end
   end
 
 end
