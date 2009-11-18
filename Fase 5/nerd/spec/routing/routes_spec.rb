@@ -19,6 +19,5 @@ describe "routes" do
     params_from(:post, "/assuntos").should == {:controller => "subjects", :action => "create"}
 
     route_for(:controller => "subjects", :action => "create").should == {:path => "/assuntos", :method => :post}
-
   end
 end

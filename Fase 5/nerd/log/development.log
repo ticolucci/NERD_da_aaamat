@@ -366,3 +366,97 @@ ActionController::UnknownAction (No action responded to show. Actions: create, i
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-18 17:03:06) [GET]
+
+ActionController::RoutingError (No route matches "/subjects" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:03:27) [GET]
+  [4;36;1mSubject Load (1.2ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 27ms (View: 18, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:04:12) [GET]
+  Parameters: {"method"=>"delete", "url"=>"/assuntos/2089548107"}
+  [4;35;1mSubject Load (1.0ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 30ms (View: 13, DB: 1) | 200 OK [http://localhost/assuntos?method=delete&url=%2Fassuntos%2F2089548107]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:04:49) [GET]
+  Parameters: {"method"=>"delete", "url"=>"/assuntos/2089548107"}
+  [4;36;1mSubject Load (1.0ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 49ms (View: 41, DB: 1) | 200 OK [http://localhost/assuntos?method=delete&url=%2Fassuntos%2F2089548107]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:04:54) [GET]
+  [4;35;1mSubject Load (1.1ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 45ms (View: 37, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#destroy (for 127.0.0.1 at 2009-11-18 17:05:00) [DELETE]
+  Parameters: {"authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "id"=>"2089548107"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548107) [0m
+  [4;35;1mSubject Delete all (57.4ms)[0m   [0mDELETE FROM "subjects" WHERE ("id" IN (2089548107)) [0m
+Redirected to http://localhost:3000/assuntos
+Completed in 67ms (DB: 58) | 302 Found [http://localhost/assuntos/2089548107]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:05:00) [GET]
+  [4;36;1mSubject Load (1.0ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 42ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:06:44) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 89ms (View: 81, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#destroy (for 127.0.0.1 at 2009-11-18 17:06:55) [DELETE]
+  Parameters: {"authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "id"=>"2089548106"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548106) [0m
+  [4;35;1mSubject Delete all (45.0ms)[0m   [0mDELETE FROM "subjects" WHERE ("id" IN (2089548106)) [0m
+Redirected to http://localhost:3000/assuntos
+Completed in 55ms (DB: 45) | 302 Found [http://localhost/assuntos/2089548106]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:06:56) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 38ms (View: 30, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#destroy (for 127.0.0.1 at 2009-11-18 17:08:05) [DELETE]
+  Parameters: {"authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "id"=>"2089548107"}
+  [4;35;1mSubject Load (0.1ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548107) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Subject with ID=2089548107):
+  app/controllers/subjects_controller.rb:20:in `destroy'
+
+Rendered rescues/_trace (41.7ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:08:15) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 42ms (View: 34, DB: 1) | 200 OK [http://localhost/assuntos]

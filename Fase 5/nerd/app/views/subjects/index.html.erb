@@ -3,7 +3,7 @@
 <ul id="subjects">
   <% @subjects.each do |subject| %>
     <li id="<%= subject.id %>">
-      <%= subject.title %>
+      <%= subject.title %> <%= link_to "excluir", subject_path(subject.id), :method => "delete", :confirm => "Excluir #{subject.title}?" %>
     </li>
   <% end %>
 </ul>
