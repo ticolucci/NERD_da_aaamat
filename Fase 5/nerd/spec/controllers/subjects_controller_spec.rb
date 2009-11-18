@@ -61,8 +61,15 @@ describe SubjectsController do
   end
 
   context "GET show" do
-    it "should assign the correct subject to subject" do
+    before :each do
       get :show, :id => subjects(:bife).id
+    end
+
+    it "should be success" do
+      response.should be_success
+    end
+
+    it "should assign the correct subject to subject" do
       assigns[:subject].should == subjects(:bife)
     end
   end
@@ -78,6 +85,21 @@ describe SubjectsController do
 
     it "should assign the correct subject to subject" do
       assigns[:subject].should == subjects(:bife)
+    end
+  end
+
+  context "PUT update" do
+    it "should be success" do
+      put :update, :id => subjects(:bife).id, :subject => {:title => "Bife"}
+      response.should redirect_to(subject_path(subjects(:bife).id))
+    end
+
+    it "should update the database" do
+      old_title = subjects(:bife).title
+      put :update, :id => subjects(:bife).id, :subject => {:title => "Bife"}
+      new_title = Subject.find(subjects(:bife)).title
+      new_title.should_not == old_title
+      new_title.should == "Bife"
     end
   end
 end

@@ -29,4 +29,10 @@ class SubjectsController < ApplicationController
   def edit
     @subject = Subject.find params[:id]
   end
+
+  def update
+    @subject = Subject.find params[:id]
+    @subject.update_attributes params[:subject]
+    redirect_to(subject_path(@subject.id))
+  end
 end
