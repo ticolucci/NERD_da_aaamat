@@ -2422,3 +2422,55 @@ Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 20:07:28) [GET]
 Rendering template within layouts/application
 Rendering subjects/index
 Completed in 90ms (View: 82, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-18 20:08:31) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/assuntos/new]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 20:08:33) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 47ms (View: 39, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 20:08:34) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 20:08:37) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 90ms (View: 81, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 20:08:40) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 15ms (View: 6, DB: 0) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#edit (for 127.0.0.1 at 2009-11-18 20:08:41) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Completed in 18ms (View: 10, DB: 0) | 200 OK [http://localhost/assuntos/2031241678/edit]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 20:08:42) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://localhost/assuntos/2031241678]

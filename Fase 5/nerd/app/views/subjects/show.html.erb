@@ -1,0 +1,4 @@
+<h1><%= @subject.title %> <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_path(@subject.id) %> </h1>
+
+
+<%= link_to image_tag("/images/back_to_list.png", :title => "Ir para Lista de Assuntos") + "Lista de Assuntos", subjects_path %>
