@@ -101,5 +101,10 @@ describe SubjectsController do
       new_title.should_not == old_title
       new_title.should == "Bife"
     end
+
+    it "should render action edit if invalid parameters" do
+      put :update, :id => subjects(:bife).id, :subject => {:title => ""}
+      response.should render_template(:edit)
+    end
   end
 end

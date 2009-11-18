@@ -32,7 +32,10 @@ class SubjectsController < ApplicationController
 
   def update
     @subject = Subject.find params[:id]
-    @subject.update_attributes params[:subject]
-    redirect_to(subject_path(@subject.id))
+    if @subject.update_attributes params[:subject]
+      redirect_to(subject_path(@subject.id))
+    else
+      render :action => 'edit'
+    end
   end
 end
