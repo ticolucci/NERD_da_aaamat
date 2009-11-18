@@ -460,3 +460,504 @@ Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:08:15) [GET]
 Rendering template within layouts/application
 Rendering subjects/index
 Completed in 42ms (View: 34, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:18:04) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 42ms (View: 34, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-18 17:18:10) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/assuntos/new]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-18 17:19:36) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/assuntos/new]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-18 17:19:41) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "subject"=>{"title"=>"Pika"}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Pika') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:19:41', 'Pika', '2009-11-18 19:19:41')[0m
+Redirected to http://localhost:3000/assuntos/2089548109
+Completed in 126ms (DB: 0) | 302 Found [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 17:19:42) [GET]
+  Parameters: {"id"=>"2089548109"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, index, and new):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:19:57) [GET]
+  [4;36;1mSubject Load (1.0ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 43ms (View: 34, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-18 17:20:30) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/assuntos/new]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-18 17:20:46) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "subject"=>{"title"=>"Próxima chapa"}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Próxima chapa') LIMIT 1[0m
+  [4;36;1mSubject Create (0.2ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:20:46', 'Próxima chapa', '2009-11-18 19:20:46')[0m
+Redirected to http://localhost:3000/assuntos/2089548110
+Completed in 63ms (DB: 0) | 302 Found [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 17:20:46) [GET]
+  Parameters: {"id"=>"2089548110"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, index, and new):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:21:03) [GET]
+  [4;35;1mSubject Load (1.0ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 88ms (View: 80, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#destroy (for 127.0.0.1 at 2009-11-18 17:21:08) [DELETE]
+  Parameters: {"authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "id"=>"2089548110"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548110) [0m
+  [4;35;1mSubject Delete all (47.3ms)[0m   [0mDELETE FROM "subjects" WHERE ("id" IN (2089548110)) [0m
+Redirected to http://localhost:3000/assuntos
+Completed in 57ms (DB: 48) | 302 Found [http://localhost/assuntos/2089548110]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:21:08) [GET]
+  [4;36;1mSubject Load (1.0ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 42ms (View: 34, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#destroy (for 127.0.0.1 at 2009-11-18 17:21:11) [DELETE]
+  Parameters: {"authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "id"=>"2089548109"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548109) [0m
+  [4;36;1mSubject Delete all (89.1ms)[0m   [0;1mDELETE FROM "subjects" WHERE ("id" IN (2089548109)) [0m
+Redirected to http://localhost:3000/assuntos
+Completed in 100ms (DB: 89) | 302 Found [http://localhost/assuntos/2089548109]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:21:11) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 86ms (View: 78, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-18 17:21:16) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/assuntos/new]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-18 17:29:27) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/assuntos/new]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:29:30) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 37ms (View: 30, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-18 17:29:33) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://localhost/assuntos/new]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-18 17:29:39) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "subject"=>{"title"=>"Pika"}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Pika') LIMIT 1[0m
+  [4;36;1mSubject Create (0.2ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:29:39', 'Pika', '2009-11-18 19:29:39')[0m
+Redirected to http://localhost:3000/assuntos/2089548111
+Completed in 75ms (DB: 0) | 302 Found [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 17:29:39) [GET]
+  Parameters: {"id"=>"2089548111"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548111) [0m
+
+ActionView::MissingTemplate (Missing template subjects/show.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 17:38:42) [GET]
+  Parameters: {"id"=>"2089548111"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548111) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 20ms (View: 12, DB: 0) | 200 OK [http://localhost/assuntos/2089548111]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-18 17:38:53) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 18ms (View: 8, DB: 0) | 200 OK [http://localhost/assuntos/new]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-18 17:39:14) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "subject"=>{"title"=>"Luluzinha"}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Luluzinha') LIMIT 1[0m
+  [4;36;1mSubject Create (0.3ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:39:14', 'Luluzinha', '2009-11-18 19:39:14')[0m
+Redirected to http://localhost:3000/assuntos/2089548112
+Completed in 89ms (DB: 0) | 302 Found [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 17:39:14) [GET]
+  Parameters: {"id"=>"2089548112"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548112) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/assuntos/2089548112]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:39:19) [GET]
+  [4;36;1mSubject Load (1.0ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 47ms (View: 39, DB: 1) | 200 OK [http://localhost/assuntos/]
+
+
+Processing SubjectsController#destroy (for 127.0.0.1 at 2009-11-18 17:39:25) [DELETE]
+  Parameters: {"authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "id"=>"2089548112"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548112) [0m
+  [4;36;1mSubject Delete all (72.2ms)[0m   [0;1mDELETE FROM "subjects" WHERE ("id" IN (2089548112)) [0m
+Redirected to http://localhost:3000/assuntos
+Completed in 82ms (DB: 73) | 302 Found [http://localhost/assuntos/2089548112]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:39:25) [GET]
+  [4;35;1mSubject Load (1.0ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 42ms (View: 35, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#destroy (for 127.0.0.1 at 2009-11-18 17:40:43) [DELETE]
+  Parameters: {"authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "id"=>"2089548111"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548111) [0m
+  [4;35;1mSubject Delete all (86.3ms)[0m   [0mDELETE FROM "subjects" WHERE ("id" IN (2089548111)) [0m
+Redirected to http://localhost:3000/assuntos
+Completed in 96ms (DB: 87) | 302 Found [http://localhost/assuntos/2089548111]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:40:43) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 40ms (View: 31, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-18 17:40:45) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/assuntos/new]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-18 17:40:52) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "subject"=>{"title"=>"Itai é muito legal"}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Itai é muito legal') LIMIT 1[0m
+  [4;36;1mSubject Create (0.2ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:40:52', 'Itai é muito legal', '2009-11-18 19:40:52')[0m
+Redirected to http://localhost:3000/assuntos/2089548113
+Completed in 72ms (DB: 0) | 302 Found [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 17:40:53) [GET]
+  Parameters: {"id"=>"2089548113"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548113) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/assuntos/2089548113]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:41:02) [GET]
+  [4;36;1mSubject Load (1.0ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 75ms (View: 45, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#destroy (for 127.0.0.1 at 2009-11-18 17:41:07) [DELETE]
+  Parameters: {"authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "id"=>"2089548113"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548113) [0m
+  [4;36;1mSubject Delete all (64.1ms)[0m   [0;1mDELETE FROM "subjects" WHERE ("id" IN (2089548113)) [0m
+Redirected to http://localhost:3000/assuntos
+Completed in 74ms (DB: 64) | 302 Found [http://localhost/assuntos/2089548113]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:41:07) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 37ms (View: 30, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-18 17:44:15) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 54ms (View: 47, DB: 0) | 200 OK [http://localhost/assuntos/new]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-18 17:44:20) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "subject"=>{"title"=>"Luluzinha"}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Luluzinha') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:44:20', 'Luluzinha', '2009-11-18 19:44:20')[0m
+Redirected to http://localhost:3000/assuntos/2089548114
+Completed in 66ms (DB: 0) | 302 Found [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 17:44:20) [GET]
+  Parameters: {"id"=>"2089548114"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548114) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/assuntos/2089548114]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:44:23) [GET]
+  [4;35;1mSubject Load (1.0ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 42ms (View: 34, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-18 17:44:32) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 31ms (View: 8, DB: 0) | 200 OK [http://localhost/assuntos/new]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-18 17:44:35) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "subject"=>{"title"=>"João"}}
+  [4;36;1mSubject Load (0.1ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'João') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:44:35', 'João', '2009-11-18 19:44:35')[0m
+Redirected to http://localhost:3000/assuntos/2089548115
+Completed in 60ms (DB: 0) | 302 Found [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 17:44:35) [GET]
+  Parameters: {"id"=>"2089548115"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548115) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/assuntos/2089548115]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:44:37) [GET]
+  [4;35;1mSubject Load (1.1ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 48ms (View: 40, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:47:48) [GET]
+  [4;36;1mSubject Load (1.1ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 60ms (View: 51, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 17:47:52) [GET]
+  Parameters: {"id"=>"2089548103"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/assuntos/2089548103]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:47:54) [GET]
+  [4;36;1mSubject Load (1.0ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 91ms (View: 83, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 17:47:55) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:47:57) [GET]
+  [4;36;1mSubject Load (1.1ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 52ms (View: 44, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 17:48:02) [GET]
+  Parameters: {"id"=>"2089548108"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548108) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/assuntos/2089548108]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 17:48:05) [GET]
+  Parameters: {"id"=>"2089548105"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/assuntos/2089548105]
+
+
+Processing SubjectsController#destroy (for 127.0.0.1 at 2009-11-18 17:48:33) [DELETE]
+  Parameters: {"authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "id"=>"2089548115"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548115) [0m
+  [4;36;1mSubject Delete all (78.5ms)[0m   [0;1mDELETE FROM "subjects" WHERE ("id" IN (2089548115)) [0m
+Redirected to http://localhost:3000/assuntos
+Completed in 95ms (DB: 79) | 302 Found [http://localhost/assuntos/2089548115]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:48:33) [GET]
+  [4;35;1mSubject Load (1.0ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 47ms (View: 39, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 17:48:36) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:48:41) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 86ms (View: 78, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 17:49:06) [GET]
+  Parameters: {"id"=>"2089548108"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548108) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/assuntos/2089548108]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:49:07) [GET]
+  [4;35;1mSubject Load (1.0ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 47ms (View: 37, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-18 17:49:08) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 18ms (View: 8, DB: 0) | 200 OK [http://localhost/assuntos/new]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-18 17:49:14) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "subject"=>{"title"=>"Pika"}}
+  [4;36;1mSubject Load (0.1ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Pika') LIMIT 1[0m
+  [4;35;1mSubject Create (0.3ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:49:14', 'Pika', '2009-11-18 19:49:14')[0m
+Redirected to http://localhost:3000/assuntos/2089548116
+Completed in 67ms (DB: 0) | 302 Found [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 17:49:15) [GET]
+  Parameters: {"id"=>"2089548116"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548116) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/assuntos/2089548116]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:49:16) [GET]
+  [4;35;1mSubject Load (1.0ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 94ms (View: 87, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-18 17:49:22) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/assuntos/new]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-18 17:49:26) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "subject"=>{"title"=>"Pika"}}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Pika') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 24ms (View: 14, DB: 0) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-18 17:49:34) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "subject"=>{"title"=>"Pika!"}}
+  [4;35;1mSubject Load (0.1ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Pika!') LIMIT 1[0m
+  [4;36;1mSubject Create (0.2ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:49:34', 'Pika!', '2009-11-18 19:49:34')[0m
+Redirected to http://localhost:3000/assuntos/2089548117
+Completed in 73ms (DB: 0) | 302 Found [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 17:49:35) [GET]
+  Parameters: {"id"=>"2089548117"}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548117) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/assuntos/2089548117]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:49:36) [GET]
+  [4;36;1mSubject Load (1.1ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 99ms (View: 91, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#destroy (for 127.0.0.1 at 2009-11-18 17:49:39) [DELETE]
+  Parameters: {"authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "id"=>"2089548117"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548117) [0m
+  [4;36;1mSubject Delete all (51.7ms)[0m   [0;1mDELETE FROM "subjects" WHERE ("id" IN (2089548117)) [0m
+Redirected to http://localhost:3000/assuntos
+Completed in 62ms (DB: 52) | 302 Found [http://localhost/assuntos/2089548117]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:49:39) [GET]
+  [4;35;1mSubject Load (1.0ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 52ms (View: 43, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 17:54:18) [GET]
+  [4;36;1mSubject Load (1.0ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 94ms (View: 86, DB: 1) | 200 OK [http://localhost/assuntos]

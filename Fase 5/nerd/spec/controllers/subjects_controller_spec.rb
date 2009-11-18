@@ -60,4 +60,24 @@ describe SubjectsController do
     end
   end
 
+  context "GET show" do
+    it "should assign the correct subject to subject" do
+      get :show, :id => subjects(:bife).id
+      assigns[:subject].should == subjects(:bife)
+    end
+  end
+
+  context "GET edit" do
+    before :each do
+      get :edit, :id => subjects(:bife).id
+    end
+    
+    it "should be success" do
+      response.should be_success
+    end
+
+    it "should assign the correct subject to subject" do
+      assigns[:subject].should == subjects(:bife)
+    end
+  end
 end

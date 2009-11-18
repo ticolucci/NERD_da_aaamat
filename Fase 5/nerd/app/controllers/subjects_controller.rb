@@ -21,4 +21,12 @@ class SubjectsController < ApplicationController
     @subject.delete
     redirect_to(subjects_path)
   end
+
+  def show
+    @subject = Subject.find params[:id]
+  end
+
+  def edit
+    @subject = Subject.find params[:id]
+  end
 end

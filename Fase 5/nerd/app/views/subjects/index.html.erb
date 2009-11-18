@@ -1,9 +1,12 @@
 <h1>Assuntos</h1>
 
+<%= link_to "Novo", new_subject_path %>
+
 <ul id="subjects">
   <% @subjects.each do |subject| %>
     <li id="<%= subject.id %>">
-      <%= subject.title %> <%= link_to "excluir", subject_path(subject.id), :method => "delete", :confirm => "Excluir #{subject.title}?" %>
+      <%= link_to subject.title, subject_path(subject.id)  %>
+      <%= link_to "excluir", subject_path(subject.id), :method => "delete", :confirm => "Excluir #{subject.title}?" %>
     </li>
   <% end %>
 </ul>

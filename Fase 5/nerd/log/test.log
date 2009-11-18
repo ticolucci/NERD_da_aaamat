@@ -3069,3 +3069,1455 @@ Rendering subjects/index
   [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
   [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
 Rendering subjects/index
+  [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.6ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.7ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+Rendering subjects/new
+Rendering subjects/new
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'value for title') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:17:57', 'value for title', '2009-11-18 19:17:57')[0m
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Abate') LIMIT 1[0m
+  [4;36;1mSubject Create (0.2ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:17:57', 'Abate', '2009-11-18 19:17:57')[0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Abate') LIMIT 1[0m
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#destroy (for 0.0.0.0 at 2009-11-18 17:17:57) [DELETE]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Delete all (0.2ms)[0m   [0;1mDELETE FROM "subjects" WHERE ("id" IN (2031241678)) [0m
+Redirected to http://test.host/assuntos
+Completed in 6ms (DB: 3) | 302 Found [http://test.host/assuntos/2031241678]
+  [4;35;1mSubject Load (0.1ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:17:57) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:17:57', 'new subject', '2009-11-18 19:17:57')[0m
+Redirected to http://test.host/assuntos/2089548104
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/assuntos?subject%5Btitle%5D=new+subject]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:17:57) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:17:57) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:17:57) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:17:57) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:17:57) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#show (for 0.0.0.0 at 2009-11-18 17:26:35) [GET]
+  Parameters: {"id"=>2031241678}
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#destroy (for 0.0.0.0 at 2009-11-18 17:26:35) [DELETE]
+  Parameters: {"id"=>2031241678}
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Delete all (1.8ms)[0m   [0mDELETE FROM "subjects" WHERE ("id" IN (2031241678)) [0m
+Redirected to http://test.host/assuntos
+Completed in 4ms (DB: 3) | 302 Found [http://test.host/assuntos/2031241678]
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:26:35) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+  [4;36;1mSubject Create (0.3ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:26:35', 'new subject', '2009-11-18 19:26:35')[0m
+Redirected to http://test.host/assuntos/2089548104
+Completed in 23ms (DB: 1) | 302 Found [http://test.host/assuntos?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:26:35) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos?subject%5Btitle%5D=]
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:26:35) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:26:35) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:26:35) [GET]
+  [4;36;1mSubject Load (0.6ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:26:35) [GET]
+  [4;35;1mSubject Load (0.6ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#show (for 0.0.0.0 at 2009-11-18 17:28:36) [GET]
+  Parameters: {"id"=>2031241678}
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 5ms (View: 1, DB: 2) | 200 OK [http://test.host/assuntos/2031241678]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#destroy (for 0.0.0.0 at 2009-11-18 17:28:36) [DELETE]
+  Parameters: {"id"=>2031241678}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Delete all (0.2ms)[0m   [0mDELETE FROM "subjects" WHERE ("id" IN (2031241678)) [0m
+Redirected to http://test.host/assuntos
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/assuntos/2031241678]
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:28:36) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+  [4;36;1mSubject Create (0.2ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:28:36', 'new subject', '2009-11-18 19:28:36')[0m
+Redirected to http://test.host/assuntos/2089548104
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/assuntos?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:28:36) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos?subject%5Btitle%5D=]
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:28:36) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:28:36) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:28:36) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:28:36) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#show (for 0.0.0.0 at 2009-11-18 17:29:05) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 6ms (View: 1, DB: 2) | 200 OK [http://test.host/assuntos/2031241678]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#destroy (for 0.0.0.0 at 2009-11-18 17:29:05) [DELETE]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Delete all (0.2ms)[0m   [0;1mDELETE FROM "subjects" WHERE ("id" IN (2031241678)) [0m
+Redirected to http://test.host/assuntos
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/assuntos/2031241678]
+  [4;35;1mSubject Load (0.1ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:29:05) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:29:05', 'new subject', '2009-11-18 19:29:05')[0m
+Redirected to http://test.host/assuntos/2089548104
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/assuntos?subject%5Btitle%5D=new+subject]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:29:05) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.1ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:29:05) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:29:05) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:29:05) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:29:06) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos]
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/new
+Rendering subjects/new
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'value for title') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:29:07', 'value for title', '2009-11-18 19:29:07')[0m
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+  [4;35;1mSubject Load (0.1ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Abate') LIMIT 1[0m
+  [4;36;1mSubject Create (0.2ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:29:07', 'Abate', '2009-11-18 19:29:07')[0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Abate') LIMIT 1[0m
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#show (for 0.0.0.0 at 2009-11-18 17:29:07) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos/2031241678]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#destroy (for 0.0.0.0 at 2009-11-18 17:29:07) [DELETE]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Delete all (0.2ms)[0m   [0;1mDELETE FROM "subjects" WHERE ("id" IN (2031241678)) [0m
+Redirected to http://test.host/assuntos
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/assuntos/2031241678]
+  [4;35;1mSubject Load (0.1ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:29:07) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:29:07', 'new subject', '2009-11-18 19:29:07')[0m
+Redirected to http://test.host/assuntos/2089548104
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/assuntos?subject%5Btitle%5D=new+subject]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:29:07) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.1ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:29:07) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:29:07) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:29:07) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:29:07) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/new
+Rendering subjects/new
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'value for title') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:37:29', 'value for title', '2009-11-18 19:37:29')[0m
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Abate') LIMIT 1[0m
+  [4;36;1mSubject Create (0.2ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:37:29', 'Abate', '2009-11-18 19:37:29')[0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Abate') LIMIT 1[0m
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#show (for 0.0.0.0 at 2009-11-18 17:37:29) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos/2031241678]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#destroy (for 0.0.0.0 at 2009-11-18 17:37:29) [DELETE]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Delete all (0.2ms)[0m   [0;1mDELETE FROM "subjects" WHERE ("id" IN (2031241678)) [0m
+Redirected to http://test.host/assuntos
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/assuntos/2031241678]
+  [4;35;1mSubject Load (0.1ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:37:29) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:37:29', 'new subject', '2009-11-18 19:37:29')[0m
+Redirected to http://test.host/assuntos/2089548104
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/assuntos?subject%5Btitle%5D=new+subject]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:37:29) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.1ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:37:29) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:37:29) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:37:29) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:37:29) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering subjects/show
+  [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering subjects/show
+Rendering subjects/new
+Rendering subjects/new
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'value for title') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:38:37', 'value for title', '2009-11-18 19:38:37')[0m
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Abate') LIMIT 1[0m
+  [4;36;1mSubject Create (0.2ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:38:37', 'Abate', '2009-11-18 19:38:37')[0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Abate') LIMIT 1[0m
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#show (for 0.0.0.0 at 2009-11-18 17:38:37) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos/2031241678]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#destroy (for 0.0.0.0 at 2009-11-18 17:38:37) [DELETE]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Delete all (0.2ms)[0m   [0;1mDELETE FROM "subjects" WHERE ("id" IN (2031241678)) [0m
+Redirected to http://test.host/assuntos
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/assuntos/2031241678]
+  [4;35;1mSubject Load (0.1ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:38:37) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:38:37', 'new subject', '2009-11-18 19:38:37')[0m
+Redirected to http://test.host/assuntos/2089548104
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/assuntos?subject%5Btitle%5D=new+subject]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:38:37) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:38:37) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:38:37) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:38:37) [GET]
+  [4;35;1mSubject Load (0.6ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:38:37) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering subjects/show
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering subjects/show
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering subjects/show
+  [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering subjects/show
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering subjects/show
+Rendering subjects/new
+Rendering subjects/new
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'value for title') LIMIT 1[0m
+  [4;35;1mSubject Create (0.3ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:44:06', 'value for title', '2009-11-18 19:44:06')[0m
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Abate') LIMIT 1[0m
+  [4;36;1mSubject Create (0.2ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:44:06', 'Abate', '2009-11-18 19:44:06')[0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Abate') LIMIT 1[0m
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#show (for 0.0.0.0 at 2009-11-18 17:44:06) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos/2031241678]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#destroy (for 0.0.0.0 at 2009-11-18 17:44:06) [DELETE]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Delete all (0.3ms)[0m   [0;1mDELETE FROM "subjects" WHERE ("id" IN (2031241678)) [0m
+Redirected to http://test.host/assuntos
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/assuntos/2031241678]
+  [4;35;1mSubject Load (0.1ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:44:06) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:44:06', 'new subject', '2009-11-18 19:44:06')[0m
+Redirected to http://test.host/assuntos/2089548104
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/assuntos?subject%5Btitle%5D=new+subject]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:44:06) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:44:06) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:44:07) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:44:07) [GET]
+  [4;35;1mSubject Load (0.6ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:44:07) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering subjects/show
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering subjects/show
+  [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.6ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.6ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.6ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+Rendering subjects/new
+Rendering subjects/new
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'value for title') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:47:44', 'value for title', '2009-11-18 19:47:44')[0m
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Abate') LIMIT 1[0m
+  [4;36;1mSubject Create (0.2ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:47:44', 'Abate', '2009-11-18 19:47:44')[0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Abate') LIMIT 1[0m
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#show (for 0.0.0.0 at 2009-11-18 17:47:44) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 6ms (View: 1, DB: 2) | 200 OK [http://test.host/assuntos/2031241678]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#destroy (for 0.0.0.0 at 2009-11-18 17:47:44) [DELETE]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Delete all (0.2ms)[0m   [0;1mDELETE FROM "subjects" WHERE ("id" IN (2031241678)) [0m
+Redirected to http://test.host/assuntos
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/assuntos/2031241678]
+  [4;35;1mSubject Load (0.1ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:47:44) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:47:44', 'new subject', '2009-11-18 19:47:44')[0m
+Redirected to http://test.host/assuntos/2089548104
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/assuntos?subject%5Btitle%5D=new+subject]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:47:44) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.1ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:47:44) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:47:44) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:47:44) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:47:44) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering subjects/show
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering subjects/show
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#edit (for 0.0.0.0 at 2009-11-18 17:52:05) [GET]
+  Parameters: {"id"=>2031241678}
+Rendering template within layouts/application
+Rendering subjects/edit
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#show (for 0.0.0.0 at 2009-11-18 17:52:05) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos/2031241678]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#destroy (for 0.0.0.0 at 2009-11-18 17:52:05) [DELETE]
+  Parameters: {"id"=>2031241678}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Delete all (0.2ms)[0m   [0mDELETE FROM "subjects" WHERE ("id" IN (2031241678)) [0m
+Redirected to http://test.host/assuntos
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/assuntos/2031241678]
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:52:05) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+  [4;36;1mSubject Create (0.2ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:52:05', 'new subject', '2009-11-18 19:52:05')[0m
+Redirected to http://test.host/assuntos/2089548104
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/assuntos?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:52:05) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos?subject%5Btitle%5D=]
+  [4;35;1mSubject Load (0.1ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:52:05) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:52:05) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:52:05) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:52:05) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos]
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#edit (for 0.0.0.0 at 2009-11-18 17:52:19) [GET]
+  Parameters: {"id"=>2031241678}
+Rendering template within layouts/application
+Rendering subjects/edit
+Completed in 5ms (View: 1, DB: 2) | 200 OK [http://test.host/assuntos/2031241678/editar]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#show (for 0.0.0.0 at 2009-11-18 17:52:19) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos/2031241678]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#destroy (for 0.0.0.0 at 2009-11-18 17:52:19) [DELETE]
+  Parameters: {"id"=>2031241678}
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Delete all (0.3ms)[0m   [0mDELETE FROM "subjects" WHERE ("id" IN (2031241678)) [0m
+Redirected to http://test.host/assuntos
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/assuntos/2031241678]
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:52:19) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+  [4;36;1mSubject Create (0.3ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:52:19', 'new subject', '2009-11-18 19:52:19')[0m
+Redirected to http://test.host/assuntos/2089548104
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/assuntos?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:52:19) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos?subject%5Btitle%5D=]
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:52:19) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:52:19) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:52:19) [GET]
+  [4;36;1mSubject Load (0.6ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:52:19) [GET]
+  [4;35;1mSubject Load (0.6ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/new
+Rendering subjects/new
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'value for title') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:52:21', 'value for title', '2009-11-18 19:52:21')[0m
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+  [4;35;1mSubject Load (0.1ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Abate') LIMIT 1[0m
+  [4;36;1mSubject Create (0.2ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:52:21', 'Abate', '2009-11-18 19:52:21')[0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Abate') LIMIT 1[0m
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering subjects/show
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering subjects/show
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#edit (for 0.0.0.0 at 2009-11-18 17:52:21) [GET]
+  Parameters: {"id"=>2031241678}
+Rendering template within layouts/application
+Rendering subjects/edit
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/2031241678/editar]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#show (for 0.0.0.0 at 2009-11-18 17:52:21) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos/2031241678]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#destroy (for 0.0.0.0 at 2009-11-18 17:52:21) [DELETE]
+  Parameters: {"id"=>2031241678}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Delete all (0.2ms)[0m   [0mDELETE FROM "subjects" WHERE ("id" IN (2031241678)) [0m
+Redirected to http://test.host/assuntos
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/assuntos/2031241678]
+  [4;36;1mSubject Load (0.1ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:52:21) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+  [4;36;1mSubject Create (0.3ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:52:21', 'new subject', '2009-11-18 19:52:21')[0m
+Redirected to http://test.host/assuntos/2089548104
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/assuntos?subject%5Btitle%5D=new+subject]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:52:21) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos?subject%5Btitle%5D=]
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:52:21) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:52:21) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:52:21) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:52:21) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#edit (for 0.0.0.0 at 2009-11-18 17:53:18) [GET]
+  Parameters: {"id"=>2031241678}
+Rendering template within layouts/application
+Rendering subjects/edit
+Completed in 5ms (View: 1, DB: 2) | 200 OK [http://test.host/assuntos/2031241678/editar]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#edit (for 0.0.0.0 at 2009-11-18 17:53:18) [GET]
+  Parameters: {"id"=>2031241678}
+Rendering template within layouts/application
+Rendering subjects/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/2031241678/editar]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#show (for 0.0.0.0 at 2009-11-18 17:53:18) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos/2031241678]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#destroy (for 0.0.0.0 at 2009-11-18 17:53:18) [DELETE]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Delete all (0.2ms)[0m   [0;1mDELETE FROM "subjects" WHERE ("id" IN (2031241678)) [0m
+Redirected to http://test.host/assuntos
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/assuntos/2031241678]
+  [4;35;1mSubject Load (0.1ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:53:18) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:53:18', 'new subject', '2009-11-18 19:53:18')[0m
+Redirected to http://test.host/assuntos/2089548104
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/assuntos?subject%5Btitle%5D=new+subject]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:53:18) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:53:18) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:53:18) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:53:18) [GET]
+  [4;35;1mSubject Load (0.6ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:53:18) [GET]
+  [4;36;1mSubject Load (0.6ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#edit (for 0.0.0.0 at 2009-11-18 17:53:20) [GET]
+  Parameters: {"id"=>2031241678}
+Rendering template within layouts/application
+Rendering subjects/edit
+Completed in 6ms (View: 1, DB: 2) | 200 OK [http://test.host/assuntos/2031241678/editar]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#edit (for 0.0.0.0 at 2009-11-18 17:53:20) [GET]
+  Parameters: {"id"=>2031241678}
+Rendering template within layouts/application
+Rendering subjects/edit
+Completed in 1ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos/2031241678/editar]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#show (for 0.0.0.0 at 2009-11-18 17:53:20) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos/2031241678]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#destroy (for 0.0.0.0 at 2009-11-18 17:53:20) [DELETE]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Delete all (0.3ms)[0m   [0;1mDELETE FROM "subjects" WHERE ("id" IN (2031241678)) [0m
+Redirected to http://test.host/assuntos
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/assuntos/2031241678]
+  [4;35;1mSubject Load (0.1ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:53:20) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:53:20', 'new subject', '2009-11-18 19:53:20')[0m
+Redirected to http://test.host/assuntos/2089548104
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/assuntos?subject%5Btitle%5D=new+subject]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:53:20) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.1ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:53:20) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:53:20) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:53:20) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:53:20) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#edit (for 0.0.0.0 at 2009-11-18 17:53:43) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Completed in 10ms (View: 1, DB: 2) | 200 OK [http://test.host/assuntos/2031241678/editar]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#edit (for 0.0.0.0 at 2009-11-18 17:53:43) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos/2031241678/editar]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#show (for 0.0.0.0 at 2009-11-18 17:53:43) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos/2031241678]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#destroy (for 0.0.0.0 at 2009-11-18 17:53:43) [DELETE]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Delete all (0.2ms)[0m   [0;1mDELETE FROM "subjects" WHERE ("id" IN (2031241678)) [0m
+Redirected to http://test.host/assuntos
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/assuntos/2031241678]
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:53:43) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:53:43', 'new subject', '2009-11-18 19:53:43')[0m
+Redirected to http://test.host/assuntos/2089548104
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/assuntos?subject%5Btitle%5D=new+subject]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:53:43) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.1ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:53:43) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:53:43) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:53:43) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:53:43) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos]
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/new
+Rendering subjects/new
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'value for title') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:53:45', 'value for title', '2009-11-18 19:53:45')[0m
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+  [4;35;1mSubject Load (0.1ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Abate') LIMIT 1[0m
+  [4;36;1mSubject Create (0.2ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:53:45', 'Abate', '2009-11-18 19:53:45')[0m
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Abate') LIMIT 1[0m
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering subjects/show
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering subjects/show
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering subjects/index
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#edit (for 0.0.0.0 at 2009-11-18 17:53:45) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos/2031241678/editar]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#edit (for 0.0.0.0 at 2009-11-18 17:53:45) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos/2031241678/editar]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#show (for 0.0.0.0 at 2009-11-18 17:53:45) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos/2031241678]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#destroy (for 0.0.0.0 at 2009-11-18 17:53:45) [DELETE]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Delete all (0.2ms)[0m   [0;1mDELETE FROM "subjects" WHERE ("id" IN (2031241678)) [0m
+Redirected to http://test.host/assuntos
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/assuntos/2031241678]
+  [4;35;1mSubject Load (0.1ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:53:45) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:53:45', 'new subject', '2009-11-18 19:53:45')[0m
+Redirected to http://test.host/assuntos/2089548104
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/assuntos?subject%5Btitle%5D=new+subject]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:53:45) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.1ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:53:45) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:53:45) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:53:45) [GET]
+  [4;35;1mSubject Load (0.6ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:53:45) [GET]
+  [4;36;1mSubject Load (0.6ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#edit (for 0.0.0.0 at 2009-11-18 17:54:14) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Completed in 6ms (View: 1, DB: 2) | 200 OK [http://test.host/assuntos/2031241678/editar]
+  [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#edit (for 0.0.0.0 at 2009-11-18 17:54:14) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos/2031241678/editar]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#show (for 0.0.0.0 at 2009-11-18 17:54:14) [GET]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos/2031241678]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#destroy (for 0.0.0.0 at 2009-11-18 17:54:14) [DELETE]
+  Parameters: {"id"=>2031241678}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Delete all (0.2ms)[0m   [0;1mDELETE FROM "subjects" WHERE ("id" IN (2031241678)) [0m
+Redirected to http://test.host/assuntos
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/assuntos/2031241678]
+  [4;35;1mSubject Load (0.1ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:54:14) [POST]
+  Parameters: {"subject"=>{"title"=>"new subject"}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+  [4;35;1mSubject Create (0.3ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 19:54:14', 'new subject', '2009-11-18 19:54:14')[0m
+Redirected to http://test.host/assuntos/2089548104
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/assuntos?subject%5Btitle%5D=new+subject]
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = 'new subject') LIMIT 1[0m
+
+
+Processing SubjectsController#create (for 0.0.0.0 at 2009-11-18 17:54:14) [POST]
+  Parameters: {"subject"=>{"title"=>""}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos?subject%5Btitle%5D=]
+  [4;36;1mSubject Load (0.1ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:54:14) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#new (for 0.0.0.0 at 2009-11-18 17:54:14) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/assuntos/novo]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:54:14) [GET]
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+
+
+Processing SubjectsController#index (for 0.0.0.0 at 2009-11-18 17:54:14) [GET]
+  [4;36;1mSubject Load (0.5ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/assuntos]
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
