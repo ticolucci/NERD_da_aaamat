@@ -16,4 +16,10 @@ describe Subject do
     subject = Subject.new(:title => "")
     subject.save.should == false
   end
+
+  it "titles should be unique" do
+    Subject.create!(:title => "Abate")
+    subject2 = Subject.new(:title => "Abate")
+    subject2.save.should == false
+  end
 end

@@ -307,3 +307,62 @@ Processing SubjectsController#create (for 127.0.0.1 at 2009-11-14 23:16:23) [POS
 Rendering template within layouts/application
 Rendering subjects/new
 Completed in 71ms (View: 61, DB: 0) | 200 OK [http://localhost/subjects]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-18 16:02:33) [GET]
+
+ActionController::RoutingError (No route matches "/i" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 16:02:57) [GET]
+  [4;36;1mSubject Load (1.2ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 43ms (View: 35, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-18 16:08:09) [GET]
+
+ActionController::RoutingError (No route matches "/sub" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 16:08:19) [GET]
+  [4;35;1mSubject Load (1.1ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://localhost/subjects]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 16:08:20) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/subjects]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-18 16:08:35) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 27ms (View: 19, DB: 0) | 200 OK [http://localhost/subjects/new]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-18 16:08:50) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "subject"=>{"title"=>"Churrasco de fim de ano"}}
+  [4;35;1mSubject Create (0.4ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 18:08:50', 'Churrasco de fim de ano', '2009-11-18 18:08:50')[0m
+Redirected to http://localhost:3000/subjects/2089548108
+Completed in 63ms (DB: 0) | 302 Found [http://localhost/subjects]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 16:08:50) [GET]
+  Parameters: {"id"=>"2089548108"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, index, and new):
+  
+
+Rendering rescues/layout (not_found)
