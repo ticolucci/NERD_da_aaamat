@@ -18,3 +18,7 @@
   background-color: LightPink;
 	border-color: Red;
 }
+
+img{
+  border: none;
+}

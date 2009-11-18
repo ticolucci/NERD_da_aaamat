@@ -19,4 +19,8 @@ describe "/subjects/new" do
     end
   end
 
+  it "should have a link to cancel" do
+    response.should have_tag("a[href=?]", subjects_path)
+  end
+
 end

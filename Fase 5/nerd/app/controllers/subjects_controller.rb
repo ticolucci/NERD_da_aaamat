@@ -1,5 +1,7 @@
 class SubjectsController < ApplicationController
+  
   def index
+    store_location
     @subjects = Subject.find :all
   end
 
@@ -23,6 +25,7 @@ class SubjectsController < ApplicationController
   end
 
   def show
+    store_location
     @subject = Subject.find params[:id]
   end
 

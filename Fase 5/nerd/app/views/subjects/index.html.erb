@@ -1,13 +1,13 @@
 <h1>Assuntos</h1>
 
-<%= link_to "Novo", new_subject_path %>
+<%= link_to image_tag("/images/add.png", :title => "Novo") + "Novo", new_subject_path %>
 
 <ul id="subjects">
   <% @subjects.each do |subject| %>
     <li id="<%= subject.id %>">
       <%= link_to subject.title, subject_path(subject.id) %>
-      <%= link_to "excluir", subject_path(subject.id), :method => "delete", :confirm => "Excluir #{subject.title}?" %> |
-      <%= link_to "editar", edit_subject_path(subject.id) %>
+      <%= link_to image_tag("/images/delete.png", :title => "Excluir"), subject_path(subject.id), :method => "delete", :confirm => "Excluir #{subject.title}?" %> |
+      <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_path(subject.id) %>
     </li>
   <% end %>
 </ul>
