@@ -1,0 +1,11 @@
+pagar_laausp:
+  title: "Pagar LAAUSP"
+  body: "pagar refiliação"
+  due_date: 2009-12-25
+  status: a_fazer
+
+falar_com_diretor:
+  title: "Falar com Diretor"
+  body: "Pedir pra ele se retirar"
+  due_date: 2009-12-01
+  status: fazendo

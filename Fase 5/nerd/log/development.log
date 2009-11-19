@@ -2474,3 +2474,622 @@ Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 20:08:42) [GET]
 Rendering template within layouts/application
 Rendering subjects/show
 Completed in 15ms (View: 7, DB: 0) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 20:54:45) [GET]
+  [4;36;1mSubject Load (1.1ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 75ms (View: 67, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-18 20:55:21) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 20ms (View: 13, DB: 0) | 200 OK [http://localhost/assuntos/novo]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-18 20:55:32) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "subject"=>{"title"=>"Dora"}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Dora') LIMIT 1[0m
+  [4;36;1mSubject Create (0.4ms)[0m   [0;1mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-18 22:55:32', 'Dora', '2009-11-18 22:55:32')[0m
+Redirected to http://localhost:3000/assuntos/2089548119
+Completed in 68ms (DB: 1) | 302 Found [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 20:55:32) [GET]
+  Parameters: {"id"=>"2089548119"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548119) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 20ms (View: 11, DB: 0) | 200 OK [http://localhost/assuntos/2089548119]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 20:55:37) [GET]
+  [4;36;1mSubject Load (1.0ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 100ms (View: 47, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 20:55:40) [GET]
+  Parameters: {"id"=>"2089548119"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548119) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/assuntos/2089548119]
+
+
+Processing SubjectsController#edit (for 127.0.0.1 at 2009-11-18 20:55:42) [GET]
+  Parameters: {"id"=>"2089548119"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548119) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Completed in 22ms (View: 14, DB: 0) | 200 OK [http://localhost/assuntos/2089548119/editar]
+
+
+Processing SubjectsController#update (for 127.0.0.1 at 2009-11-18 20:55:45) [PUT]
+  Parameters: {"commit"=>"ok", "authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "id"=>"2089548119", "subject"=>{"title"=>"Dora!"}}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548119) [0m
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Dora!' AND "subjects".id <> 2089548119) LIMIT 1[0m
+  [4;35;1mSubject Update (0.2ms)[0m   [0mUPDATE "subjects" SET "updated_at" = '2009-11-18 22:55:45', "title" = 'Dora!' WHERE "id" = 2089548119[0m
+Redirected to http://localhost:3000/assuntos/2089548119
+Completed in 74ms (DB: 1) | 302 Found [http://localhost/assuntos/2089548119]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 20:55:46) [GET]
+  Parameters: {"id"=>"2089548119"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548119) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 23ms (View: 7, DB: 0) | 200 OK [http://localhost/assuntos/2089548119]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 20:55:48) [GET]
+  [4;35;1mSubject Load (1.0ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 97ms (View: 89, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#destroy (for 127.0.0.1 at 2009-11-18 20:55:59) [DELETE]
+  Parameters: {"authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "id"=>"2089548105"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;35;1mSubject Delete all (72.9ms)[0m   [0mDELETE FROM "subjects" WHERE ("id" IN (2089548105)) [0m
+Redirected to http://localhost:3000/assuntos
+Completed in 83ms (DB: 73) | 302 Found [http://localhost/assuntos/2089548105]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 20:55:59) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 50ms (View: 43, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 20:56:05) [GET]
+  Parameters: {"id"=>"2089548119"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548119) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 21ms (View: 6, DB: 0) | 200 OK [http://localhost/assuntos/2089548119]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 20:56:17) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 107ms (View: 42, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-18 20:56:21) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/assuntos/novo]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-18 20:56:23) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "subject"=>{"title"=>""}}
+  [4;35;1mSubject Load (0.2ms)[0m   [0mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 29ms (View: 15, DB: 0) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-18 20:56:34) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"yJgz2YFe3KhhOFzpsvmx6lp46VTY+fuOFapBff8YbFo=", "subject"=>{"title"=>"Dora!"}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Dora!') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 50ms (View: 39, DB: 0) | 200 OK [http://localhost/assuntos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-18 22:29:52) [GET]
+
+ActionController::RoutingError (No route matches "/login" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-18 22:29:57) [GET]
+
+ActionController::RoutingError (No route matches "/login" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-18 22:30:06) [GET]
+
+ActionController::RoutingError (No route matches "/processos/1/documentos/1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 22:30:15) [GET]
+  [4;36;1mSubject Load (1.1ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 92ms (View: 67, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SubjectsController#destroy (for 127.0.0.1 at 2009-11-18 22:30:48) [DELETE]
+  Parameters: {"authenticity_token"=>"cL1un72zhdIArjWp6p1Svco55WyBuyyDDydZmDDo0d4=", "id"=>"2089548119"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548119) [0m
+  [4;36;1mSubject Delete all (81.7ms)[0m   [0;1mDELETE FROM "subjects" WHERE ("id" IN (2089548119)) [0m
+Redirected to http://localhost:3000/assuntos
+Completed in 92ms (DB: 82) | 302 Found [http://localhost/assuntos/2089548119]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 22:30:48) [GET]
+  [4;35;1mSubject Load (0.8ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 88ms (View: 34, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-18 22:30:50) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Completed in 21ms (View: 13, DB: 0) | 200 OK [http://localhost/assuntos/novo]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-18 22:31:01) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"cL1un72zhdIArjWp6p1Svco55WyBuyyDDydZmDDo0d4=", "subject"=>{"title"=>"Julia"}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Julia') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-19 00:31:01', 'Julia', '2009-11-19 00:31:01')[0m
+Redirected to http://localhost:3000/assuntos/2089548120
+Completed in 64ms (DB: 0) | 302 Found [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 22:31:01) [GET]
+  Parameters: {"id"=>"2089548120"}
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548120) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 23ms (View: 12, DB: 0) | 200 OK [http://localhost/assuntos/2089548120]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 22:31:06) [GET]
+  [4;35;1mSubject Load (3.3ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 96ms (View: 86, DB: 3) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#edit (for 127.0.0.1 at 2009-11-18 22:31:12) [GET]
+  Parameters: {"id"=>"2089548120"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548120) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Completed in 22ms (View: 14, DB: 0) | 200 OK [http://localhost/assuntos/2089548120/editar]
+
+
+Processing SubjectsController#update (for 127.0.0.1 at 2009-11-18 22:31:19) [PUT]
+  Parameters: {"commit"=>"ok", "authenticity_token"=>"cL1un72zhdIArjWp6p1Svco55WyBuyyDDydZmDDo0d4=", "id"=>"2089548120", "subject"=>{"title"=>"Julia!!"}}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548120) [0m
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Julia!!' AND "subjects".id <> 2089548120) LIMIT 1[0m
+  [4;35;1mSubject Update (0.2ms)[0m   [0mUPDATE "subjects" SET "updated_at" = '2009-11-19 00:31:19', "title" = 'Julia!!' WHERE "id" = 2089548120[0m
+Redirected to http://localhost:3000/assuntos/2089548120
+Completed in 76ms (DB: 1) | 302 Found [http://localhost/assuntos/2089548120]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-18 22:31:19) [GET]
+  Parameters: {"id"=>"2089548120"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548120) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/assuntos/2089548120]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-18 22:31:22) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 47ms (View: 39, DB: 1) | 200 OK [http://localhost/assuntos]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSubjects (1)
+Migrating to CreateStatus (2)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "status" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "status_type" varchar(255)) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('2')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("status")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("subjects")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSubjects (1)
+Migrating to CreateStatus (2)
+Migrating to CreateTasks (3)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" varchar(255), "due_date" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('3')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("status")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("subjects")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (111.1ms)[0m   [0;1mCREATE TABLE "status" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "status_type" varchar(255)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (102.2ms)[0m   [0;1mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (97.2ms)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" varchar(255), "due_date" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (101.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (90.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (56.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (67.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;36;1mSQL (67.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSubjects (1)
+Migrating to CreateStatus (2)
+Migrating to CreateTasks (3)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("status")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("subjects")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSubjects (1)
+Migrating to CreateStatus (2)
+Migrating to CreateTasks (3)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("status")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("subjects")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (111.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (92.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSubjects (1)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('1')[0m
+Migrating to CreateStatus (2)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "status" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "status_type" varchar(255)) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('2')[0m
+Migrating to CreateTasks (3)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" varchar(255), "due_date" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('3')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("status")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("subjects")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (92.2ms)[0m   [0;1mCREATE TABLE "status" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "status_type" varchar(255)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (66.5ms)[0m   [0;1mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (88.6ms)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" varchar(255), "due_date" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (94.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (135.4ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (45.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (56.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;36;1mSQL (56.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTasks (3)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mDROP TABLE "tasks"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '3'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("status")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("subjects")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSubjects (1)
+Migrating to CreateStatus (2)
+Migrating to CreateTasks (3)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" varchar(255), "due_date" date, "status_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('3')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("status")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("subjects")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (116.2ms)[0m   [0;1mCREATE TABLE "status" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "status_type" varchar(255)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (88.2ms)[0m   [0;1mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (88.2ms)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" varchar(255), "due_date" date, "status_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (89.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (90.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (45.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (58.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;36;1mSQL (234.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+  [4;35;1mTask Create (0.5ms)[0m   [0mINSERT INTO "tasks" ("created_at", "title", "body", "updated_at", "due_date", "status_id") VALUES('2009-11-19 01:45:46', 'oi', NULL, '2009-11-19 01:45:46', NULL, NULL)[0m
+  [4;36;1mStatus Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: statuses: SELECT * FROM "statuses" [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTasks (3)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mDROP TABLE "tasks"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '3'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("status")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("subjects")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStatus (2)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mDROP TABLE "status"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '2'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("subjects")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSubjects (1)
+Migrating to CreateStatus (2)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "statuses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "status_type" varchar(255)) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('2')[0m
+Migrating to CreateTasks (3)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" varchar(255), "due_date" date, "status_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('3')[0m
+  [4;35;1mSQL (1.9ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("statuses")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("subjects")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (113.7ms)[0m   [0;1mCREATE TABLE "statuses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "status_type" varchar(255)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (99.9ms)[0m   [0;1mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (89.7ms)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" varchar(255), "due_date" date, "status_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (100.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (104.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (44.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (54.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;36;1mSQL (56.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m

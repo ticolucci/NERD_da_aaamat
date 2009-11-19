@@ -1,0 +1,8 @@
+feito:
+  status_type: Feito
+
+fazendo:
+  status_type: Fazendo
+
+a_fazer:
+  status_type: "A Fazer"
