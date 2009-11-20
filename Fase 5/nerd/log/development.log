@@ -3690,3 +3690,128 @@ Rendering template within layouts/application
 Rendering tasks/show
   [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 662328050) [0m
 Completed in 25ms (View: 15, DB: 1) | 200 OK [http://localhost/assuntos/2089548103/tarefas/1407023927]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 20:02:33) [GET]
+  Parameters: {"subject_id"=>"2089548103", "id"=>"1407023927"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023927) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 662328050) [0m
+Completed in 22ms (View: 11, DB: 1) | 200 OK [http://localhost/assuntos/2089548103/tarefas/1407023927]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 20:15:01) [GET]
+  Parameters: {"subject_id"=>"2089548103", "id"=>"1407023927"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023927) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 662328050) [0m
+Completed in 72ms (View: 62, DB: 1) | 200 OK [http://localhost/assuntos/2089548103/tarefas/1407023927]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 20:18:28) [GET]
+  Parameters: {"subject_id"=>"2089548103", "id"=>"1407023927"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023927) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 662328050) [0m
+Completed in 28ms (View: 17, DB: 1) | 200 OK [http://localhost/assuntos/2089548103/tarefas/1407023927]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 20:23:14) [GET]
+  Parameters: {"subject_id"=>"2089548103", "id"=>"1407023927"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023927) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 662328050) [0m
+Completed in 27ms (View: 16, DB: 1) | 200 OK [http://localhost/assuntos/2089548103/tarefas/1407023927]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 20:25:52) [GET]
+  Parameters: {"subject_id"=>"2089548103", "id"=>"1407023927"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023927) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 662328050) [0m
+Completed in 26ms (View: 16, DB: 1) | 200 OK [http://localhost/assuntos/2089548103/tarefas/1407023927]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 20:30:53) [GET]
+  Parameters: {"subject_id"=>"2089548103", "id"=>"1407023927"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023927) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 662328050) [0m
+
+ActionView::TemplateError (No such file or directory - /home/ticolucci/Repositorios/NERD_da_aaamat/Fase 5/nerd/config/locales/en.yml) on line #13 of app/views/tasks/show.html.erb:
+10:   </p>
+11:   <p>
+12:     <label>Data limite para realização:</label>
+13:     <%= l(@task.due_date) %>
+14:   </p>
+15:   <p>
+16:     <label>Data de criação:</label>
+
+    app/views/tasks/show.html.erb:13
+
+Rendered rescues/_trace (63.8ms)
+Rendered rescues/_request_and_response (13.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 20:33:15) [GET]
+  Parameters: {"id"=>"1407023927", "subject_id"=>"2089548103"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023927) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 662328050) [0m
+Completed in 62ms (View: 48, DB: 1) | 200 OK [http://localhost/assuntos/2089548103/tarefas/1407023927]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 20:38:21) [GET]
+  Parameters: {"id"=>"1407023927", "subject_id"=>"2089548103"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023927) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 662328050) [0m
+Completed in 29ms (View: 19, DB: 1) | 200 OK [http://localhost/assuntos/2089548103/tarefas/1407023927]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 20:38:27) [GET]
+  Parameters: {"id"=>"1407023927", "subject_id"=>"2089548103"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023927) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 662328050) [0m
+Completed in 29ms (View: 19, DB: 1) | 200 OK [http://localhost/assuntos/2089548103/tarefas/1407023927]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 21:23:54) [GET]
+  Parameters: {"id"=>"1407023927", "subject_id"=>"2089548103"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023927) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 662328050) [0m
+Completed in 30ms (View: 20, DB: 1) | 200 OK [http://localhost/assuntos/2089548103/tarefas/1407023927]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 21:31:50) [GET]
+  Parameters: {"id"=>"1407023927", "subject_id"=>"2089548103"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023927) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 662328050) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Completed in 42ms (View: 30, DB: 1) | 200 OK [http://localhost/assuntos/2089548103/tarefas/1407023927]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 21:37:48) [GET]
+  Parameters: {"id"=>"1407023927", "subject_id"=>"2089548103"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023927) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 662328050) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Completed in 35ms (View: 20, DB: 1) | 200 OK [http://localhost/assuntos/2089548103/tarefas/1407023927]

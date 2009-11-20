@@ -15,5 +15,9 @@ describe TasksController do
     it "should assign task to @task" do
       assigns[:task].should == tasks(:falar_com_diretor)
     end
+
+    it"should assign the subject from task to @subject" do
+      assigns[:subject].should == subjects(:bife)
+    end
   end
 end

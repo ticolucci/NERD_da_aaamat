@@ -2,3 +2,20 @@
   <%= @task.title %>
   <%= image_tag "/images/#{@task.status.status_type}.png", :title => @task.status.status_type.humanize %>
 </h1>
+
+<div id="task_attributes">
+  <p>
+    <label>Corpo:</label>
+    <%= @task.body %>
+  </p>
+  <p>
+    <label>Data limite para realização:</label>
+    <%= l(@task.due_date) %>
+  </p>
+  <p>
+    <label>Data de criação:</label>
+    <%= l(@task.due_date) %>
+  </p>
+</div>
+
+<%= link_to "Ir para assunto", subject_path(@subject.id) %>
