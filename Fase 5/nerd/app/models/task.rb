@@ -8,6 +8,6 @@ class Task < ActiveRecord::Base
   after_save :certificate_status
 
   def certificate_status
-    self.update_attribute :status, Status.find_by_status_type("A Fazer") unless self.status
+    self.update_attribute :status, Status.find_by_status_type("a_fazer") unless self.status
   end
 end

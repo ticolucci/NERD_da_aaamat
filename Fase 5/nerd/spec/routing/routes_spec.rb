@@ -20,4 +20,10 @@ describe "routes" do
 
     route_for(:controller => "subjects", :action => "create").should == {:path => "/assuntos", :method => :post}
   end
+
+  it "should route all crud actions for tasks as tarefas except for index" do
+    params_from(:get, "/assuntos/1/tarefas/2").should == {:controller => "tasks", :action => "show", :subject_id => "1", :id => "2"}
+
+    route_for(:controller => "tasks", :action => "show", :subject_id => "1", :id => "2").should == {:path => "/assuntos/1/tarefas/2", :method => :get}
+  end
 end

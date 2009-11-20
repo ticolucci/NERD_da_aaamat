@@ -3,7 +3,7 @@
 <table id="tasks">
   <% @tasks.each do |task| %>
     <tr id="task_<%= task.id %>">
-      <td><%= task.title %></td>
+      <td><%= link_to task.title, subject_task_path(@subject.id, task.id) %></td>
     </tr>
   <% end %>
 </table>

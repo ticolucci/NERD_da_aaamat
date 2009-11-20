@@ -74,9 +74,10 @@ describe SubjectsController do
     end
 
     it "should assign a list of tasks to tasks" do
-      assigns[:tasks].should == [tasks(:falar_com_diretor)]
+      assigns[:tasks].should == [tasks(:falar_com_diretor), tasks(:arrumar_deposito)]
     end
-  end
+    
+end
 
   context "GET edit" do
     before :each do

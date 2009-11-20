@@ -3450,3 +3450,243 @@ Rendering template within layouts/application
 Rendering subjects/show
   [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
 Completed in 24ms (View: 10, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-20 18:33:40) [GET]
+  [4;35;1mSubject Load (0.7ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 28ms (View: 20, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-20 18:38:35) [GET]
+  [4;36;1mSubject Load (0.7ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 80ms (View: 70, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-20 18:38:40) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.5ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 25ms (View: 11, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-20 18:38:42) [GET]
+  [4;35;1mSubject Load (0.7ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 28ms (View: 20, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-20 19:15:00) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 25ms (View: 11, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-20 19:18:44) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 64ms (View: 50, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 19:19:38) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"281513492"}
+  [4;36;1mTask Load (5.7ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 281513492) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 401453378) [0m
+Completed in 37ms (View: 19, DB: 6) | 200 OK [http://localhost/assuntos/2031241678/tarefas/281513492]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-20 19:19:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/Fazendo" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 19:35:26) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"281513492"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 281513492) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 401453378) [0m
+Completed in 25ms (View: 15, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/281513492]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-20 19:35:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/fazendo" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 19:35:27) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"281513492"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 281513492) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 401453378) [0m
+Completed in 30ms (View: 11, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/281513492]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-20 19:35:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/fazendo" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-20 19:35:36) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 72ms (View: 11, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 19:35:48) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"281513492"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 281513492) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 401453378) [0m
+Completed in 22ms (View: 11, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/281513492]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-20 19:35:48) [GET]
+
+ActionController::RoutingError (No route matches "/images/fazendo" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-20 19:35:55) [GET]
+  [4;36;1mSubject Load (0.7ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 33ms (View: 24, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-20 19:35:57) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 24ms (View: 10, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 19:36:25) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"281513492"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 281513492) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 401453378) [0m
+Completed in 23ms (View: 12, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/281513492]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-20 19:36:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/fazendo" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 19:37:02) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"281513492"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 281513492) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 401453378) [0m
+Completed in 26ms (View: 16, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/281513492]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 19:37:40) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"281513492"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 281513492) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 401453378) [0m
+Completed in 29ms (View: 16, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/281513492]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-20 19:48:14) [GET]
+  [4;35;1mSubject Load (0.7ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 36ms (View: 20, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-20 19:48:16) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.6ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Completed in 32ms (View: 18, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 19:48:19) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"281513492"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 281513492) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 401453378) [0m
+Completed in 74ms (View: 64, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/281513492]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 19:48:22) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"887055525"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 887055525) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 233849429) [0m
+Completed in 22ms (View: 12, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/887055525]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-20 19:48:32) [GET]
+  Parameters: {"id"=>"2089548103"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548103) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Completed in 26ms (View: 12, DB: 1) | 200 OK [http://localhost/assuntos/2089548103]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 19:48:34) [GET]
+  Parameters: {"subject_id"=>"2089548103", "id"=>"1407023927"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023927) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 662328050) [0m
+Completed in 23ms (View: 13, DB: 1) | 200 OK [http://localhost/assuntos/2089548103/tarefas/1407023927]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-20 19:49:12) [GET]
+  Parameters: {"subject_id"=>"2089548103", "id"=>"1407023927"}
+  [4;35;1mTask Load (0.6ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023927) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 662328050) [0m
+Completed in 25ms (View: 15, DB: 1) | 200 OK [http://localhost/assuntos/2089548103/tarefas/1407023927]

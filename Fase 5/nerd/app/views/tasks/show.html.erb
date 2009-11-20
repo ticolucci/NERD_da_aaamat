@@ -1,0 +1,4 @@
+<h1>
+  <%= @task.title %>
+  <%= image_tag "/images/#{@task.status.status_type}.png", :title => @task.status.status_type.humanize %>
+</h1>

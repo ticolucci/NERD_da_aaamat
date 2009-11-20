@@ -12,11 +12,11 @@ describe "/subjects/index" do
   end
 
   it "should render the list os subjects in <ul>" do
-    response.should have_tag("ul#subjects") do
-      with_tag "li", :id => subjects(:bife).id do
+    response.should have_tag("table#subjects") do
+      with_tag "tr", :id => subjects(:bife).id do
         with_tag "a", /#{subjects(:bife).title}/
       end
-      with_tag "li", :id => subjects(:copa_usp).id do
+      with_tag "tr", :id => subjects(:copa_usp).id do
         with_tag "a", /#{subjects(:copa_usp).title}/ 
       end
     end

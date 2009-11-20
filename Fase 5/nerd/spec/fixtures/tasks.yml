@@ -3,10 +3,18 @@ pagar_laausp:
   body: "pagar refiliação"
   due_date: 2009-12-25
   status: a_fazer
+  subject: copa_usp
 
 falar_com_diretor:
   title: "Falar com Diretor"
   body: "Pedir pra ele se retirar"
   due_date: 2009-12-01
   status: fazendo
+  subject: bife
+
+arrumar_deposito:
+  title: "Arrumar o depósito"
+  body: "Tem um monte de cervejas lá dentro para arrumar"
+  due_date: 2009-12-20
+  status: feito
   subject: bife

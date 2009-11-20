@@ -6,7 +6,6 @@ describe "/subjects/show" do
   before :each do
     assigns[:subject] = @subject = subjects(:bife)
     assigns[:tasks] = @tasks = [tasks(:falar_com_diretor)]
-
     render
   end
 
@@ -26,7 +25,9 @@ describe "/subjects/show" do
     task = @tasks.first
     response.should have_tag("table#tasks") do
       with_tag("tr", :id=>"task_#{task.id}") do
-        with_tag("td", /#{task.title}/)
+        with_tag("td") do
+          with_tag("a", task.title, :href => subject_task_path(task.subject.id, task.id))
+        end
       end
     end
   end

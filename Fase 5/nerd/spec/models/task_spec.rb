@@ -31,7 +31,7 @@ describe Task do
   it "without given status should created with a_fazer status" do
     task = Task.new valid_attributes(:status => nil)
     task.save
-    task.status.status_type.should == "A Fazer"
+    task.status.status_type.should == "a_fazer"
   end
 
   it "should belong to a subject" do
