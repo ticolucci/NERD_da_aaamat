@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe SubjectsController do
-  fixtures :subjects
+  fixtures :subjects, :tasks
 
   def mock_subject
     @mock_subject ||= mock_model(Subject)
@@ -71,6 +71,10 @@ describe SubjectsController do
 
     it "should assign the correct subject to subject" do
       assigns[:subject].should == subjects(:bife)
+    end
+
+    it "should assign a list of tasks to tasks" do
+      assigns[:tasks].should == [tasks(:falar_com_diretor)]
     end
   end
 

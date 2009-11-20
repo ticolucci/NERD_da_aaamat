@@ -27,6 +27,7 @@ class SubjectsController < ApplicationController
   def show
     store_location
     @subject = Subject.find params[:id]
+    @tasks = @subject.tasks
   end
 
   def edit

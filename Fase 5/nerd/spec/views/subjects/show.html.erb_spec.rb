@@ -1,10 +1,12 @@
 require File.expand_path(File.dirname(__FILE__) + '/../../spec_helper')
 
 describe "/subjects/show" do
-  fixtures :subjects
+  fixtures :subjects, :tasks
   
   before :each do
-    assigns[:subject] = subjects(:bife)
+    assigns[:subject] = @subject = subjects(:bife)
+    assigns[:tasks] = @tasks = [tasks(:falar_com_diretor)]
+
     render
   end
 
@@ -18,5 +20,14 @@ describe "/subjects/show" do
 
   it "should have a link to edit" do
     response.should have_tag("a[href=?]", edit_subject_path(subjects(:bife).id))
+  end
+
+  it "should have a table of tasks" do
+    task = @tasks.first
+    response.should have_tag("table#tasks") do
+      with_tag("tr", :id=>"task_#{task.id}") do
+        with_tag("td", /#{task.title}/)
+      end
+    end
   end
 end

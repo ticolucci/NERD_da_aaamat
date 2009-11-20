@@ -1,7 +1,10 @@
 class Task < ActiveRecord::Base
   belongs_to :status
-  validates_presence_of :title
+  belongs_to :subject
+
+  validates_presence_of :title, :subject
   validates_uniqueness_of :title
+
   after_save :certificate_status
 
   def certificate_status

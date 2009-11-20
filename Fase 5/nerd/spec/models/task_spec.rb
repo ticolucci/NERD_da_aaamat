@@ -1,14 +1,15 @@
 require "spec_helper"
 
 describe Task do
-  fixtures :statuses
+  fixtures :statuses, :subjects
 
   def valid_attributes(attributes={})
     {
       :title => "task title",
       :body => "task body",
       :due_date => "2009-11-18",
-      :status => statuses(:a_fazer)
+      :status => statuses(:a_fazer),
+      :subject => subjects(:bife)
     }.merge attributes
   end
 
@@ -32,4 +33,16 @@ describe Task do
     task.save
     task.status.status_type.should == "A Fazer"
   end
+
+  it "should belong to a subject" do
+    task = Task.new valid_attributes()
+    task.save
+    task.subject.should == subjects(:bife)
+  end
+
+  it "should not be able to create a task without subject" do
+    task = Task.new valid_attributes(:subject => nil)
+    task.save.should == false
+  end
+
 end

@@ -6,6 +6,6 @@ class CreateStatus < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :statuses
+    drop_table :status
   end
 end

@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(:version => 3) do
     t.string   "body"
     t.date     "due_date"
     t.integer  "status_id"
+    t.integer  "subject_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
