@@ -39,4 +39,8 @@ describe "/subjects/show" do
   it "should render the link to destroy a subject" do
     response.should have_tag("a[href=?]", subject_task_path(subjects(:bife).id, tasks(:falar_com_diretor).id))
   end
+
+  it "should render the link to edit a subject" do
+    response.should have_tag("a[href=?]", edit_subject_task_path(subjects(:bife).id, tasks(:falar_com_diretor).id))
+  end
 end

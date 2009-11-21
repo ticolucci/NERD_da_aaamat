@@ -108,4 +108,39 @@ describe TasksController do
       response.should redirect_to(subject_path(subjects(:bife).id))
     end
   end
+
+  context "GET edit" do
+    before :each do
+      get :edit, :subject_id => subjects(:bife).id, :id => tasks(:falar_com_diretor).id
+    end
+
+    it "should be success" do
+      response.should be_success
+    end
+
+    it "should assign the correct subject to subject and task to task" do
+      assigns[:subject].should == subjects(:bife)
+      assigns[:task].should == tasks(:falar_com_diretor)
+    end
+  end
+
+  context "PUT update" do
+    it "should be redirected if all went well" do
+      put :update, :subject_id => subjects(:bife).id, :id => tasks(:falar_com_diretor).id, :task => {:title => "new title"}
+      response.should redirect_to(subject_task_path(subjects(:bife).id, tasks(:falar_com_diretor).id))
+    end
+
+    it "should update the database" do
+      old_title = tasks(:falar_com_diretor).title
+      put :update, :subject_id => subjects(:bife).id, :id => tasks(:falar_com_diretor).id, :task => {:title => "new title"}
+      new_title = Task.find(tasks(:falar_com_diretor)).title
+      new_title.should_not == old_title
+      new_title.should == "new title"
+    end
+
+    it "should render action edit if invalid parameters" do
+      put :update, :subject_id => subjects(:bife).id, :id => tasks(:falar_com_diretor).id, :task => {:title => ""}
+      response.should render_template(:edit)
+    end
+  end
 end

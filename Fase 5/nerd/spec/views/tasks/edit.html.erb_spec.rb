@@ -1,10 +1,10 @@
 require File.expand_path(File.dirname(__FILE__) + '/../../spec_helper')
 
-describe "/tasks/new" do
+describe "/tasks/edit" do
   fixtures :tasks, :statuses, :subjects
 
   before :each do
-    assigns[:task] = Task.new
+    assigns[:task] = @task = tasks(:falar_com_diretor)
     assigns[:subject] = @subject = subjects(:bife)
     render
   end
@@ -30,11 +30,11 @@ describe "/tasks/new" do
   end
 
   it "should have title" do
-    response.should have_tag("h1", "Nova Tarefa")
+    response.should have_tag("h1", "Editando Tarefa")
   end
 
   it "should have a way to cancel" do
-    response.should have_tag("a[href=?]", subject_path(@subject.id))
+    response.should have_tag("a[href=?]", subject_task_path(@subject.id, @task.id))
   end
 
   it "should have subject hidden field" do

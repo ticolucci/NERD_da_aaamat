@@ -1,0 +1,18 @@
+<%= form.error_messages %>
+<%= hidden_field_tag 'task[subject_id]', @subject.id %>
+<p>
+  <%= form.label :title, "Título" %>
+  <%= form.text_field :title %>
+</p>
+<p>
+  <%= form.label :body, "Corpo" %>
+  <%= form.text_area :body, :size => "40x3" %>
+</p>
+<p>
+  <%= form.label :due_date, "Data limite para realização" %>
+  <% due_date = form.object.due_date ? l(form.object.due_date) : nil  %>
+  <%= calendar_field :task, :due_date, due_date, {:date_format=>'%d/%m/%Y', :lang =>  'pt-BR'} %>
+</p>
+<%= form.submit submit_text %>
+
+<%= javascript_tag("$('task_title').focus();") %>

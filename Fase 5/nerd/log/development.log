@@ -5433,3 +5433,196 @@ Completed in 50ms (View: 35, DB: 1) | 200 OK [http://localhost/assuntos]
   [4;35;1mTask Update (40.6ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2009-11-21 18:43:19', "status_id" = 662328050 WHERE "id" = 281513492[0m
   [4;36;1mStatus Load (0.6ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."status_type" = 'fazendo') LIMIT 1[0m
   [4;35;1mTask Update (0.4ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2009-11-21 18:43:20', "status_id" = 401453378 WHERE "id" = 281513492[0m
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 17:44:38) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 84ms (View: 47, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 17:46:02) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.9ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 102ms (View: 87, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-11-21 17:46:06) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"281513492"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 281513492) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering tasks/edit
+Rendered tasks/_form (5.7ms)
+Completed in 47ms (View: 31, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/281513492/editar]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 17:46:16) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"281513492"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 281513492) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 662328050) [0m
+Completed in 44ms (View: 28, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/281513492]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 17:46:26) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 95ms (View: 81, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 17:46:38) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"1407023930"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023930) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 662328050) [0m
+Completed in 41ms (View: 23, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/1407023930]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 17:46:43) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 49ms (View: 34, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-11-21 17:46:44) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"1407023930"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023930) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering tasks/edit
+Rendered tasks/_form (4.3ms)
+Completed in 71ms (View: 56, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/1407023930/editar]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-11-21 17:49:25) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"1407023930"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023930) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering tasks/edit
+
+ActionView::TemplateError (wrong number of arguments (4 for 3)) on line #13 of app/views/tasks/_form.html.erb:
+10: </p>
+11: <p>
+12:   <%= form.label :due_date, "Data limite para realização" %>
+13:   <%= calendar_field :task, :due_date, form.object.due_date, {:date_format=>'%d/%m/%Y', :lang =>  'pt-BR'} %>
+14: </p>
+15: <%= form.submit submit_text %>
+16: 
+
+    app/views/tasks/_form.html.erb:13:in `calendar_field'
+    app/views/tasks/_form.html.erb:13
+    app/views/tasks/edit.html.erb:4
+    app/views/tasks/edit.html.erb:3
+
+Rendered rescues/_trace (63.7ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-11-21 17:49:38) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"1407023930"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023930) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering tasks/edit
+Rendered tasks/_form (6.3ms)
+Completed in 75ms (View: 50, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/1407023930/editar]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-11-21 17:49:54) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"1407023930"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023930) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering tasks/edit
+Rendered tasks/_form (12.6ms)
+Completed in 42ms (View: 26, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/1407023930/editar]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 17:49:58) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"1407023930"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1407023930) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 662328050) [0m
+Completed in 45ms (View: 28, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/1407023930]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 17:50:00) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 60ms (View: 46, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-11-21 17:50:02) [GET]
+  Parameters: {"subject_id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering tasks/new
+
+ActionView::TemplateError (Object must be a Date, DateTime or Time object. nil given.) on line #13 of app/views/tasks/_form.html.erb:
+10: </p>
+11: <p>
+12:   <%= form.label :due_date, "Data limite para realização" %>
+13:   <%= calendar_field :task, :due_date, l(form.object.due_date), {:date_format=>'%d/%m/%Y', :lang =>  'pt-BR'} %>
+14: </p>
+15: <%= form.submit submit_text %>
+16: 
+
+    app/views/tasks/_form.html.erb:13
+    app/views/tasks/new.html.erb:4
+    app/views/tasks/new.html.erb:3
+
+Rendered rescues/_trace (66.8ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-11-21 17:51:23) [GET]
+  Parameters: {"subject_id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering tasks/new
+Rendered tasks/_form (5.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/assuntos/2031241678/tarefas/novo]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 17:51:26) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 103ms (View: 36, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-11-21 17:51:28) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"887055525"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 887055525) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering tasks/edit
+Rendered tasks/_form (11.6ms)
+Completed in 39ms (View: 21, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/887055525/editar]

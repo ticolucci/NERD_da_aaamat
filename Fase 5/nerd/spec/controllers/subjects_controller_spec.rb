@@ -94,7 +94,7 @@ end
   end
 
   context "PUT update" do
-    it "should be success" do
+    it "should be redirected if all went well" do
       put :update, :id => subjects(:bife).id, :subject => {:title => "Bife"}
       response.should redirect_to(subject_path(subjects(:bife).id))
     end

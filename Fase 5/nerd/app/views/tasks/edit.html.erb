@@ -1,0 +1,7 @@
+<h1>Editando Tarefa</h1>
+
+<% form_for [@subject, @task] do |form| %>
+  <%= render :partial => 'form', :locals => {:form => form, :submit_text => "Salvar"} %>
+<% end %>
+
+<%= link_to image_tag("/images/cancel.png", :title => "Cancelar")+"Cancelar", subject_task_path(@subject.id, @task.id) %>

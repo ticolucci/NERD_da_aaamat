@@ -26,6 +26,22 @@ class TasksController < ApplicationController
     redirect_to subject_path(params[:subject_id])
   end
 
+  def edit
+    @task = Task.find params[:id]
+    @subject = Subject.find params[:subject_id]
+  end
+
+  def update
+    @task = Task.find params[:id]
+    @subject = Subject.find params[:subject_id]
+
+    if @task.update_attributes params[:task]
+      redirect_to subject_task_path(@subject.id, @task.id)
+    else
+      render :action => :edit
+    end
+  end
+
   def change_status
     @task = Task.find params[:id]
     @task.update_attribute :status, Status.next(@task.status)
