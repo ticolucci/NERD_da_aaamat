@@ -2,11 +2,14 @@ class TasksController < ApplicationController
   def show
     @task = Task.find params[:id]
     @subject = Subject.find params[:subject_id]
+    @members = @task.members.sort
   end
 
   def new
     @task = Task.new
     @subject = Subject.find params[:subject_id]
+    @members = Member.find :all
+    @task_members = @task.members
   end
 
   def create
@@ -14,6 +17,7 @@ class TasksController < ApplicationController
     @subject = Subject.find params[:subject_id]
     @task = Task.new params[:task]
     if @task.save
+      @task.save_members params[:members_ids]
       redirect_to(subject_path(params[:subject_id]))
     else
       render :action => :new
@@ -29,13 +33,15 @@ class TasksController < ApplicationController
   def edit
     @task = Task.find params[:id]
     @subject = Subject.find params[:subject_id]
+    @members = Member.find :all
+    @task_members = @task.members
   end
 
   def update
     @task = Task.find params[:id]
     @subject = Subject.find params[:subject_id]
-
     if @task.update_attributes params[:task]
+      @task.update_members params[:members_ids]
       redirect_to subject_task_path(@subject.id, @task.id)
     else
       render :action => :edit

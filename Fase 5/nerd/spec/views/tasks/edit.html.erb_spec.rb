@@ -1,11 +1,13 @@
 require File.expand_path(File.dirname(__FILE__) + '/../../spec_helper')
 
 describe "/tasks/edit" do
-  fixtures :tasks, :statuses, :subjects
+  fixtures :tasks, :statuses, :subjects, :members
 
   before :each do
     assigns[:task] = @task = tasks(:falar_com_diretor)
     assigns[:subject] = @subject = subjects(:bife)
+    assigns[:members] = @members = [members(:thiago)]
+    assigns[:task_members] = @task_members = [members(:thiago)]
     render
   end
 

@@ -13,6 +13,22 @@
   <% due_date = form.object.due_date ? l(form.object.due_date) : nil  %>
   <%= calendar_field :task, :due_date, due_date, {:date_format=>'%d/%m/%Y', :lang =>  'pt-BR'} %>
 </p>
+<label> Responsáveis: </label>
+<table>
+  <tr>
+    <% @members.sort.each_with_index do |member, i| %>
+      <td>
+        <%= check_box_tag "members_ids[]", member.id, @task_members.include?(member), :id => "members_ids_#{member.id}" %>
+        <%= label_tag "members_ids_#{member.id}", member.name %>
+      </td>
+      <% if (i + 1) % 5 == 0 %>
+        </tr>
+        <tr>
+      <% end %>
+    <% end %>
+  </tr>
+</table>
+
 <%= form.submit submit_text %>
 
 <%= javascript_tag("$('task_title').focus();") %>

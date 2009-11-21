@@ -9,7 +9,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 3) do
+ActiveRecord::Schema.define(:version => 5) do
+
+  create_table "members", :force => true do |t|
+    t.string   "name"
+    t.string   "e_mail"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "members_tasks", :force => true do |t|
+    t.integer "member_id"
+    t.integer "task_id"
+  end
 
   create_table "statuses", :force => true do |t|
     t.string "status_type"

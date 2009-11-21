@@ -1,8 +1,11 @@
 feito:
   status_type: feito
+  id: 3
 
 fazendo:
   status_type: fazendo
+  id: 2
 
 a_fazer:
   status_type: a_fazer
+  id: 1

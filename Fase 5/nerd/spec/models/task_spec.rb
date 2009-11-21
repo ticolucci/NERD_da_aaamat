@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe Task do
-  fixtures :statuses, :subjects
+  fixtures :statuses, :subjects, :tasks, :members, :members_tasks
 
   def valid_attributes(attributes={})
     {
@@ -43,6 +43,10 @@ describe Task do
   it "should not be able to create a task without subject" do
     task = Task.new valid_attributes(:subject => nil)
     task.save.should == false
+  end
+
+  it "should have and belongs_to many members" do
+    tasks(:falar_com_diretor).members.should == [members(:lucianna), members(:joao)]
   end
 
 end

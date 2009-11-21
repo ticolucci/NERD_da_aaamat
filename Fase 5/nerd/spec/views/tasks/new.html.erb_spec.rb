@@ -1,11 +1,13 @@
 require File.expand_path(File.dirname(__FILE__) + '/../../spec_helper')
 
 describe "/tasks/new" do
-  fixtures :tasks, :statuses, :subjects
+  fixtures :tasks, :statuses, :subjects, :members
 
   before :each do
     assigns[:task] = Task.new
     assigns[:subject] = @subject = subjects(:bife)
+    assigns[:members] = @members = [members(:thiago)]
+    assigns[:task_members] = @task_members = [members(:thiago)]
     render
   end
 
@@ -25,6 +27,14 @@ describe "/tasks/new" do
       end
       with_tag 'p' do
         with_tag("input", :id => "task_submit")
+      end
+      with_tag 'table' do
+        with_tag 'tr' do
+          with_tag 'td' do
+            with_tag 'input', :value => @members.first.id
+            with_tag 'label', @members.first.name
+          end
+        end
       end
     end
   end

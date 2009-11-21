@@ -2,6 +2,8 @@
 
 <%= link_to image_tag("/images/add.png", :title => "Novo") + "Novo", new_subject_path %>
 
+<br/><br/>
+
 <table id="subjects">
   <% @subjects.each do |subject| %>
     <tr id="<%= subject.id %>">

@@ -6,7 +6,6 @@ describe "/tasks/change_status" do
   it "should render image from status" do
     assigns[:task] = tasks(:arrumar_deposito)
     render
-    puts response.body
     response.should have_tag("img[title=?]", 'Feito')
   end
 end

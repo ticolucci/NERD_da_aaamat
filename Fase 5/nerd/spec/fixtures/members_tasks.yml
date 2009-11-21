@@ -1,0 +1,21 @@
+one:
+  member_id: 1
+  task_id: 2
+
+two:
+  member_id: 2
+  task_id: 2
+
+three:
+  member_id: 3
+  task_id: 3
+
+four:
+  member_id: 1
+  task_id: 3
+
+five:
+  member_id: 2
+  task_id: 3
+
+

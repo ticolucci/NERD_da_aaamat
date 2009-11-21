@@ -3,21 +3,37 @@
   <%= link_to_remote image_tag("/images/#{@task.status.status_type}.png", :title => @task.status.status_type.humanize),
                      {:url => change_status_subjects_task_url(@subject.id, @task.id), :update => 'status_img'},
                      :id => 'status_img' %>
+  <%= link_to image_tag("/images/delete.png", :title => "Excluir"), subject_task_path(@subject.id, @task.id), :method => "delete", :confirm => "Excluir #{@task.title}?"%>
+  <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_task_path(@subject.id, @task.id) %>
+
 </h1>
 
 <div id="task_attributes">
-  <p>
-    <label>Corpo:</label>
-    <%= @task.body %>
-  </p>
-  <p>
-    <label>Data limite para realização:</label>
-    <%= l(@task.due_date) %>
-  </p>
+  <% unless @task.body.empty? %>
+    <p>
+      <label>Corpo:</label>
+      <%= RedCloth.new(@task.body, [:filter_html]).to_html %>
+    </p>
+  <% end %>
+
+  <% if @task.due_date %>
+    <p>
+      <label>Data limite para realização:</label>
+      <%= l(@task.due_date) %>
+    </p>
+  <% end %>
   <p>
     <label>Data de criação:</label>
-    <%= l(@task.due_date) %>
+    <%= l(@task.created_at) %>
   </p>
+  <label> Responsáveis: </label>
+  <ul>
+    <% @members.each do |member| %>
+      <li> <%= member.name  %> </li>
+    <% end %>
+  </ul>
 </div>
+
+<br/><br/>
 
 <%= link_to "Ir para assunto", subject_path(@subject.id) %>

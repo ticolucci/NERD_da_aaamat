@@ -40,4 +40,5 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
 
   config.action_controller.resources_path_names = { :new => 'novo', :edit => 'editar' }
+  config.gem "RedCloth"
 end

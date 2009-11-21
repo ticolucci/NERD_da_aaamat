@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe TasksController do
-  fixtures :statuses, :tasks, :subjects
+  fixtures :statuses, :tasks, :subjects, :members
 
   context "GET show" do
     before :each do
@@ -19,6 +19,11 @@ describe TasksController do
     it"should assign the subject from task to @subject" do
       assigns[:subject].should == subjects(:bife)
     end
+
+    it "should assing the members to @members" do
+      (assigns[:members] - [members(:lucianna), members(:joao)]).should be_empty
+    end
+    
   end
 
   context "GET new" do
@@ -37,6 +42,14 @@ describe TasksController do
     it "should assign subject to subject" do
       assigns[:subject].should == subjects(:bife)
     end
+
+    it "should assing the members to @members" do
+      assigns[:members].should == Member.find(:all)
+    end
+
+    it "should assing the members to @task_members" do
+      (assigns[:task_members] - [members(:lucianna), members(:joao)]).should be_empty
+    end
   end
 
   context "POST create" do
@@ -50,8 +63,9 @@ describe TasksController do
     end
 
     it "should create a task with correct parameters" do
-      post :create, :task => valid_attributes, :subject_id => subjects(:bife).id
+      post :create, :task => valid_attributes, :subject_id => subjects(:bife).id, :members_ids => [members(:joao).id, members(:thiago).id]
       task = Task.find_by_title("a title")
+      task.members.should_not be_empty
       task.should_not be_nil
       task.due_date.should_not be_nil
     end
@@ -122,6 +136,14 @@ describe TasksController do
       assigns[:subject].should == subjects(:bife)
       assigns[:task].should == tasks(:falar_com_diretor)
     end
+
+    it "should assing the members to @members" do
+      assigns[:members].should == Member.find(:all)
+    end
+
+    it "should assing the members to @task_members" do
+      (assigns[:task_members] - [members(:lucianna), members(:joao)]).should be_empty
+    end
   end
 
   context "PUT update" do
@@ -132,10 +154,17 @@ describe TasksController do
 
     it "should update the database" do
       old_title = tasks(:falar_com_diretor).title
-      put :update, :subject_id => subjects(:bife).id, :id => tasks(:falar_com_diretor).id, :task => {:title => "new title"}
-      new_title = Task.find(tasks(:falar_com_diretor)).title
+      put :update, :subject_id => subjects(:bife).id,
+                   :id => tasks(:falar_com_diretor).id, :task => {:title => "new title"},
+                   :members_ids => [members(:lucianna).id, members(:thiago).id]
+
+      task = Task.find(tasks(:falar_com_diretor))
+      new_title = task.title
       new_title.should_not == old_title
       new_title.should == "new title"
+
+      task.members.should == [members(:lucianna), members(:thiago)]
+
     end
 
     it "should render action edit if invalid parameters" do
