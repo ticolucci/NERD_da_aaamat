@@ -71,4 +71,41 @@ describe TasksController do
       assigns[:subject].should == subjects(:bife)
     end
   end
+
+  context "POST change_status" do
+    it "should go to doing if todo" do
+      task = tasks(:pagar_laausp)
+      task.status.should == statuses(:a_fazer)
+      post :change_status, :id => task.id, :subject_id => task.subject.id
+      Task.find(task.id).status.should == statuses(:fazendo)
+    end
+
+    it "should go to done if doing" do
+      task = tasks(:falar_com_diretor)
+      task.status.should == statuses(:fazendo)
+      post :change_status, :id => task.id, :subject_id => task.subject.id
+      Task.find(task.id).status.should == statuses(:feito)
+    end
+
+    it "should go to todo if done" do
+      task = tasks(:arrumar_deposito)
+      task.status.should == statuses(:feito)
+      post :change_status, :id => task.id, :subject_id => task.subject.id
+      Task.find(task.id).status.should == statuses(:a_fazer)
+    end
+  end
+
+  context "DELETE destroy" do
+    it "should destroy a task" do
+      old_count = Task.count
+      delete :destroy, :id => tasks(:falar_com_diretor), :subject_id => subjects(:bife)
+      new_count = Task.count
+      (old_count - new_count).should == 1
+    end
+
+    it "should redirect to task list" do
+      delete :destroy, :id => tasks(:falar_com_diretor), :subject_id => subjects(:bife)
+      response.should redirect_to(subject_path(subjects(:bife).id))
+    end
+  end
 end

@@ -1,6 +1,8 @@
 <h1>
   <%= @task.title %>
-  <%= image_tag "/images/#{@task.status.status_type}.png", :title => @task.status.status_type.humanize %>
+  <%= link_to_remote image_tag("/images/#{@task.status.status_type}.png", :title => @task.status.status_type.humanize),
+                     {:url => change_status_subjects_task_url(@subject.id, @task.id), :update => 'status_img'},
+                     :id => 'status_img' %>
 </h1>
 
 <div id="task_attributes">

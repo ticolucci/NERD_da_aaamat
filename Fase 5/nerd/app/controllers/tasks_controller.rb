@@ -19,4 +19,16 @@ class TasksController < ApplicationController
       render :action => :new
     end
   end
+
+  def destroy
+    @task = Task.find params[:id]
+    @task.destroy
+    redirect_to subject_path(params[:subject_id])
+  end
+
+  def change_status
+    @task = Task.find params[:id]
+    @task.update_attribute :status, Status.next(@task.status)
+    render :change_status, :layout => false
+  end
 end

@@ -1,12 +1,7 @@
 <h1>Novo Assunto</h1>
 
 <% form_for @subject do |form| %>
-  <%= form.error_messages %>
-  <%= form.label :title, "Título" %>
-  <%= form.text_field :title %>
-
-
-  <%= form.submit "Criar" %>  
+  <%= render :partial => 'form', :locals => {:form => form, :submit_text => "Criar"} %>
 <% end %>
 
 <%= link_to image_tag("/images/cancel.png", :title => "Cancelar") + "Cancelar", subjects_path %>

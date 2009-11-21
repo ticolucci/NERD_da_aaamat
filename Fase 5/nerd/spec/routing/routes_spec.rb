@@ -26,4 +26,10 @@ describe "routes" do
 
     route_for(:controller => "tasks", :action => "show", :subject_id => "1", :id => "2").should == {:path => "/assuntos/1/tarefas/2", :method => :get}
   end
+
+  it "should route change_status action for task" do
+    params_from(:get, "/assuntos/1/tarefas/2/change_status").should == {:controller => "tasks", :action => "change_status", :subject_id => "1", :id => "2"}
+
+    route_for(:controller => "tasks", :action => "change_status", :subject_id => "1", :id => "2").should == {:path => "/assuntos/1/tarefas/2/change_status", :method => :get}
+  end
 end

@@ -5425,3 +5425,11 @@ Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 16:08:27) [GET]
 Rendering template within layouts/application
 Rendering subjects/index
 Completed in 50ms (View: 35, DB: 1) | 200 OK [http://localhost/assuntos]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" LIMIT 1[0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 401453378) [0m
+  [4;36;1mStatus Load (0.5ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."status_type" = 'feito') LIMIT 1[0m
+  [4;35;1mTask Update (0.4ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2009-11-21 18:43:06', "status_id" = 233849429 WHERE "id" = 281513492[0m
+  [4;36;1mStatus Load (0.6ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."status_type" = 'a_fazer') LIMIT 1[0m
+  [4;35;1mTask Update (40.6ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2009-11-21 18:43:19', "status_id" = 662328050 WHERE "id" = 281513492[0m
+  [4;36;1mStatus Load (0.6ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."status_type" = 'fazendo') LIMIT 1[0m
+  [4;35;1mTask Update (0.4ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2009-11-21 18:43:20', "status_id" = 401453378 WHERE "id" = 281513492[0m
