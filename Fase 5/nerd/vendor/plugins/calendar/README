@@ -1,0 +1,17 @@
+= Calendar Plugin for Rails =
+
+===  Install ===
+	`script/plugin install http://calendarplugin.googlecode.com/svn/trunk/`
+	
+	`<%=calendar_field :user,:birthday%>`
+[http://farm1.static.flickr.com/145/406604722_c85527d6d6.jpg?v=0]	
+
+===  Usage ===
+	* The default language is en,if you want to use chinese,use
+	`<%=calendar_field :user,:birthday,{:lang=>'zh_CN'}%>`
+	* The default size of text input is 12,if you want to change it,use
+	`<%=calendar_field :user,:birthday,{:size=>12}%>`
+	* The default data format is '%Y-%m-%d',if you want to change it,use
+	`<%=calendar_field :user,:birthday,{:date_format=>'%Y-%m-%d'}%>`	
+	* The default skin is aqua,if you want to change it ,use
+	`<%=calendar_field :user,:birthday,{:skin=>'aqua'}%>`				

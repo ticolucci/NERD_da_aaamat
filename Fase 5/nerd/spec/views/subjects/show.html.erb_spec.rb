@@ -31,4 +31,8 @@ describe "/subjects/show" do
       end
     end
   end
+
+  it "should have a way to create a new task" do
+    response.should have_tag("a[href=?]", new_subject_task_path(@subject.id))
+  end
 end

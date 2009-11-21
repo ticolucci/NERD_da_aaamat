@@ -1,0 +1,22 @@
+<h1>Nova Tarefa</h1>
+
+<% form_for [@subject, @task] do |form| %>
+  <%= form.error_messages %>
+  <%= hidden_field_tag 'task[subject_id]', @subject.id %>
+  <p>
+    <%= form.label :title, "Título" %>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    <%= form.label :body, "Corpo" %>
+    <%= form.text_area :body, :size => "40x3" %>
+  </p>
+  <p>
+    <%= form.label :due_date, "Data limite para realização" %>
+    <%= calendar_field :task, :due_date, {:date_format=>'%d/%m/%Y', :lang =>  'pt-BR'} %>
+  </p>
+  <%= form.submit "Criar" %>  
+
+<% end %>
+
+<%= link_to image_tag("/images/cancel.png", :title => "Cancelar")+"Cancelar", subject_path(@subject.id) %>

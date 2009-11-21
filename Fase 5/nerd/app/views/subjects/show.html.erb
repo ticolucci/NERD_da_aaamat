@@ -1,5 +1,7 @@
 <h1><%= @subject.title %> <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_path(@subject.id) %> </h1>
 
+<%= link_to image_tag("/images/add.png", :title => "Nova Tarefa") + "Nova Tarefa", new_subject_task_path(@subject.id) %>
+
 <table id="tasks">
   <% @tasks.each do |task| %>
     <tr id="task_<%= task.id %>">
