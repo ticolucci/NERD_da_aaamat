@@ -19,7 +19,7 @@
     <% @members.sort.each_with_index do |member, i| %>
       <td>
         <%= check_box_tag "members_ids[]", member.id, @task_members.include?(member), :id => "members_ids_#{member.id}" %>
-        <%= label_tag "members_ids_#{member.id}", member.name %>
+        <%= label_tag "members_ids_#{member.id}", member.name, :class => "inline" %>
       </td>
       <% if (i + 1) % 5 == 0 %>
         </tr>

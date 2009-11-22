@@ -1,11 +1,18 @@
-<h1><%= @subject.title %>
-    <%= link_to image_tag("/images/delete.png", :title => "Excluir"), subject_path(@subject.id), :method => "delete", :confirm => "Excluir #{@subject.title}?" %>
-    <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_path(@subject.id) %>
-</h1>
 
-<%= link_to image_tag("/images/add.png", :title => "Nova Tarefa") + "Nova Tarefa", new_subject_task_path(@subject.id) %>
+<% content_for :title do %>
+  <h1><%= @subject.title %>
+      <%= link_to image_tag("/images/delete.png", :title => "Excluir"), subject_path(@subject.id), :method => "delete", :confirm => "Excluir #{@subject.title}?" %>
+      <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_path(@subject.id) %>
+  </h1>
+<% end %>
 
-<br/><br/>
+<% content_for :upper_links do %>
+  <%= link_to image_tag("/images/add.png", :title => "Nova Tarefa") + "Nova Tarefa", new_subject_task_path(@subject.id) %>
+<% end %>
+
+<% content_for :bottom_links do %>
+  <%= link_to image_tag("/images/back_to_list.png", :title => "Ir para Lista de Assuntos") + "Lista de Assuntos", subjects_path %>
+<% end %>
 
 <table id="tasks">
   <% @tasks.each do |task| %>
@@ -19,6 +26,4 @@
   <% end %>
 </table>
 
-<br/><br/>
 
-<%= link_to image_tag("/images/back_to_list.png", :title => "Ir para Lista de Assuntos") + "Lista de Assuntos", subjects_path %>

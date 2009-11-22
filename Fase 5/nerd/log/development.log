@@ -8405,3 +8405,2216 @@ Rendering tasks/edit
   [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 6) AND (("members_tasks".task_id = 2)) LIMIT 1[0m
 Rendered tasks/_form (24.5ms)
 Completed in 60ms (View: 32, DB: 3) | 200 OK [http://localhost/assuntos/2031241678/tarefas/2/editar]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 21:00:58) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"2"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mMember Load (0.6ms)[0m   [0mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 2)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+Completed in 124ms (View: 31, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/2]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:01:00) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 54ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:01:04) [GET]
+  [4;35;1mSubject Load (0.7ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 32ms (View: 24, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:01:06) [GET]
+  Parameters: {"id"=>"2089548103"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548103) [0m
+Completed in 39ms (View: 23, DB: 1) | 200 OK [http://localhost/assuntos/2089548103]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:01:07) [GET]
+  [4;36;1mSubject Load (0.7ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 30ms (View: 21, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-21 21:01:10) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Rendered subjects/_form (2.8ms)
+Completed in 26ms (View: 17, DB: 0) | 200 OK [http://localhost/assuntos/novo]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:01:13) [GET]
+  [4;35;1mSubject Load (0.8ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 91ms (View: 20, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-21 21:01:14) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Rendered subjects/_form (2.2ms)
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/assuntos/novo]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-21 21:01:18) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"bMOx4VH9+fkY/fSlDDIL57Zsll9vDsvvMsNoedlE2AA=", "subject"=>{"title"=>"Melhores do Ano"}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Melhores do Ano') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-21 23:01:18', 'Melhores do Ano', '2009-11-21 23:01:18')[0m
+Redirected to http://localhost:3000/assuntos/2089548104
+Completed in 79ms (DB: 0) | 302 Found [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:01:18) [GET]
+  Parameters: {"id"=>"2089548104"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548104) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548104) [0m
+Completed in 28ms (View: 13, DB: 0) | 200 OK [http://localhost/assuntos/2089548104]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-11-21 21:01:21) [GET]
+  Parameters: {"subject_id"=>"2089548104"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548104) [0m
+  [4;35;1mMember Load (0.9ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering tasks/new
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 7) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 1) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 2) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;35;1mMember Load (0.2ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 5) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 4) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 3) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 6) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+Rendered tasks/_form (17.3ms)
+Completed in 51ms (View: 24, DB: 2) | 200 OK [http://localhost/assuntos/2089548104/tarefas/novo]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-11-21 21:02:33) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"bMOx4VH9+fkY/fSlDDIL57Zsll9vDsvvMsNoedlE2AA=", "subject_id"=>"2089548104", "task"=>{"body"=>"Falar sobre os seguintes tópicos:\r\n* Data da Festa\r\n* Pedir os banners", "title"=>"Falar com a Melissa", "subject_id"=>"2089548104", "due_date"=>"25/11/2009"}, "members_ids"=>["4"]}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548104) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548104) [0m
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT "tasks".id FROM "tasks" WHERE ("tasks"."title" = 'Falar com a Melissa') LIMIT 1[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO "tasks" ("created_at", "title", "body", "updated_at", "subject_id", "due_date", "status_id") VALUES('2009-11-21 23:02:33', 'Falar com a Melissa', 'Falar sobre os seguintes tópicos:
+* Data da Festa
+* Pedir os banners', '2009-11-21 23:02:33', 2089548104, '2009-11-25', NULL)[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."status_type" = 'a_fazer') LIMIT 1[0m
+  [4;36;1mTask Update (0.1ms)[0m   [0;1mUPDATE "tasks" SET "updated_at" = '2009-11-21 23:02:33', "created_at" = '2009-11-21 23:02:33', "title" = 'Falar com a Melissa', "due_date" = '2009-11-25', "subject_id" = 2089548104, "status_id" = 1, "body" = 'Falar sobre os seguintes tópicos:
+* Data da Festa
+* Pedir os banners' WHERE "id" = 7[0m
+  [4;35;1mMembersTask Create (0.5ms)[0m   [0mINSERT INTO "members_tasks" ("task_id", "member_id") VALUES(7, 4)[0m
+Redirected to http://localhost:3000/assuntos/2089548104
+Completed in 173ms (DB: 2) | 302 Found [http://localhost/assuntos/2089548104/tarefas]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:02:33) [GET]
+  Parameters: {"id"=>"2089548104"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548104) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548104) [0m
+Completed in 99ms (View: 25, DB: 1) | 200 OK [http://localhost/assuntos/2089548104]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-11-21 21:02:35) [GET]
+  Parameters: {"subject_id"=>"2089548104"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548104) [0m
+  [4;35;1mMember Load (0.9ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering tasks/new
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 7) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 1) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 2) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 5) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 4) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 3) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 6) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+Rendered tasks/_form (17.8ms)
+Completed in 53ms (View: 24, DB: 2) | 200 OK [http://localhost/assuntos/2089548104/tarefas/novo]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-11-21 21:03:31) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"bMOx4VH9+fkY/fSlDDIL57Zsll9vDsvvMsNoedlE2AA=", "subject_id"=>"2089548104", "task"=>{"body"=>"Cada DM tem que trazer os votos dos técnicos e já começar a pedir os votos dos jogadores", "title"=>"Trazer os votos", "subject_id"=>"2089548104", "due_date"=>""}, "members_ids"=>["7", "1", "2", "5", "6"]}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548104) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548104) [0m
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT "tasks".id FROM "tasks" WHERE ("tasks"."title" = 'Trazer os votos') LIMIT 1[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO "tasks" ("created_at", "title", "body", "updated_at", "subject_id", "due_date", "status_id") VALUES('2009-11-21 23:03:32', 'Trazer os votos', 'Cada DM tem que trazer os votos dos técnicos e já começar a pedir os votos dos jogadores', '2009-11-21 23:03:32', 2089548104, NULL, NULL)[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."status_type" = 'a_fazer') LIMIT 1[0m
+  [4;36;1mTask Update (0.1ms)[0m   [0;1mUPDATE "tasks" SET "updated_at" = '2009-11-21 23:03:32', "created_at" = '2009-11-21 23:03:32', "title" = 'Trazer os votos', "subject_id" = 2089548104, "status_id" = 1, "body" = 'Cada DM tem que trazer os votos dos técnicos e já começar a pedir os votos dos jogadores' WHERE "id" = 8[0m
+  [4;35;1mMembersTask Create (0.5ms)[0m   [0mINSERT INTO "members_tasks" ("task_id", "member_id") VALUES(8, 7)[0m
+  [4;36;1mMembersTask Create (0.4ms)[0m   [0;1mINSERT INTO "members_tasks" ("task_id", "member_id") VALUES(8, 1)[0m
+  [4;35;1mMembersTask Create (0.5ms)[0m   [0mINSERT INTO "members_tasks" ("task_id", "member_id") VALUES(8, 2)[0m
+  [4;36;1mMembersTask Create (0.4ms)[0m   [0;1mINSERT INTO "members_tasks" ("task_id", "member_id") VALUES(8, 5)[0m
+  [4;35;1mMembersTask Create (0.5ms)[0m   [0mINSERT INTO "members_tasks" ("task_id", "member_id") VALUES(8, 6)[0m
+Redirected to http://localhost:3000/assuntos/2089548104
+Completed in 481ms (DB: 3) | 302 Found [http://localhost/assuntos/2089548104/tarefas]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:03:32) [GET]
+  Parameters: {"id"=>"2089548104"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548104) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.6ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548104) [0m
+Completed in 46ms (View: 30, DB: 1) | 200 OK [http://localhost/assuntos/2089548104]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 21:03:35) [GET]
+  Parameters: {"subject_id"=>"2089548104", "id"=>"8"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 8) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548104) [0m
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 8)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (13.4ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 120ms (View: 78, DB: 15) | 200 OK [http://localhost/assuntos/2089548104/tarefas/8]
+
+
+Processing TasksController#change_status (for 127.0.0.1 at 2009-11-21 21:03:38) [POST]
+  Parameters: {"authenticity_token"=>"bMOx4VH9+fkY/fSlDDIL57Zsll9vDsvvMsNoedlE2AA=", "subject_id"=>"2089548104", "id"=>"8"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 8) [0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."status_type" = 'fazendo') LIMIT 1[0m
+  [4;35;1mTask Update (0.3ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2009-11-21 23:03:38', "status_id" = 2 WHERE "id" = 8[0m
+Rendering tasks/change_status
+Completed in 93ms (View: 2, DB: 1) | 200 OK [http://localhost/assuntos/2089548104/tarefas/8/change_status]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:03:39) [GET]
+  Parameters: {"id"=>"2089548104"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548104) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.6ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548104) [0m
+Completed in 47ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos/2089548104]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 21:03:40) [GET]
+  Parameters: {"subject_id"=>"2089548104", "id"=>"7"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 7) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548104) [0m
+  [4;36;1mMember Load (0.4ms)[0m   [0;1mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 7)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 61ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos/2089548104/tarefas/7]
+
+
+Processing TasksController#change_status (for 127.0.0.1 at 2009-11-21 21:03:41) [POST]
+  Parameters: {"authenticity_token"=>"bMOx4VH9+fkY/fSlDDIL57Zsll9vDsvvMsNoedlE2AA=", "subject_id"=>"2089548104", "id"=>"7"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 7) [0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."status_type" = 'fazendo') LIMIT 1[0m
+  [4;35;1mTask Update (0.3ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2009-11-21 23:03:41', "status_id" = 2 WHERE "id" = 7[0m
+Rendering tasks/change_status
+Completed in 75ms (View: 2, DB: 1) | 200 OK [http://localhost/assuntos/2089548104/tarefas/7/change_status]
+
+
+Processing TasksController#change_status (for 127.0.0.1 at 2009-11-21 21:03:41) [POST]
+  Parameters: {"authenticity_token"=>"bMOx4VH9+fkY/fSlDDIL57Zsll9vDsvvMsNoedlE2AA=", "subject_id"=>"2089548104", "id"=>"7"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 7) [0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."status_type" = 'feito') LIMIT 1[0m
+  [4;35;1mTask Update (0.3ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2009-11-21 23:03:41', "status_id" = 3 WHERE "id" = 7[0m
+Rendering tasks/change_status
+Completed in 85ms (View: 2, DB: 1) | 200 OK [http://localhost/assuntos/2089548104/tarefas/7/change_status]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:03:44) [GET]
+  Parameters: {"id"=>"2089548104"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548104) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.6ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548104) [0m
+Completed in 113ms (View: 34, DB: 1) | 200 OK [http://localhost/assuntos/2089548104]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:03:46) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 37ms (View: 26, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:04:10) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 70ms (View: 40, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 21:04:14) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"6"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 6) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mMember Load (0.6ms)[0m   [0mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 6)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+Completed in 57ms (View: 29, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/6]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:04:27) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 52ms (View: 37, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:04:39) [GET]
+  [4;35;1mSubject Load (0.8ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 96ms (View: 88, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:04:43) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 55ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:04:45) [GET]
+  [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 34ms (View: 26, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:04:46) [GET]
+  Parameters: {"id"=>"2089548103"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.5ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548103) [0m
+Completed in 39ms (View: 23, DB: 1) | 200 OK [http://localhost/assuntos/2089548103]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 21:04:47) [GET]
+  Parameters: {"subject_id"=>"2089548103", "id"=>"1"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+  [4;35;1mMember Load (0.2ms)[0m   [0mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 1)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 55ms (View: 29, DB: 1) | 200 OK [http://localhost/assuntos/2089548103/tarefas/1]
+
+
+Processing TasksController#change_status (for 127.0.0.1 at 2009-11-21 21:04:49) [POST]
+  Parameters: {"authenticity_token"=>"bMOx4VH9+fkY/fSlDDIL57Zsll9vDsvvMsNoedlE2AA=", "subject_id"=>"2089548103", "id"=>"1"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."status_type" = 'fazendo') LIMIT 1[0m
+  [4;36;1mTask Update (0.2ms)[0m   [0;1mUPDATE "tasks" SET "updated_at" = '2009-11-21 23:04:49', "status_id" = 2 WHERE "id" = 1[0m
+Rendering tasks/change_status
+Completed in 114ms (View: 3, DB: 1) | 200 OK [http://localhost/assuntos/2089548103/tarefas/1/change_status]
+
+
+Processing TasksController#change_status (for 127.0.0.1 at 2009-11-21 21:04:50) [POST]
+  Parameters: {"authenticity_token"=>"bMOx4VH9+fkY/fSlDDIL57Zsll9vDsvvMsNoedlE2AA=", "subject_id"=>"2089548103", "id"=>"1"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."status_type" = 'feito') LIMIT 1[0m
+  [4;36;1mTask Update (0.3ms)[0m   [0;1mUPDATE "tasks" SET "updated_at" = '2009-11-21 23:04:50', "status_id" = 3 WHERE "id" = 1[0m
+Rendering tasks/change_status
+Completed in 164ms (View: 2, DB: 1) | 200 OK [http://localhost/assuntos/2089548103/tarefas/1/change_status]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:05:06) [GET]
+  Parameters: {"id"=>"2089548103"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548103) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.5ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548103) [0m
+Completed in 40ms (View: 23, DB: 1) | 200 OK [http://localhost/assuntos/2089548103]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:05:10) [GET]
+  [4;35;1mSubject Load (0.8ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 34ms (View: 26, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:05:12) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 61ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 21:05:13) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"2"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mMember Load (0.5ms)[0m   [0;1mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 2)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+Completed in 58ms (View: 29, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/2]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:05:15) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (1.1ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 53ms (View: 37, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:05:16) [GET]
+  [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 35ms (View: 26, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-21 21:05:21) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Rendered subjects/_form (2.1ms)
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/assuntos/novo]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:05:22) [GET]
+  [4;35;1mSubject Load (0.8ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 34ms (View: 26, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-21 21:05:25) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Rendered subjects/_form (2.1ms)
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/assuntos/novo]
+
+
+Processing SubjectsController#create (for 127.0.0.1 at 2009-11-21 21:05:46) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"bMOx4VH9+fkY/fSlDDIL57Zsll9vDsvvMsNoedlE2AA=", "subject"=>{"title"=>"Churrasco do Final do Ano"}}
+  [4;36;1mSubject Load (0.2ms)[0m   [0;1mSELECT "subjects".id FROM "subjects" WHERE ("subjects"."title" = 'Churrasco do Final do Ano') LIMIT 1[0m
+  [4;35;1mSubject Create (0.2ms)[0m   [0mINSERT INTO "subjects" ("created_at", "title", "updated_at") VALUES('2009-11-21 23:05:46', 'Churrasco do Final do Ano', '2009-11-21 23:05:46')[0m
+Redirected to http://localhost:3000/assuntos/2089548105
+Completed in 73ms (DB: 0) | 302 Found [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:05:46) [GET]
+  Parameters: {"id"=>"2089548105"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.6ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548105) [0m
+Completed in 29ms (View: 13, DB: 1) | 200 OK [http://localhost/assuntos/2089548105]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-11-21 21:05:49) [GET]
+  Parameters: {"subject_id"=>"2089548105"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;35;1mMember Load (0.9ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering tasks/new
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 7) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 1) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 2) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 5) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 4) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 3) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 6) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+Rendered tasks/_form (16.7ms)
+Completed in 52ms (View: 25, DB: 2) | 200 OK [http://localhost/assuntos/2089548105/tarefas/novo]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-11-21 21:06:30) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"bMOx4VH9+fkY/fSlDDIL57Zsll9vDsvvMsNoedlE2AA=", "subject_id"=>"2089548105", "task"=>{"body"=>"O João tem que confirmar se a gente pode fazer o churrasco no Terreno na Granja Viana", "title"=>"Confirmar o local", "subject_id"=>"2089548105", "due_date"=>"30/11/2009"}, "members_ids"=>["1"]}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT "tasks".id FROM "tasks" WHERE ("tasks"."title" = 'Confirmar o local') LIMIT 1[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO "tasks" ("created_at", "title", "body", "updated_at", "subject_id", "due_date", "status_id") VALUES('2009-11-21 23:06:30', 'Confirmar o local', 'O João tem que confirmar se a gente pode fazer o churrasco no Terreno na Granja Viana', '2009-11-21 23:06:30', 2089548105, '2009-11-30', NULL)[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."status_type" = 'a_fazer') LIMIT 1[0m
+  [4;36;1mTask Update (0.1ms)[0m   [0;1mUPDATE "tasks" SET "updated_at" = '2009-11-21 23:06:30', "created_at" = '2009-11-21 23:06:30', "title" = 'Confirmar o local', "due_date" = '2009-11-30', "subject_id" = 2089548105, "status_id" = 1, "body" = 'O João tem que confirmar se a gente pode fazer o churrasco no Terreno na Granja Viana' WHERE "id" = 9[0m
+  [4;35;1mMembersTask Create (0.5ms)[0m   [0mINSERT INTO "members_tasks" ("task_id", "member_id") VALUES(9, 1)[0m
+Redirected to http://localhost:3000/assuntos/2089548105
+Completed in 171ms (DB: 2) | 302 Found [http://localhost/assuntos/2089548105/tarefas]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:06:31) [GET]
+  Parameters: {"id"=>"2089548105"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548105) [0m
+Completed in 39ms (View: 23, DB: 1) | 200 OK [http://localhost/assuntos/2089548105]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-11-21 21:06:32) [GET]
+  Parameters: {"subject_id"=>"2089548105"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;35;1mMember Load (0.9ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering tasks/new
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 7) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 1) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 2) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 5) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 4) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 3) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 6) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+Rendered tasks/_form (16.9ms)
+Completed in 61ms (View: 24, DB: 2) | 200 OK [http://localhost/assuntos/2089548105/tarefas/novo]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-11-21 21:07:53) [POST]
+  Parameters: {"commit"=>"Criar", "authenticity_token"=>"bMOx4VH9+fkY/fSlDDIL57Zsll9vDsvvMsNoedlE2AA=", "subject_id"=>"2089548105", "task"=>{"body"=>"Tarefas:\r\n1) Criar grupo no site\r\n2) Convidar todos da atletica\r\n3) Abrir um topico de discussão na lista da diretoria para ver que gostaria de ir para o churrasco mas não participar do amigo secreto", "title"=>"Organizar o Amigo Secreto", "subject_id"=>"2089548105", "due_date"=>""}, "members_ids"=>["1", "4", "6"]}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT "tasks".id FROM "tasks" WHERE ("tasks"."title" = 'Organizar o Amigo Secreto') LIMIT 1[0m
+  [4;36;1mTask Create (0.2ms)[0m   [0;1mINSERT INTO "tasks" ("created_at", "title", "body", "updated_at", "subject_id", "due_date", "status_id") VALUES('2009-11-21 23:07:53', 'Organizar o Amigo Secreto', 'Tarefas:
+1) Criar grupo no site
+2) Convidar todos da atletica
+3) Abrir um topico de discussão na lista da diretoria para ver que gostaria de ir para o churrasco mas não participar do amigo secreto', '2009-11-21 23:07:53', 2089548105, NULL, NULL)[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."status_type" = 'a_fazer') LIMIT 1[0m
+  [4;36;1mTask Update (0.1ms)[0m   [0;1mUPDATE "tasks" SET "updated_at" = '2009-11-21 23:07:53', "created_at" = '2009-11-21 23:07:53', "title" = 'Organizar o Amigo Secreto', "subject_id" = 2089548105, "status_id" = 1, "body" = 'Tarefas:
+1) Criar grupo no site
+2) Convidar todos da atletica
+3) Abrir um topico de discussão na lista da diretoria para ver que gostaria de ir para o churrasco mas não participar do amigo secreto' WHERE "id" = 10[0m
+  [4;35;1mMembersTask Create (0.5ms)[0m   [0mINSERT INTO "members_tasks" ("task_id", "member_id") VALUES(10, 1)[0m
+  [4;36;1mMembersTask Create (0.5ms)[0m   [0;1mINSERT INTO "members_tasks" ("task_id", "member_id") VALUES(10, 4)[0m
+  [4;35;1mMembersTask Create (0.5ms)[0m   [0mINSERT INTO "members_tasks" ("task_id", "member_id") VALUES(10, 6)[0m
+Redirected to http://localhost:3000/assuntos/2089548105
+Completed in 374ms (DB: 2) | 302 Found [http://localhost/assuntos/2089548105/tarefas]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:07:53) [GET]
+  Parameters: {"id"=>"2089548105"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.6ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548105) [0m
+Completed in 112ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos/2089548105]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 21:07:56) [GET]
+  Parameters: {"subject_id"=>"2089548105", "id"=>"10"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 10) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 10)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 64ms (View: 32, DB: 2) | 200 OK [http://localhost/assuntos/2089548105/tarefas/10]
+
+
+Processing TasksController#change_status (for 127.0.0.1 at 2009-11-21 21:08:01) [POST]
+  Parameters: {"authenticity_token"=>"bMOx4VH9+fkY/fSlDDIL57Zsll9vDsvvMsNoedlE2AA=", "subject_id"=>"2089548105", "id"=>"10"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 10) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."status_type" = 'fazendo') LIMIT 1[0m
+  [4;35;1mTask Update (0.2ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2009-11-21 23:08:01', "status_id" = 2 WHERE "id" = 10[0m
+Rendering tasks/change_status
+Completed in 74ms (View: 2, DB: 1) | 200 OK [http://localhost/assuntos/2089548105/tarefas/10/change_status]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:08:02) [GET]
+  Parameters: {"id"=>"2089548105"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.6ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548105) [0m
+Completed in 47ms (View: 31, DB: 1) | 200 OK [http://localhost/assuntos/2089548105]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 21:08:03) [GET]
+  Parameters: {"subject_id"=>"2089548105", "id"=>"9"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 9) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;36;1mMember Load (0.4ms)[0m   [0;1mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 9)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 58ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos/2089548105/tarefas/9]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:08:06) [GET]
+  Parameters: {"id"=>"2089548105"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.6ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548105) [0m
+Completed in 114ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos/2089548105]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:08:08) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 47ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:19:32) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 83ms (View: 49, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:19:34) [GET]
+  [4;36;1mSubject Load (1.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 46ms (View: 36, DB: 2) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-21 21:19:47) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Rendered subjects/_form (2.2ms)
+Completed in 18ms (View: 9, DB: 0) | 200 OK [http://localhost/assuntos/novo]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:19:49) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 46ms (View: 35, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:20:13) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 103ms (View: 95, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:21:27) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:21:40) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:26:10) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:26:11) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:26:26) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 43ms (View: 34, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:34:58) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 42ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:36:03) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:37:02) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:37:03) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:37:08) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 54ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:40:55) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:42:13) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 53ms (View: 37, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 21:42:18) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"2"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mMember Load (0.5ms)[0m   [0;1mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 2)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+Completed in 60ms (View: 30, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/2]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:42:20) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 114ms (View: 39, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 21:42:22) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"2"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mMember Load (0.5ms)[0m   [0;1mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 2)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+Completed in 60ms (View: 30, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/2]
+
+
+Processing TasksController#change_status (for 127.0.0.1 at 2009-11-21 21:42:31) [POST]
+  Parameters: {"authenticity_token"=>"bMOx4VH9+fkY/fSlDDIL57Zsll9vDsvvMsNoedlE2AA=", "subject_id"=>"2031241678", "id"=>"2"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."status_type" = 'feito') LIMIT 1[0m
+  [4;35;1mTask Update (0.2ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2009-11-21 23:42:31', "status_id" = 3 WHERE "id" = 2[0m
+Rendering tasks/change_status
+Completed in 74ms (View: 3, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/2/change_status]
+
+
+Processing TasksController#change_status (for 127.0.0.1 at 2009-11-21 21:42:33) [POST]
+  Parameters: {"authenticity_token"=>"bMOx4VH9+fkY/fSlDDIL57Zsll9vDsvvMsNoedlE2AA=", "subject_id"=>"2031241678", "id"=>"2"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 3) [0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."status_type" = 'a_fazer') LIMIT 1[0m
+  [4;35;1mTask Update (0.2ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2009-11-21 23:42:33', "status_id" = 1 WHERE "id" = 2[0m
+Rendering tasks/change_status
+Completed in 75ms (View: 3, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/2/change_status]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:42:36) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 53ms (View: 37, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:47:41) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 119ms (View: 40, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:50:54) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 54ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:52:08) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 59ms (View: 41, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:52:09) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 55ms (View: 37, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:52:10) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 54ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:53:34) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 54ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:53:35) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 53ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:53:39) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 45ms (View: 37, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:54:55) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 47ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:56:25) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 47ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:57:55) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 46ms (View: 37, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:58:10) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 54ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:58:11) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 43ms (View: 34, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 21:58:33) [GET]
+  Parameters: {"id"=>"2089548105"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.6ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548105) [0m
+Completed in 48ms (View: 31, DB: 1) | 200 OK [http://localhost/assuntos/2089548105]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:59:05) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 48ms (View: 39, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 21:59:07) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:00:34) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:00:35) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 53ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:01:02) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 43ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:02:35) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:02:36) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:02:37) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 100ms (View: 91, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:03:00) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 42ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:03:29) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 47ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:03:55) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:05:52) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 47ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:06:22) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 47ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:08:23) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 46ms (View: 37, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:14:43) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 53ms (View: 44, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:15:49) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 46ms (View: 37, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:16:03) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 47ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#edit (for 127.0.0.1 at 2009-11-21 22:17:05) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Rendered subjects/_form (2.6ms)
+Completed in 28ms (View: 17, DB: 0) | 200 OK [http://localhost/assuntos/2031241678/editar]
+
+
+Processing SubjectsController#edit (for 127.0.0.1 at 2009-11-21 22:17:15) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Rendered subjects/_form (2.2ms)
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/assuntos/2031241678/editar]
+
+
+Processing SubjectsController#edit (for 127.0.0.1 at 2009-11-21 22:18:07) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Rendered subjects/_form (2.1ms)
+Completed in 19ms (View: 10, DB: 0) | 200 OK [http://localhost/assuntos/2031241678/editar]
+
+
+Processing SubjectsController#edit (for 127.0.0.1 at 2009-11-21 22:18:37) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Rendered subjects/_form (2.1ms)
+Completed in 18ms (View: 10, DB: 0) | 200 OK [http://localhost/assuntos/2031241678/editar]
+
+
+Processing SubjectsController#edit (for 127.0.0.1 at 2009-11-21 22:19:42) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Rendered subjects/_form (2.3ms)
+Completed in 78ms (View: 68, DB: 0) | 200 OK [http://localhost/assuntos/2031241678/editar]
+
+
+Processing SubjectsController#edit (for 127.0.0.1 at 2009-11-21 22:20:04) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Rendered subjects/_form (2.3ms)
+Completed in 32ms (View: 15, DB: 0) | 200 OK [http://localhost/assuntos/2031241678/editar]
+
+
+Processing SubjectsController#edit (for 127.0.0.1 at 2009-11-21 22:20:31) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Rendered subjects/_form (2.2ms)
+Completed in 19ms (View: 10, DB: 0) | 200 OK [http://localhost/assuntos/2031241678/editar]
+
+
+Processing SubjectsController#edit (for 127.0.0.1 at 2009-11-21 22:20:35) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Rendered subjects/_form (2.2ms)
+Completed in 19ms (View: 10, DB: 0) | 200 OK [http://localhost/assuntos/2031241678/editar]
+
+
+Processing SubjectsController#edit (for 127.0.0.1 at 2009-11-21 22:22:05) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Rendered subjects/_form (2.2ms)
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/assuntos/2031241678/editar]
+
+
+Processing SubjectsController#edit (for 127.0.0.1 at 2009-11-21 22:22:15) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Rendered subjects/_form (2.3ms)
+Completed in 19ms (View: 10, DB: 0) | 200 OK [http://localhost/assuntos/2031241678/editar]
+
+
+Processing SubjectsController#edit (for 127.0.0.1 at 2009-11-21 22:22:29) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Rendered subjects/_form (2.2ms)
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/assuntos/2031241678/editar]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:22:42) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 43ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:23:04) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 48ms (View: 39, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#edit (for 127.0.0.1 at 2009-11-21 22:23:14) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Rendered subjects/_form (2.8ms)
+Completed in 22ms (View: 12, DB: 0) | 200 OK [http://localhost/assuntos/2031241678/editar]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:23:19) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 53ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#edit (for 127.0.0.1 at 2009-11-21 22:23:23) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Rendered subjects/_form (2.2ms)
+Completed in 19ms (View: 10, DB: 0) | 200 OK [http://localhost/assuntos/2031241678/editar]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:23:26) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 112ms (View: 35, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:27:11) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 42ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:27:13) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+
+ActionView::TemplateError (undefined method `content_to' for #<ActionView::Base:0xb5838a50>) on line #2 of app/views/subjects/show.html.erb:
+1: 
+2: <% content_to :title do %>
+3:   <h1><%= @subject.title %>
+4:       <%= link_to image_tag("/images/delete.png", :title => "Excluir"), subject_path(@subject.id), :method => "delete", :confirm => "Excluir #{@subject.title}?" %>
+5:       <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_path(@subject.id) %>
+
+    app/views/subjects/show.html.erb:2
+
+Rendered rescues/_trace (46.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:27:43) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 122ms (View: 107, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:27:47) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 43ms (View: 34, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:27:52) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 53ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 22:27:53) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"2"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mMember Load (0.5ms)[0m   [0;1mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 2)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 63ms (View: 29, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/2]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 22:28:09) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"2"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mMember Load (0.5ms)[0m   [0;1mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 2)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 119ms (View: 90, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/2]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:28:32) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 61ms (View: 43, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:30:11) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 59ms (View: 43, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:30:25) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 56ms (View: 37, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:30:26) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 121ms (View: 40, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:30:35) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 56ms (View: 39, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 22:30:40) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"6"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 6) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mMember Load (0.6ms)[0m   [0;1mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 6)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+Completed in 65ms (View: 29, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/6]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:30:42) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 54ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:31:05) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 58ms (View: 40, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 22:31:09) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"2"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mMember Load (0.5ms)[0m   [0;1mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 2)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 59ms (View: 30, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/2]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:31:11) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 57ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 22:31:12) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"2"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mMember Load (0.5ms)[0m   [0;1mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 2)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 60ms (View: 29, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/2]
+
+
+Processing TasksController#change_status (for 127.0.0.1 at 2009-11-21 22:31:13) [POST]
+  Parameters: {"authenticity_token"=>"bMOx4VH9+fkY/fSlDDIL57Zsll9vDsvvMsNoedlE2AA=", "subject_id"=>"2031241678", "id"=>"2"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+  [4;36;1mStatus Load (0.4ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."status_type" = 'fazendo') LIMIT 1[0m
+  [4;35;1mTask Update (0.2ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2009-11-22 00:31:13', "status_id" = 2 WHERE "id" = 2[0m
+Rendering tasks/change_status
+Completed in 87ms (View: 3, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/2/change_status]
+
+
+Processing TasksController#change_status (for 127.0.0.1 at 2009-11-21 22:31:14) [POST]
+  Parameters: {"authenticity_token"=>"bMOx4VH9+fkY/fSlDDIL57Zsll9vDsvvMsNoedlE2AA=", "subject_id"=>"2031241678", "id"=>"2"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."status_type" = 'feito') LIMIT 1[0m
+  [4;35;1mTask Update (0.2ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2009-11-22 00:31:14', "status_id" = 3 WHERE "id" = 2[0m
+Rendering tasks/change_status
+Completed in 106ms (View: 3, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/2/change_status]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:31:17) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 55ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:33:57) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 56ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:33:58) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-21 22:34:00) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Rendered subjects/_form (2.3ms)
+Completed in 86ms (View: 76, DB: 0) | 200 OK [http://localhost/assuntos/novo]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:34:01) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 44ms (View: 35, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:34:02) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 55ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:34:04) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 54ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#edit (for 127.0.0.1 at 2009-11-21 22:34:06) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Rendered subjects/_form (2.2ms)
+Completed in 24ms (View: 15, DB: 0) | 200 OK [http://localhost/assuntos/2031241678/editar]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:34:07) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:34:10) [GET]
+  Parameters: {"id"=>"2089548105"}
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.6ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548105) [0m
+Completed in 51ms (View: 30, DB: 1) | 200 OK [http://localhost/assuntos/2089548105]
+
+
+Processing SubjectsController#edit (for 127.0.0.1 at 2009-11-21 22:34:14) [GET]
+  Parameters: {"id"=>"2089548105"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Rendered subjects/_form (2.5ms)
+Completed in 20ms (View: 11, DB: 0) | 200 OK [http://localhost/assuntos/2089548105/editar]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:34:16) [GET]
+  Parameters: {"id"=>"2089548105"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.6ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548105) [0m
+Completed in 48ms (View: 31, DB: 1) | 200 OK [http://localhost/assuntos/2089548105]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 22:34:17) [GET]
+  Parameters: {"subject_id"=>"2089548105", "id"=>"9"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 9) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;36;1mMember Load (0.4ms)[0m   [0;1mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 9)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 65ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos/2089548105/tarefas/9]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-11-21 22:34:19) [GET]
+  Parameters: {"subject_id"=>"2089548105", "id"=>"9"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 9) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;36;1mMember Load (0.9ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering tasks/edit
+ERROR: compiling _run_erb_app47views47tasks47edit46html46erb RAISED compile error
+/home/ticolucci/Repositorios/NERD_da_aaamat/Fase 5/nerd/app/views/tasks/edit.html.erb:11: syntax error, unexpected kENSURE, expecting kEND
+/home/ticolucci/Repositorios/NERD_da_aaamat/Fase 5/nerd/app/views/tasks/edit.html.erb:13: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47tasks47edit46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  content_for :title do ; @output_buffer.concat "\n  <h1>Editando Tarefa</h1>\n"
+
+;  end ; @output_buffer.concat "\n\n"
+
+;  content_for :bottom_links do ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( link_to image_tag("/images/cancel.png", :title => "Cancelar")+"Cancelar", subject_task_path(@subject.id, @task.id) ).to_s); @output_buffer.concat "\n\n"
+
+;  form_for [@subject, @task] do |form| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( render :partial => 'form', :locals => {:form => form, :submit_text => "Salvar"} ).to_s); @output_buffer.concat "\n"
+;  end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/ticolucci/Repositorios/NERD_da_aaamat/Fase 5/nerd/app/views/tasks/edit.html.erb:13:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/var/lib/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/var/lib/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/var/lib/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/var/lib/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/var/lib/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/home/ticolucci/Repositorios/NERD_da_aaamat/Fase 5/nerd/app/views/tasks/edit.html.erb:11: syntax error, unexpected kENSURE, expecting kEND
+/home/ticolucci/Repositorios/NERD_da_aaamat/Fase 5/nerd/app/views/tasks/edit.html.erb:13: syntax error, unexpected $end, expecting kEND) on line #11 of app/views/tasks/edit.html.erb:
+8: <% form_for [@subject, @task] do |form| %>
+9:   <%= render :partial => 'form', :locals => {:form => form, :submit_text => "Salvar"} %>
+10: <% end %>
+
+    app/views/tasks/edit.html.erb:13:in `compile!'
+
+Rendered rescues/_trace (111.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-11-21 22:34:41) [GET]
+  Parameters: {"subject_id"=>"2089548105", "id"=>"9"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 9) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;35;1mMember Load (0.9ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering tasks/edit
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 7) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.2ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 1) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 2) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.2ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 5) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 4) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 3) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 6) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+Rendered tasks/_form (25.4ms)
+Completed in 71ms (View: 38, DB: 3) | 200 OK [http://localhost/assuntos/2089548105/tarefas/9/editar]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 22:34:55) [GET]
+  Parameters: {"subject_id"=>"2089548105", "id"=>"9"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 9) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;35;1mMember Load (0.4ms)[0m   [0mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 9)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 61ms (View: 34, DB: 1) | 200 OK [http://localhost/assuntos/2089548105/tarefas/9]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 22:35:29) [GET]
+  Parameters: {"subject_id"=>"2089548105", "id"=>"9"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 9) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;35;1mMember Load (0.4ms)[0m   [0mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 9)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 119ms (View: 92, DB: 1) | 200 OK [http://localhost/assuntos/2089548105/tarefas/9]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:35:31) [GET]
+  Parameters: {"id"=>"2089548105"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.6ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548105) [0m
+Completed in 48ms (View: 31, DB: 1) | 200 OK [http://localhost/assuntos/2089548105]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 22:35:33) [GET]
+  Parameters: {"subject_id"=>"2089548105", "id"=>"9"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 9) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;35;1mMember Load (0.4ms)[0m   [0mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 9)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 61ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos/2089548105/tarefas/9]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-11-21 22:35:36) [GET]
+  Parameters: {"subject_id"=>"2089548105", "id"=>"9"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 9) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;35;1mMember Load (0.9ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering tasks/edit
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 7) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.2ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 1) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 2) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 5) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 4) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 3) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 6) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+Rendered tasks/_form (24.7ms)
+Completed in 61ms (View: 32, DB: 3) | 200 OK [http://localhost/assuntos/2089548105/tarefas/9/editar]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-11-21 22:36:56) [GET]
+  Parameters: {"subject_id"=>"2089548105", "id"=>"9"}
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 9) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;35;1mMember Load (1.1ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering tasks/edit
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 7) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.2ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 1) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 2) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.2ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 5) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 4) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 3) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 6) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+Rendered tasks/_form (28.6ms)
+Completed in 131ms (View: 41, DB: 3) | 200 OK [http://localhost/assuntos/2089548105/tarefas/9/editar]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-11-21 22:36:58) [GET]
+  Parameters: {"subject_id"=>"2089548105", "id"=>"9"}
+  [4;35;1mTask Load (0.6ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 9) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;35;1mMember Load (0.9ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering tasks/edit
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 7) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.3ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 1) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 2) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 5) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 4) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.2ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 3) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 6) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+Rendered tasks/_form (26.0ms)
+Completed in 66ms (View: 34, DB: 3) | 200 OK [http://localhost/assuntos/2089548105/tarefas/9/editar]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-11-21 22:37:08) [GET]
+  Parameters: {"subject_id"=>"2089548105", "id"=>"9"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 9) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;35;1mMember Load (0.9ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering tasks/edit
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 7) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.2ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 1) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 2) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.2ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 5) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 4) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 3) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 6) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+Rendered tasks/_form (25.0ms)
+Completed in 61ms (View: 33, DB: 3) | 200 OK [http://localhost/assuntos/2089548105/tarefas/9/editar]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-11-21 22:37:17) [GET]
+  Parameters: {"subject_id"=>"2089548105", "id"=>"9"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 9) [0m
+  [4;36;1mSubject Load (0.6ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;35;1mMember Load (1.8ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering tasks/edit
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 7) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.3ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 1) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 2) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.2ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 5) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 4) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 3) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 6) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+Rendered tasks/_form (26.0ms)
+Completed in 84ms (View: 34, DB: 4) | 200 OK [http://localhost/assuntos/2089548105/tarefas/9/editar]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-11-21 22:37:35) [GET]
+  Parameters: {"subject_id"=>"2089548105", "id"=>"9"}
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 9) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;35;1mMember Load (1.1ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering tasks/edit
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 7) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.2ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 1) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 2) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 5) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 4) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 3) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 6) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+Rendered tasks/_form (25.3ms)
+Completed in 67ms (View: 33, DB: 3) | 200 OK [http://localhost/assuntos/2089548105/tarefas/9/editar]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-11-21 22:37:57) [GET]
+  Parameters: {"subject_id"=>"2089548105", "id"=>"9"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 9) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;35;1mMember Load (1.0ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering tasks/edit
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 7) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.2ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 1) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 2) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.2ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 5) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 4) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 3) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 6) AND (("members_tasks".task_id = 9)) LIMIT 1[0m
+Rendered tasks/_form (26.6ms)
+Completed in 118ms (View: 35, DB: 3) | 200 OK [http://localhost/assuntos/2089548105/tarefas/9/editar]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 22:38:04) [GET]
+  Parameters: {"subject_id"=>"2089548105", "id"=>"9"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 9) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;35;1mMember Load (0.4ms)[0m   [0mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 9)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 1) [0m
+Completed in 59ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos/2089548105/tarefas/9]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:38:06) [GET]
+  Parameters: {"id"=>"2089548105"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.6ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548105) [0m
+Completed in 47ms (View: 31, DB: 1) | 200 OK [http://localhost/assuntos/2089548105]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:38:07) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#edit (for 127.0.0.1 at 2009-11-21 22:38:09) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/edit
+Rendered subjects/_form (2.2ms)
+Completed in 19ms (View: 10, DB: 0) | 200 OK [http://localhost/assuntos/2031241678/editar]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:38:15) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 43ms (View: 34, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:38:22) [GET]
+  Parameters: {"id"=>"2089548105"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.6ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548105) [0m
+Completed in 47ms (View: 31, DB: 1) | 200 OK [http://localhost/assuntos/2089548105]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:38:23) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-21 22:38:24) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Rendered subjects/_form (2.1ms)
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/assuntos/novo]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:38:26) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:38:49) [GET]
+  [4;36;1mSubject Load (1.0ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 42ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:38:57) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 109ms (View: 100, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:39:04) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 43ms (View: 34, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:39:06) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 44ms (View: 35, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:39:30) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 42ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:39:51) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-21 22:39:59) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Rendered subjects/_form (2.2ms)
+Completed in 19ms (View: 10, DB: 0) | 200 OK [http://localhost/assuntos/novo]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:40:00) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 43ms (View: 34, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:40:02) [GET]
+  Parameters: {"id"=>"2089548104"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548104) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.6ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548104) [0m
+Completed in 49ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos/2089548104]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:40:08) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 52ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:40:35) [GET]
+  [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 47ms (View: 39, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:40:38) [GET]
+  Parameters: {"id"=>"2089548105"}
+  [4;35;1mSubject Load (3.1ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.6ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548105) [0m
+Completed in 49ms (View: 30, DB: 4) | 200 OK [http://localhost/assuntos/2089548105]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:40:40) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 45ms (View: 35, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:40:55) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 42ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:41:09) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 47ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:41:17) [GET]
+  Parameters: {"id"=>"2089548105"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.6ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548105) [0m
+Completed in 46ms (View: 31, DB: 1) | 200 OK [http://localhost/assuntos/2089548105]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-11-21 22:41:21) [GET]
+  Parameters: {"subject_id"=>"2089548105"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+  [4;35;1mMember Load (0.9ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering tasks/new
+  [4;36;1mMember Load (0.3ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 7) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;35;1mMember Load (0.2ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 1) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 2) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 5) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 4) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 3) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+  [4;36;1mMember Load (0.1ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 6) AND (("members_tasks".task_id = NULL)) LIMIT 1[0m
+Rendered tasks/_form (79.0ms)
+Completed in 118ms (View: 91, DB: 2) | 200 OK [http://localhost/assuntos/2089548105/tarefas/novo]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:41:23) [GET]
+  Parameters: {"id"=>"2089548105"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.6ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548105) [0m
+Completed in 48ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos/2089548105]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:41:25) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-21 22:41:35) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Rendered subjects/_form (2.3ms)
+Completed in 24ms (View: 14, DB: 0) | 200 OK [http://localhost/assuntos/novo]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:41:39) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-21 22:41:49) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Rendered subjects/_form (2.1ms)
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/assuntos/novo]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:41:51) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 43ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:41:52) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.4ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 126ms (View: 40, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:41:55) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#new (for 127.0.0.1 at 2009-11-21 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering subjects/new
+Rendered subjects/_form (2.1ms)
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/assuntos/novo]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:42:01) [GET]
+  [4;35;1mSubject Load (1.2ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 48ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:45:35) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:45:37) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:45:41) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 117ms (View: 40, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 22:45:43) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"2"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mMember Load (0.5ms)[0m   [0;1mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 2)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 3) [0m
+Completed in 60ms (View: 30, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/2]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:45:44) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 54ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:46:22) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 66ms (View: 37, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:46:37) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 120ms (View: 40, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:46:38) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 42ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:46:39) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 57ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:46:41) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 43ms (View: 35, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:46:54) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:47:02) [GET]
+  [4;36;1mSubject Load (1.1ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 130ms (View: 113, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:47:03) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 62ms (View: 43, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 22:47:04) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"2"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mMember Load (0.5ms)[0m   [0mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 2)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 3) [0m
+Completed in 139ms (View: 110, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/2]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:47:05) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 53ms (View: 37, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-21 22:47:06) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"6"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 6) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mMember Load (0.6ms)[0m   [0mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 6)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+Completed in 61ms (View: 30, DB: 2) | 200 OK [http://localhost/assuntos/2031241678/tarefas/6]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:47:08) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 58ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:47:09) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:47:10) [GET]
+  Parameters: {"id"=>"2089548105"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.6ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548105) [0m
+Completed in 47ms (View: 30, DB: 1) | 200 OK [http://localhost/assuntos/2089548105]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:47:11) [GET]
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 41ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:47:15) [GET]
+  Parameters: {"id"=>"2089548105"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2089548105) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mTask Load (0.6ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2089548105) [0m
+Completed in 110ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos/2089548105]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-21 22:47:16) [GET]
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 42ms (View: 33, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-21 22:47:19) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+Completed in 54ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos/2031241678]

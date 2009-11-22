@@ -1,12 +1,18 @@
-<h1>
-  <%= @task.title %>
-  <%= link_to_remote image_tag("/images/#{@task.status.status_type}.png", :title => @task.status.status_type.humanize),
-                     {:url => change_status_subjects_task_url(@subject.id, @task.id), :update => 'status_img'},
-                     :id => 'status_img' %>
-  <%= link_to image_tag("/images/delete.png", :title => "Excluir"), subject_task_path(@subject.id, @task.id), :method => "delete", :confirm => "Excluir #{@task.title}?"%>
-  <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_task_path(@subject.id, @task.id) %>
+<% content_for :title do %>
+  <h1>
+    <%= @task.title %>
+    <%= link_to_remote image_tag("/images/#{@task.status.status_type}.png", :title => @task.status.status_type.humanize),
+                       {:url => change_status_subjects_task_url(@subject.id, @task.id), :update => 'status_img'},
+                       :id => 'status_img' %>
+    <%= link_to image_tag("/images/delete.png", :title => "Excluir"), subject_task_path(@subject.id, @task.id), :method => "delete", :confirm => "Excluir #{@task.title}?"%>
+    <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_task_path(@subject.id, @task.id) %>
 
-</h1>
+  </h1>
+<% end %>
+
+<% content_for :bottom_links do %>
+  <%= link_to "Ir para assunto", subject_path(@subject.id) %>
+<% end %>
 
 <div id="task_attributes">
   <% unless @task.body.empty? %>
@@ -33,7 +39,3 @@
     <% end %>
   </ul>
 </div>
-
-<br/><br/>
-
-<%= link_to "Ir para assunto", subject_path(@subject.id) %>

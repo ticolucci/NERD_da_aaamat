@@ -1,3 +1,29 @@
 <%= stylesheet_link_tag "application" %>
 <%= javascript_include_tag :defaults %>
-<%= yield %>
+
+<div class="title">
+  <%= yield :title %>
+</div>
+
+<div class="upper_links">
+  <%= yield :upper_links %>
+</div>
+
+<br/>
+
+<div id="liquid-round">
+
+  <div class="top"><span> </span></div>
+
+  <div class="content">
+    <br/>
+    <%= yield %>
+    <br/><br/>
+  </div>
+
+  <div class="bottom"><span></span></div>
+</div>
+
+<div class="bottom_links">
+  <%= yield :bottom_links %>
+</div>

@@ -1,8 +1,11 @@
-<h1>Assuntos</h1>
 
-<%= link_to image_tag("/images/add.png", :title => "Novo") + "Novo", new_subject_path %>
+<% content_for :title do %>
+  <h1>Assuntos</h1>
+<% end %>
 
-<br/><br/>
+<% content_for :upper_links do %>
+  <%= link_to image_tag("/images/add.png", :title => "Novo") + "Novo", new_subject_path %>
+<% end %>
 
 <table id="subjects">
   <% @subjects.each do |subject| %>
