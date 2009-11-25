@@ -3,4 +3,5 @@ class Subject < ActiveRecord::Base
   validates_uniqueness_of :title
 
   has_many :tasks
+  has_many :events
 end
