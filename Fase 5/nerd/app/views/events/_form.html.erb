@@ -1,0 +1,23 @@
+<%= form.error_messages %>
+<%= hidden_field_tag 'event[subject_id]', @subject.id %>
+<p>
+  <%= form.label :title, "Título" %>
+  <%= form.text_field :title %>
+</p>
+<p>
+  <%= form.label :body, "Corpo" %>
+  <%= form.text_area :body, :size => "40x3" %>
+</p>
+<p>
+  <%= form.label :date, "Data" %>
+  <% date = form.object.date ? l(form.object.date) : nil  %>
+  <%= calendar_field :event, :date, date, {:date_format=>'%d/%m/%Y', :lang =>  'pt-BR'} %>
+</p>
+<p>
+  <%= form.label :time, "Horário" %>
+  <%= form.text_field :time %>
+</p>
+
+<%= form.submit submit_text %>
+
+<%= javascript_tag("$('event_title').focus();") %>

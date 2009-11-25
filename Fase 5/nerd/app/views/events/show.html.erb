@@ -1,0 +1,39 @@
+<% content_for :title do %>
+  <h1> <%= @event.title %> </h1>
+<% end %>
+
+<% content_for :top_links do %>
+  <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_event_path(@subject.id, @event.id) %>
+  <%= link_to image_tag("/images/delete.png", :title => "Excluir"), subject_event_path(@subject.id, @event.id), :method => "delete", :confirm => "Excluir #{@event.title}?"%>
+<% end %>
+
+<% content_for :bottom_links do %>
+  <%= link_to "Ir para assunto", subject_path(@subject.id) %>
+<% end %>
+
+<div id="event_attributes">
+  <% unless @event.body.empty? %>
+    <p>
+      <label>Corpo:</label>
+      <%= RedCloth.new(@event.body, [:filter_html]).to_html %>
+    </p>
+  <% end %>
+
+  <% if @event.date %>
+    <p>
+      <label>Data:</label>
+      <%= l(@event.date) %>
+    </p>
+  <% end %>
+
+  <% if @event.time %>
+    <p>
+      <label>Horário:</label>
+      <%= l(@event.time, :format => :short) %>
+    </p>
+  <% end %>
+  <p>
+    <label>Data de Criação:</label>
+    <%= l(@event.created_at) %>
+  </p>
+</div>
