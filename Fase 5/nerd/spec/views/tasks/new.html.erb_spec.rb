@@ -8,7 +8,7 @@ describe "/tasks/new" do
     assigns[:subject] = @subject = subjects(:bife)
     assigns[:members] = @members = [members(:thiago)]
     assigns[:task_members] = @task_members = [members(:thiago)]
-    render
+    render :layout => "application"
   end
 
   it "should show all the fields" do

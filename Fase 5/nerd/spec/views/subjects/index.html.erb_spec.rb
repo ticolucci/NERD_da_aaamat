@@ -4,7 +4,7 @@ describe "/subjects/index" do
   fixtures :subjects
   before :each do
     assigns[:subjects] = [subjects(:bife), subjects(:copa_usp)]
-    render
+    render :layout => "application"
   end
 
   it "should have title for the page" do

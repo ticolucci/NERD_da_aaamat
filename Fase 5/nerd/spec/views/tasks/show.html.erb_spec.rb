@@ -7,7 +7,7 @@ describe "/tasks/show" do
     assigns[:task] = @task = tasks(:falar_com_diretor)
     assigns[:subject] = @subject = subjects(:bife)
     assigns[:members] = @members = [members(:lucianna)]
-    render
+    render :layout => "application"
   end
 
   it "should show the title as heading" do
@@ -46,7 +46,7 @@ describe "/tasks/show" do
   end
 
   it "should have a link to delete the task" do
-    response.should have_tag("a[href=?]", subject_task_path(subjects(:bife).id, tasks(:falar_com_diretor).id))
+    content_for(:top_links).should have_tag("a[href=?]", subject_task_path(subjects(:bife).id, tasks(:falar_com_diretor).id))
   end
 
 end

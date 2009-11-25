@@ -6,7 +6,7 @@ describe "/subjects/show" do
   before :each do
     assigns[:subject] = @subject = subjects(:bife)
     assigns[:tasks] = @tasks = [tasks(:falar_com_diretor)]
-    render
+    render :layout => "application"
   end
 
   it "should render all attributes" do
@@ -33,7 +33,7 @@ describe "/subjects/show" do
   end
 
   it "should have a way to create a new task" do
-    response.should have_tag("a[href=?]", new_subject_task_path(@subject.id))
+    content_for(:top_links).should have_tag("a[href=?]", new_subject_task_path(@subject.id))
   end
 
   it "should render the link to destroy a subject" do

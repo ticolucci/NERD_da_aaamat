@@ -4,7 +4,7 @@ describe "/subjects/new" do
   fixtures :subjects
   before :each do
     assigns[:subject] = Subject.new
-    render
+    render :layout => "application"
   end
 
   it "should have title for the page" do

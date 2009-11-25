@@ -5,7 +5,7 @@ describe "/subjects/edit" do
 
   before :each do
     assigns[:subject] = subjects(:bife)
-    render
+    render :layout => "application"
   end
 
   it "should have title for the page" do
