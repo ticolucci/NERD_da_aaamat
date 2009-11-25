@@ -29,7 +29,7 @@ describe Event do
   end
 
   it "should belong to a subject" do
-    event = Event.new valid_attributes()
+    event = Event.new valid_attributes
     event.save
     event.subject.should == subjects(:bife)
   end

@@ -42,8 +42,8 @@ ActiveRecord::Schema.define(:version => 8) do
   end
 
   create_table "reminders", :force => true do |t|
-    t.string   "date"
-    t.string   "time"
+    t.date     "date"
+    t.integer  "time"
     t.integer  "item_id"
     t.string   "item_type"
     t.datetime "created_at"

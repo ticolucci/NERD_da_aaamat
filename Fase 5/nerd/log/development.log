@@ -12778,3 +12778,271 @@ Migrating to CreateReminder (8)
   [4;35;1mSQL (95.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
   [4;36;1mSQL (98.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
   [4;35;1mSQL (57.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateReminder (8)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mDROP TABLE "reminders"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("events")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("members")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("members_tasks")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("records")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("statuses")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("subjects")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSubjects (1)
+Migrating to CreateStatus (2)
+Migrating to CreateTasks (3)
+Migrating to CreateMembers (4)
+Migrating to CreateMembersTasks (5)
+Migrating to CreateEvent (6)
+Migrating to CreateRecord (7)
+Migrating to CreateReminder (8)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "reminders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "time" integer, "item_id" integer, "item_type" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('8')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("events")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("members")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("members_tasks")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("records")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("reminders")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("statuses")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("subjects")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("tasks")[0m
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-25 19:53:20) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "events" WHERE ("events".subject_id = 2031241678) [0m
+  [4;36;1mEvent Load (0.6ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events".subject_id = 2031241678) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+  [4;36;1mTask Load (0.6ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "records" WHERE ("records".subject_id = 2031241678) [0m
+  [4;36;1mRecord Load (0.3ms)[0m   [0;1mSELECT * FROM "records" WHERE ("records".subject_id = 2031241678) [0m
+Completed in 104ms (View: 76, DB: 3) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2009-11-25 19:53:24) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"3"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 3) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 43ms (View: 27, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/eventos/3]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-25 19:53:29) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" WHERE ("events".subject_id = 2031241678) [0m
+  [4;35;1mEvent Load (15.3ms)[0m   [0mSELECT * FROM "events" WHERE ("events".subject_id = 2031241678) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "records" WHERE ("records".subject_id = 2031241678) [0m
+  [4;35;1mRecord Load (0.3ms)[0m   [0mSELECT * FROM "records" WHERE ("records".subject_id = 2031241678) [0m
+Completed in 172ms (View: 129, DB: 17) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2009-11-25 19:53:30) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 40ms (View: 23, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/eventos/1]
+
+
+Processing EventsController#edit (for 127.0.0.1 at 2009-11-25 19:53:48) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"1"}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering events/edit
+Rendered events/_form (13.7ms)
+Completed in 64ms (View: 32, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/eventos/1/editar]
+
+
+Processing EventsController#update (for 127.0.0.1 at 2009-11-25 19:53:54) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"xrrA13+M+hNyYvHjTtZGdCyh1NM92hm32AYWIGmsrKc=", "subject_id"=>"2031241678", "id"=>"1", "event"=>{"body"=>"Festa na chuva", "title"=>"Abate", "time"=>"23:00", "date"=>"12/12/1212", "subject_id"=>"2031241678"}}
+  [4;36;1mEvent Load (0.4ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mEvent Load (0.2ms)[0m   [0mSELECT "events".id FROM "events" WHERE ("events"."title" = 'Abate' AND "events".id <> 1) LIMIT 1[0m
+  [4;36;1mEvent Update (0.3ms)[0m   [0;1mUPDATE "events" SET "updated_at" = '2009-11-25 21:53:54', "time" = '2000-01-01 23:00:00' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/assuntos/2031241678/eventos/1
+Completed in 103ms (DB: 1) | 302 Found [http://localhost/assuntos/2031241678/eventos/1]
+
+
+Processing EventsController#show (for 127.0.0.1 at 2009-11-25 19:53:54) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"1"}
+  [4;35;1mEvent Load (0.4ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering events/show
+Completed in 52ms (View: 34, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/eventos/1]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-25 19:56:47) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" WHERE ("events".subject_id = 2031241678) [0m
+  [4;35;1mEvent Load (0.6ms)[0m   [0mSELECT * FROM "events" WHERE ("events".subject_id = 2031241678) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "records" WHERE ("records".subject_id = 2031241678) [0m
+  [4;35;1mRecord Load (0.3ms)[0m   [0mSELECT * FROM "records" WHERE ("records".subject_id = 2031241678) [0m
+Completed in 376ms (View: 170, DB: 3) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2009-11-25 19:56:53) [GET]
+  [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM "subjects" [0m
+Rendering template within layouts/application
+Rendering subjects/index
+Completed in 31ms (View: 21, DB: 1) | 200 OK [http://localhost/assuntos]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-25 19:57:01) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" WHERE ("events".subject_id = 2031241678) [0m
+  [4;35;1mEvent Load (0.6ms)[0m   [0mSELECT * FROM "events" WHERE ("events".subject_id = 2031241678) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "records" WHERE ("records".subject_id = 2031241678) [0m
+  [4;35;1mRecord Load (0.3ms)[0m   [0mSELECT * FROM "records" WHERE ("records".subject_id = 2031241678) [0m
+Completed in 109ms (View: 74, DB: 2) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-25 19:57:08) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"2"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mMember Load (0.5ms)[0m   [0;1mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 2)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+Completed in 99ms (View: 38, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/2]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2009-11-25 19:57:15) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"2"}
+  [4;36;1mTask Load (0.5ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mMember Load (0.5ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering tasks/edit
+  [4;35;1mMember Load (0.3ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 1) AND (("members_tasks".task_id = 2)) LIMIT 1[0m
+  [4;36;1mMember Load (0.2ms)[0m   [0;1mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 2) AND (("members_tasks".task_id = 2)) LIMIT 1[0m
+  [4;35;1mMember Load (0.1ms)[0m   [0mSELECT "members".id FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE ("members"."id" = 3) AND (("members_tasks".task_id = 2)) LIMIT 1[0m
+Rendered tasks/_form (21.3ms)
+Completed in 138ms (View: 40, DB: 2) | 200 OK [http://localhost/assuntos/2031241678/tarefas/2/editar]
+
+
+Processing TasksController#update (for 127.0.0.1 at 2009-11-25 19:57:29) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"xrrA13+M+hNyYvHjTtZGdCyh1NM92hm32AYWIGmsrKc=", "subject_id"=>"2031241678", "id"=>"2", "task"=>{"body"=>"Pedir pra ele se retirar", "title"=>"Falar com Diretor", "subject_id"=>"2031241678", "due_date"=>"01/12/2009"}, "members_ids"=>["1", "2"]}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT "tasks".id FROM "tasks" WHERE ("tasks"."title" = 'Falar com Diretor' AND "tasks".id <> 2) LIMIT 1[0m
+  [4;36;1mTask Update (0.2ms)[0m   [0;1mUPDATE "tasks" SET "updated_at" = '2009-11-25 21:57:29', "due_date" = '2009-01-12' WHERE "id" = 2[0m
+  [4;35;1mStatus Load (0.2ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+  [4;36;1mMember Load (0.5ms)[0m   [0;1mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 2)) [0m
+  [4;35;1mMembersTask Create (0.2ms)[0m   [0mINSERT INTO "members_tasks" ("task_id", "member_id") VALUES(2, 1)[0m
+  [4;36;1mMembersTask Create (0.2ms)[0m   [0;1mINSERT INTO "members_tasks" ("task_id", "member_id") VALUES(2, 2)[0m
+  [4;35;1mMembersTask Load (0.3ms)[0m   [0mSELECT * FROM "members_tasks" WHERE ("members_tasks"."member_id" = 2 AND "members_tasks"."task_id" = 2) LIMIT 1[0m
+  [4;36;1mMembersTask Delete all (88.3ms)[0m   [0;1mDELETE FROM "members_tasks" WHERE ("id" IN (298486374)) [0m
+  [4;35;1mMembersTask Load (0.3ms)[0m   [0mSELECT * FROM "members_tasks" WHERE ("members_tasks"."member_id" = 1 AND "members_tasks"."task_id" = 2) LIMIT 1[0m
+  [4;36;1mMembersTask Delete all (88.8ms)[0m   [0;1mDELETE FROM "members_tasks" WHERE ("id" IN (2053932785)) [0m
+Redirected to http://localhost:3000/assuntos/2031241678/tarefas/2
+Completed in 458ms (DB: 180) | 302 Found [http://localhost/assuntos/2031241678/tarefas/2]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-25 19:57:29) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"2"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;35;1mMember Load (0.5ms)[0m   [0mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 2)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;36;1mStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+Completed in 62ms (View: 30, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/2]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-25 19:57:32) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" WHERE ("events".subject_id = 2031241678) [0m
+  [4;35;1mEvent Load (0.6ms)[0m   [0mSELECT * FROM "events" WHERE ("events".subject_id = 2031241678) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "records" WHERE ("records".subject_id = 2031241678) [0m
+  [4;35;1mRecord Load (0.3ms)[0m   [0mSELECT * FROM "records" WHERE ("records".subject_id = 2031241678) [0m
+Completed in 178ms (View: 76, DB: 2) | 200 OK [http://localhost/assuntos/2031241678]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-11-25 19:57:36) [GET]
+  Parameters: {"subject_id"=>"2031241678", "id"=>"2"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+  [4;36;1mMember Load (0.5ms)[0m   [0;1mSELECT "members".* FROM "members" INNER JOIN "members_tasks" ON "members".id = "members_tasks".member_id WHERE (("members_tasks".task_id = 2)) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+  [4;35;1mStatus Load (0.3ms)[0m   [0mSELECT * FROM "statuses" WHERE ("statuses"."id" = 2) [0m
+Completed in 68ms (View: 34, DB: 1) | 200 OK [http://localhost/assuntos/2031241678/tarefas/2]
+
+
+Processing SubjectsController#show (for 127.0.0.1 at 2009-11-25 19:57:40) [GET]
+  Parameters: {"id"=>"2031241678"}
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM "subjects" WHERE ("subjects"."id" = 2031241678) [0m
+Rendering template within layouts/application
+Rendering subjects/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "events" WHERE ("events".subject_id = 2031241678) [0m
+  [4;36;1mEvent Load (0.6ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events".subject_id = 2031241678) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+  [4;36;1mTask Load (0.5ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks".subject_id = 2031241678) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "records" WHERE ("records".subject_id = 2031241678) [0m
+  [4;36;1mRecord Load (0.3ms)[0m   [0;1mSELECT * FROM "records" WHERE ("records".subject_id = 2031241678) [0m
+Completed in 143ms (View: 71, DB: 2) | 200 OK [http://localhost/assuntos/2031241678]
