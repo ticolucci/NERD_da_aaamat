@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Subject do
-  fixtures :events, :subjects
+  fixtures :events, :subjects, :records
 
   before(:each) do
     @valid_attributes = {
@@ -28,5 +28,10 @@ describe Subject do
   it "should have events" do
     expected = [events(:abate), events(:esquenta_bife), events(:engorda)]
     (subjects(:bife).events - expected).should == []
+  end
+
+  it "should have recors" do
+    expected = [records(:ovos)]
+    (subjects(:bife).records - expected).should == []
   end
 end

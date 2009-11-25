@@ -9,12 +9,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 6) do
+ActiveRecord::Schema.define(:version => 8) do
 
   create_table "events", :force => true do |t|
     t.string   "title"
     t.string   "body"
     t.time     "time"
+    t.date     "date"
     t.integer  "subject_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -30,6 +31,23 @@ ActiveRecord::Schema.define(:version => 6) do
   create_table "members_tasks", :force => true do |t|
     t.integer "member_id"
     t.integer "task_id"
+  end
+
+  create_table "records", :force => true do |t|
+    t.string   "title"
+    t.string   "body"
+    t.integer  "subject_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "reminders", :force => true do |t|
+    t.string   "date"
+    t.string   "time"
+    t.integer  "item_id"
+    t.string   "item_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "statuses", :force => true do |t|

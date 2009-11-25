@@ -28,6 +28,8 @@ class SubjectsController < ApplicationController
     store_location
     @subject = Subject.find params[:id]
     @tasks = @subject.tasks
+    @events = @subject.events
+    @records = @subject.records
   end
 
   def edit

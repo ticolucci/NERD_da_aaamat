@@ -27,7 +27,7 @@ describe "/subjects/index" do
   end
 
   it "should render the link to create a new subject" do
-    response.should have_tag("a[href=?]", new_subject_path)
+    content_for(:top_links).should have_tag("a[href=?]", new_subject_path)
   end
 
   it "should render the link to edit a subject" do

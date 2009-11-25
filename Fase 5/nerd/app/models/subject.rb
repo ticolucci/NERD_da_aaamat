@@ -4,4 +4,5 @@ class Subject < ActiveRecord::Base
 
   has_many :tasks
   has_many :events
+  has_many :records
 end

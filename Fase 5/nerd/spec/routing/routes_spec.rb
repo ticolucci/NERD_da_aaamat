@@ -32,4 +32,17 @@ describe "routes" do
 
     route_for(:controller => "tasks", :action => "change_status", :subject_id => "1", :id => "2").should == {:path => "/assuntos/1/tarefas/2/change_status", :method => :get}
   end
+
+  it "should route all crud actions for events as eventos except for index" do
+    params_from(:get, "/assuntos/1/eventos/2").should == {:controller => "events", :action => "show", :subject_id => "1", :id => "2"}
+
+    route_for(:controller => "events", :action => "show", :subject_id => "1", :id => "2").should == {:path => "/assuntos/1/eventos/2", :method => :get}
+  end
+
+  it "should route all crud actions for records as registros except for index" do
+    params_from(:get, "/assuntos/1/registros/2").should == {:controller => "records", :action => "show", :subject_id => "1", :id => "2"}
+
+    route_for(:controller => "records", :action => "show", :subject_id => "1", :id => "2").should == {:path => "/assuntos/1/registros/2", :method => :get}
+  end
+
 end
