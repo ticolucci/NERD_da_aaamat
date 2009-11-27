@@ -4,6 +4,7 @@ class Task < ActiveRecord::Base
 
   has_many :members_tasks
   has_many :members, :through => :members_tasks
+  has_many :reminders, :as => :item
 
   validates_presence_of :title, :subject
   validates_uniqueness_of :title
@@ -23,7 +24,11 @@ class Task < ActiveRecord::Base
   end
 
   def update_members members
-    unless members.nil?
+    if members.nil?
+      self.members.each do |member|
+        MembersTask.find_by_member_id_and_task_id(member, self.id).delete
+      end
+    else
       current_members = self.members.collect {|m| m.id}
       members.each do |member|
         unless current_members.include? member

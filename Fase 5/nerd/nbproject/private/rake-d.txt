@@ -73,6 +73,11 @@ rails\:update\:generate_dispatchers=Generate dispatcher files in RAILS_ROOT/publ
 rails\:update\:javascripts=Update your javascripts from your current rails install
 rails\:update\:scripts=Add new scripts to the application script/ directory
 rails_env=
+rcov\:all=Run both specs and features to generate aggregated coverage
+rcov\:clobber=
+rcov\:clobber_rspec=Remove rcov products for rspec
+rcov\:cucumber=Run Cucumber features
+rcov\:rspec=Run specs using RCov
 routes=Print out all defined routes in match order, with names. Target specific controller with CONTROLLER=x.
 secret=Generate a crytographically secure secret key. This is typically used to generate a secret for cookie sessions.
 spec=Run all specs in spec directory (excluding plugin specs)

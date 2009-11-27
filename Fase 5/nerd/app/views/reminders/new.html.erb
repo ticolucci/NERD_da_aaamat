@@ -1,0 +1,24 @@
+<link href="/components/calendar/skins/aqua/theme.css" type="text/css" rel="stylesheet">
+
+<h3> Novo Lembrete </h3>
+
+<% form_for @reminder do |form| %>
+  <%= form.error_messages %>
+  <%= hidden_field_tag 'reminder[item_id]', @item.id %>
+  <%= hidden_field_tag 'reminder[item_type]', @item.class.to_s %>
+
+  <p>
+    <%= form.label :date, "Data" %>
+    <%  date = form.object.date ? l(form.object.date) : nil  %>
+    <%= calendar_field :reminder, :date, date, {:date_format=>'%d/%m/%Y', :lang =>  'pt-BR'} %>
+  </p>
+
+  <p>
+    <%= form.label :time, "Horário" %>
+    <%= select_tag "reminder[time]", hour_options %>
+  </p>
+
+  <%= form.submit "Criar" %>
+
+<%= link_to_function 'Cancelar', "$(new_reminder).update(\"\");" %>
+<% end %>

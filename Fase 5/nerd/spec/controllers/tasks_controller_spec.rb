@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe TasksController do
-  fixtures :statuses, :tasks, :subjects, :members
+  fixtures :statuses, :tasks, :subjects, :members, :reminders
 
   context "GET show" do
     before :each do
@@ -22,6 +22,10 @@ describe TasksController do
 
     it "should assing the members to @members" do
       (assigns[:members] - [members(:lucianna), members(:joao)]).should be_empty
+    end
+
+    it "should assign the reminders to reminders" do
+      (assigns[:reminders] - [reminders(:lembrete1), reminders(:lembrete2)]).should be_empty
     end
     
   end
@@ -165,6 +169,14 @@ describe TasksController do
 
       task.members.should == [members(:lucianna), members(:thiago)]
 
+    end
+
+    it "should erase members if no members are given" do
+      put :update, :subject_id => subjects(:bife).id,
+                   :id => tasks(:falar_com_diretor).id, :task => {:title => "new title"}
+
+      task = Task.find(tasks(:falar_com_diretor))
+      task.members.should == []
     end
 
     it "should render action edit if invalid parameters" do

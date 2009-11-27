@@ -45,4 +45,18 @@ describe "routes" do
     route_for(:controller => "records", :action => "show", :subject_id => "1", :id => "2").should == {:path => "/assuntos/1/registros/2", :method => :get}
   end
 
+  it "should route new, create and destroy actions for reminder as lembretes" do
+    params_from(:get, "/lembretes/novo").should == {:controller => "reminders", :action => "new"}
+
+    route_for(:controller => "reminders", :action => "new").should == {:path => "/lembretes/novo"}
+
+    params_from(:post, "/lembretes").should == {:controller => "reminders", :action => "create"}
+
+    route_for(:controller => "reminders", :action => "create").should == {:path => "/lembretes", :method => "post"}
+
+    params_from(:delete, "/lembretes/1").should == {:controller => "reminders", :action => "destroy", :id => "1"}
+
+    route_for(:controller => "reminders", :action => "destroy", :id => "1").should == {:path => "/lembretes/1", :method => :delete}
+  end
+
 end

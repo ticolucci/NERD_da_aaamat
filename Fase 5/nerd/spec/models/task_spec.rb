@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe Task do
-  fixtures :statuses, :subjects, :tasks, :members, :members_tasks
+  fixtures :statuses, :subjects, :tasks, :members, :members_tasks, :reminders
 
   def valid_attributes(attributes={})
     {
@@ -47,6 +47,10 @@ describe Task do
 
   it "should have and belongs_to many members" do
     tasks(:falar_com_diretor).members.should == [members(:lucianna), members(:joao)]
+  end
+
+  it "should have many reminders" do
+    (tasks(:falar_com_diretor).reminders - [reminders(:lembrete1), reminders(:lembrete2)]).should == []
   end
 
 end

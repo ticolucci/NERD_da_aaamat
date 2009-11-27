@@ -1,3 +1,7 @@
+<script type="text/javascript" src="/components/calendar/calendar.js"></script>
+<script type="text/javascript" src="/components/calendar/calendar-setup.js"></script>
+<script type="text/javascript" src="/components/calendar/lang/calendar-pt-BR.js"></script>
+
 <% content_for :title do %>
   <h1>
     <%= @task.title %>
@@ -35,10 +39,32 @@
     <label>Data de criação:</label>
     <%= l(@task.created_at) %>
   </p>
+
   <label> Responsáveis: </label>
   <ul>
     <% @members.each do |member| %>
       <li> <%= member.name  %> </li>
     <% end %>
   </ul>
+
+  <label>
+    Lembretes:
+    <%= link_to_remote image_tag("/images/add.png", :title => "Novo Lembrete"),
+                       {
+                         :url => new_reminder_path(:item_id => @task.id, :item_type => @task.class),
+                         :method => :get,
+                         :update => 'new_reminder'
+                       }
+    %>
+  </label>
+  <ul id="reminders_list">
+    <% @reminders.each do |reminder| %>
+      <li> <%= l(reminder.date) %> </li>
+    <% end %>
+  </ul>
+  <div id="new_reminder">
+  </div>
 </div>
+
+
+<br/><br/>

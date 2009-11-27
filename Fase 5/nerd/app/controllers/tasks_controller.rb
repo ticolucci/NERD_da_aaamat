@@ -3,6 +3,7 @@ class TasksController < ApplicationController
     @task = Task.find params[:id]
     @subject = Subject.find params[:subject_id]
     @members = @task.members.sort
+    @reminders = @task.reminders.sort
   end
 
   def new

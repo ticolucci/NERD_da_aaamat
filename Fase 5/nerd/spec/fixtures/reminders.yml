@@ -1,0 +1,20 @@
+lembrete1:
+  date: "2009-12-25"
+  time: 12
+  item_id: 2
+  item_type: Task
+  id: 1
+
+lembrete2:
+  date: "2009-12-27"
+  time: 16
+  item_id: 2
+  item_type: Task
+  id: 2
+
+lembrete3:
+  date: "2010-02-30"
+  time: 11
+  item_id: 3
+  item_type: Event
+  id: 3

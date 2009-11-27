@@ -6,9 +6,8 @@ describe Reminder do
   def valid_attributes(attributes={})
     {
       :date => "12/12/1212",
-      :time => "12:00:22",
-      :item_id => tasks(:falar_com_diretor).id,
-      :item_type => "Tasks"
+      :time => 12,
+      :item => tasks(:falar_com_diretor)
     }.merge attributes
   end
 
@@ -22,8 +21,8 @@ describe Reminder do
   end
 
   it "should set a default time" do
-    reminder = Reminder.create! valid_attributes(:time => "")
-    reminder.time.should == "12:00:00"
+    reminder = Reminder.create! valid_attributes(:time => nil)
+    reminder.time.should == 12
   end
 
   it "shouldnt be created if a reminder with same attributes already exists" do
@@ -33,7 +32,7 @@ describe Reminder do
   end
 
   it "should be associated to a item" do
-    reminder = Reminder.new valid_attributes(:item_id => "")
+    reminder = Reminder.new valid_attributes(:item => nil)
     reminder.save.should == false
   end
 end
