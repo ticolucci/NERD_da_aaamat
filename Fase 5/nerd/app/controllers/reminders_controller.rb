@@ -14,7 +14,11 @@ class RemindersController < ApplicationController
   def create
     params[:reminder][:date] = params[:reminder][:date].gsub "/", "-"
     @reminder = Reminder.new params[:reminder]
-    render :new unless @reminder.save
+    if @reminder.save
+      render :js => "$('new_reminder').update('');"
+    else
+      render :action => :new
+    end
   end
 
   def destroy

@@ -2,7 +2,7 @@
 
 <h3> Novo Lembrete </h3>
 
-<% form_for @reminder do |form| %>
+<% remote_form_for @reminder, :update => 'new_reminder' do |form| %>
   <%= form.error_messages %>
   <%= hidden_field_tag 'reminder[item_id]', @item.id %>
   <%= hidden_field_tag 'reminder[item_type]', @item.class.to_s %>
