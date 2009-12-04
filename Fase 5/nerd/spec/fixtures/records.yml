@@ -2,10 +2,14 @@ ovos:
   title: "Posição da atlética quanto ao caso da Chuva de Ovos"
   body: "Votamos que a FFLCH deve tomar multa em dinheiro"
   subject: bife
+  created_at: 2009-12-20
+  updated_at: 2009-12-20
   id: 1
 
 melhores_do_ano:
   title: "Os Técnicos também votam"
   body: "Os técnicos também tem direito a votar em 3 Melhores do Ano"
   subject: copa_usp
+  created_at: 2009-12-19
+  updated_at: 2009-12-20
   id: 2

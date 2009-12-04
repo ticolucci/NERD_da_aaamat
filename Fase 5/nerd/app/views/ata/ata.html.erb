@@ -1,0 +1,39 @@
+<% content_for :title do %>
+  <h1>Ata <%= @date %></h1>
+<% end %>
+
+<% content_for :top_links do %>
+  <%= link_to image_tag("/images/back_to_list.png", :title => "Ir para Lista de Assuntos") + "Lista de Assuntos", subjects_path %>
+<% end %>
+
+<h3> Presentes: </h3>
+<p>
+  <%  @atendees.each_with_index do |atendee, i| %>
+    <% if i == @atendees.size - 1 %>
+      <%= atendee.name %>
+    <% else %>
+      <%= atendee.name %>,
+    <% end %>
+  <% end %>
+</p>
+
+<h3> Pauta: </h3>
+<ul id="list">
+  <% @subjects.each do |subject| %>
+    <li> 
+      <%=  link_to subject.title, subject_path(subject.id) %>
+    </li>
+  <% end %>
+</ul>
+
+<% @subjects.each do |subject| %>
+  <h3> <%= subject.title %> </h3>
+  <ul id="subject_content">
+    <% subject.content_for_ata.each do |item|%>
+      <li>
+        <%= item.title %>:<br/>
+        <%= RedCloth.new(item.body, [:filter_html]).to_html  %> <br/><br/>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

@@ -33,4 +33,8 @@ describe "/subjects/index" do
   it "should render the link to edit a subject" do
     response.should have_tag("a[href=?]", edit_subject_path(subjects(:bife).id))
   end
+
+  it "should hava a link to create an ata" do
+    response.should have_tag("a[href=?]", new_ata_path)
+  end
 end

@@ -4,6 +4,8 @@ pagar_laausp:
   due_date: 2009-12-25
   status_id: 1
   subject: copa_usp
+  created_at: 2009-12-20
+  updated_at: 2009-12-20
   id: 1
 
 falar_com_diretor:
@@ -12,6 +14,8 @@ falar_com_diretor:
   due_date: 2009-12-01
   status_id: 2
   subject: bife
+  created_at: 2009-12-20
+  updated_at: 2009-12-20
   id: 2
 
 arrumar_deposito:
@@ -20,4 +24,6 @@ arrumar_deposito:
   due_date: 2009-12-20
   status_id: 3
   subject: bife
+  created_at: 2009-12-19
+  updated_at: 2009-12-19
   id: 3

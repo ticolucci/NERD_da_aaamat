@@ -51,6 +51,14 @@ describe EventsController do
       }.merge options
     end
 
+    it "should tell its subject that it has been changed" do
+      post :create, :event => valid_attributes, :subject_id => subjects(:bife).id
+      event = Event.find_by_title("a title")
+      subject = Subject.find(subjects(:bife).id)
+
+      subject.updated_at.should == event.created_at
+    end
+
     it "should create a event with correct parameters" do
       post :create, :event => valid_attributes, :subject_id => subjects(:bife).id
       event = Event.find_by_title("a title")
@@ -104,6 +112,13 @@ describe EventsController do
   end
 
   context "PUT update" do
+    it "should tell its subject that it has been changed" do
+      post :update, :subject_id => subjects(:bife).id, :id => events(:abate).id, :event => {:title => "new title"}
+      event = Event.find_by_title("new title")
+      subject = Subject.find(subjects(:bife).id)
+
+      subject.updated_at.should == event.updated_at
+    end
 
     it "should be redirected if all went well" do
       put :update, :subject_id => subjects(:bife).id, :id => events(:abate).id, :event => {:title => "new title"}

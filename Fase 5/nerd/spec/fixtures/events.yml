@@ -4,16 +4,22 @@ abate:
   time: "21:00:00"
   date: "12-12-1212"
   subject: bife
+  created_at: 2009-12-20
+  updated_at: 2009-12-20
   id: 1
 
 esquenta_bife:
   title: "Esquenta BIFE"
   body: "Festa quase na chuva"
   subject: bife
+  created_at: 2009-12-20
+  updated_at: 2009-12-20
   id: 2
 
 engorda:
   title: "Engorda"
   body: "Festa na Quimica"
   subject: bife
+  created_at: 2009-12-19
+  updated_at: 2009-12-19
   id: 3

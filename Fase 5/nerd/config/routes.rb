@@ -9,5 +9,8 @@ ActionController::Routing::Routes.draw do |map|
   
   map.change_status_subjects_task "/assuntos/:subject_id/tarefas/:id/change_status", {:controller => 'tasks', :action => 'change_status'}
 
+  map.ata "/ata", {:controller => 'ata', :action => 'ata'}
+  map.new_ata "/ata/novo", {:controller => 'ata', :action => 'new'}
+
   map.root :controller => "subjects", :action => "index"
 end

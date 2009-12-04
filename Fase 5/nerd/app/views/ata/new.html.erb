@@ -1,0 +1,36 @@
+<% content_for :title do %>
+  <h1>Gerando Ata</h1>
+<% end %>
+
+<% content_for :bottom_links do %>
+  <%= link_to image_tag("/images/cancel.png", :title => "Cancelar")+"Cancelar", subjects_path %>
+<% end %>
+
+<% form_tag ata_path do %>
+  
+    <p>
+      <%= label_tag :date, "Data" %>
+      <%= calendar_field nil, :date, nil, {:date_format=>'%d/%m/%Y', :lang =>  'pt-BR'} %>
+    </p>
+
+    <label> Presentes: </label>
+    <table>
+      <tr>
+        <% @atendees.sort.each_with_index do |member, i| %>
+          <td>
+            <%= check_box_tag "atendees[]", member.id, false, :id => "atendees_#{member.id}" %>
+            <%= label_tag "atendees_#{member.id}", member.name, :class => "inline" %>
+          </td>
+          <% if (i + 1) % 5 == 0 %>
+            </tr>
+            <tr>
+          <% end %>
+        <% end %>
+      </tr>
+    </table>
+    <p>
+      <%= submit_tag "Gerar" %>
+    </p>
+
+    <%= javascript_tag("$('date').focus();") %>
+<% end %>

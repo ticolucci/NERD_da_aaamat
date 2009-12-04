@@ -9,7 +9,11 @@ class Task < ActiveRecord::Base
   validates_presence_of :title, :subject
   validates_uniqueness_of :title
 
-  after_save :certificate_status
+  after_save :certificate_status, :updates_subject
+
+  def updates_subject
+    self.subject.update_attribute :updated_at, self.updated_at
+  end
 
   def certificate_status
     self.update_attribute :status, Status.find_by_status_type("a_fazer") unless self.status

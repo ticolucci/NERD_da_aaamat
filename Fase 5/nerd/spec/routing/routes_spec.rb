@@ -59,4 +59,13 @@ describe "routes" do
     route_for(:controller => "reminders", :action => "destroy", :id => "1").should == {:path => "/lembretes/1", :method => :delete}
   end
 
+  it "should route ata and new requests to Ata" do
+    params_from(:post, "/ata").should == {:controller => "ata", :action => "ata"}
+
+    route_for(:controller => "ata", :action => "ata").should == {:path => "/ata", :method => "post"}
+
+    params_from(:get, "/ata/novo").should == {:controller => "ata", :action => "new"}
+
+    route_for(:controller => "ata", :action => "new").should == {:path => "/ata/novo"}
+  end
 end

@@ -66,6 +66,14 @@ describe TasksController do
       }.merge options
     end
 
+    it "should tell its subject that it has been changed" do
+      post :create, :task => valid_attributes, :subject_id => subjects(:bife).id, :members_ids => [members(:joao).id, members(:thiago).id]
+      task = Task.find_by_title("a title")
+      subject = Subject.find(subjects(:bife).id)
+
+      subject.updated_at.should == task.updated_at
+    end
+
     it "should create a task with correct parameters" do
       post :create, :task => valid_attributes, :subject_id => subjects(:bife).id, :members_ids => [members(:joao).id, members(:thiago).id]
       task = Task.find_by_title("a title")
@@ -151,6 +159,15 @@ describe TasksController do
   end
 
   context "PUT update" do
+
+    it "should tell its subject that it has been changed" do
+      post :update, :subject_id => subjects(:bife).id, :id => tasks(:falar_com_diretor).id, :task => {:title => "new title"}
+      task = Task.find_by_title("new title")
+      subject = Subject.find(subjects(:bife).id)
+
+      subject.updated_at.should == task.updated_at
+    end
+
     it "should be redirected if all went well" do
       put :update, :subject_id => subjects(:bife).id, :id => tasks(:falar_com_diretor).id, :task => {:title => "new title"}
       response.should redirect_to(subject_task_path(subjects(:bife).id, tasks(:falar_com_diretor).id))

@@ -49,6 +49,14 @@ describe RecordsController do
       }.merge options
     end
 
+    it "should tell its subject that it has been changed" do
+      post :create, :record => valid_attributes, :subject_id => subjects(:bife).id
+      record = Record.find_by_title("a title")
+      subject = Subject.find(subjects(:bife).id)
+
+      subject.updated_at.should == record.created_at
+    end
+
     it "should create a record with correct parameters" do
       post :create, :record => valid_attributes, :subject_id => subjects(:bife).id
       record = Record.find_by_title("a title")
@@ -103,6 +111,14 @@ describe RecordsController do
   end
 
   context "PUT update" do
+
+    it "should tell its subject that it has been changed" do
+      post :update, :subject_id => subjects(:bife).id, :id => records(:ovos).id, :record => {:title => "new title"}
+      record = Record.find_by_title("new title")
+      subject = Subject.find(subjects(:bife).id)
+
+      subject.updated_at.should == record.updated_at
+    end
 
     it "should be redirected if all went well" do
       put :update, :subject_id => subjects(:bife).id, :id => records(:ovos).id, :record => {:title => "new title"}
