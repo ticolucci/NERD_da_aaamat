@@ -15,7 +15,7 @@ class RemindersController < ApplicationController
     params[:reminder][:date] = params[:reminder][:date].gsub "/", "-"
     @reminder = Reminder.new params[:reminder]
     if @reminder.save
-      render :js => "$('new_reminder').update('');"
+      redirect_to subject_task_path(@reminder.item.subject.id, @reminder.item.id)
     else
       render :action => :new
     end

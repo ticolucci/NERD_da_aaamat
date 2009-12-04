@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe RemindersController do
-  fixtures :tasks, :reminders, :events
+  fixtures :tasks, :reminders, :events, :subjects
 
   context "GET new" do
     it "should be success" do
@@ -41,9 +41,9 @@ describe RemindersController do
       reminder.should_not be_nil
     end
 
-    it "should redirect to subject if creation was succesful" do
+    it "should redirect to items path if creation was succesful" do
       post :create, :reminder => valid_attributes
-      response.should render_template(:create)
+      response.should redirect_to(subject_task_path(subjects(:bife).id, tasks(:falar_com_diretor).id))
     end
 
     it "should render new if creation went wrong" do
