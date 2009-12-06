@@ -35,6 +35,11 @@ table {
   table-layout: fixed;
 }
 
+a{
+    color: Black;
+    text-decoration: none;
+}
+
 img{
   border: none;
 }
@@ -48,6 +53,9 @@ body{
   background-color: #eff2f3;
 }
 
+h2 {
+  font-family: Georgia;
+}
 
 #liquid-round{
   width: 800px;
@@ -108,5 +116,11 @@ table#event_body {
 
 table#date_and_time {
   align: center;
+}
+
+.subject_images {
+  text-align: center;
+  width: 200px;
+  font-family: bold 34px "Century Schoolbook", Georgia;
 }
 

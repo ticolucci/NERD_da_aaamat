@@ -12,58 +12,102 @@
   <%= link_to image_tag("/images/back_to_list.png", :title => "Ir para Lista de Assuntos") + "Lista de Assuntos", subjects_path %>
 <% end %>
 
-<% unless @events.empty? %>
-  <h2> Eventos </h2>
-  <table id="events">
-    <% @events.each do |event| %>
-      <tr id="task_<%= event.id %>">
-        <td><%= link_to event.title, subject_event_path(@subject.id, event.id) %></td>
-        <td>
-          <%= link_to image_tag("/images/delete.png", :title => "Excluir"), subject_event_path(@subject.id, event.id), :method => "delete", :confirm => "Excluir #{event.title}?" %> |
-          <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_event_path(@subject.id, event.id) %>
-        </td>
-      </tr>
-    <% end %>
-  </table>
-<% end %>
-<br/>
-<%= link_to image_tag("/images/add.png", :title => "Nova Tarefa") + "Novo Evento", new_subject_event_path(@subject.id) %>
-<br/><br/>
 
-<% unless @tasks.empty? %>
-  <h2> Tarefas  </h2>
-  <table id="tasks">
-    <% @tasks.each do |task| %>
-      <tr id="task_<%= task.id %>">
-        <td><%= link_to task.title, subject_task_path(@subject.id, task.id) %></td>
-        <td>
-          <%= link_to image_tag("/images/delete.png", :title => "Excluir"), subject_task_path(@subject.id, task.id), :method => "delete", :confirm => "Excluir #{task.title}?" %> |
-          <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_task_path(@subject.id, task.id) %>
-        </td>
-      </tr>
-    <% end %>
-  </table>
-<% end %>
-<br/>
-<%= link_to image_tag("/images/add.png", :title => "Nova Tarefa") + "Nova Tarefa", new_subject_task_path(@subject.id) %>
-<br/><br/>
+<table id="subject_events">
+  <tr>
+    <td margin=30px> </td>
 
-<% unless @records.empty? %>
-  <h2> Registros </h2>
-  <table id="records">
-    <% @records.each do |record| %>
-      <tr id="record_<%= record.id %>">
-        <td><%= link_to record.title, subject_record_path(@subject.id, record.id) %></td>
-        <td>
-          <%= link_to image_tag("/images/delete.png", :title => "Excluir"), subject_record_path(@subject.id, record.id), :method => "delete", :confirm => "Excluir #{record.title}?" %> |
-          <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_record_path(@subject.id, record.id) %>
-        </td>
-      </tr>
-    <% end %>
-  </table>
-<% end %>
-<br/>
+    <td class="subject_images">
+      <%= image_tag "/images/event.png" %>
+      <p>
+        <%= link_to image_tag("/images/add.png", :title => "Nova Evento") + "Novo Evento", new_subject_event_path(@subject.id) %>
+      </p>
+    </td>
 
-<%= link_to image_tag("/images/add.png", :title => "Novo Registro") + "Novo Registro", new_subject_record_path(@subject.id) %>
+    <td width=30px> </td>
+
+    <td id="events">
+      <% unless @events.empty? %>
+        <h2> Eventos </h2>
+        <table id="events">
+          <% @events.each do |event| %>
+            <tr id="task_<%= event.id %>">
+              <td width=300px><%= link_to event.title, subject_event_path(@subject.id, event.id) %></td>
+
+              <td align=right>
+                <%= link_to image_tag("/images/delete.png", :title => "Excluir"), subject_event_path(@subject.id, event.id), :method => "delete", :confirm => "Excluir #{event.title}?" %> |
+                <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_event_path(@subject.id, event.id) %>
+              </td>
+            </tr>
+          <% end %>
+        </table>
+      <% end %>
+    </td>
+
+
+  </tr>
+</table>
+
+<br/><br/><br/>
+
+<table>
+  <tr>
+    <td colspan=2 width=50%>
+      <% unless @tasks.empty? %>
+        <h2> Tarefas  </h2>
+        <table id="tasks">
+          <% @tasks.each do |task| %>
+            <tr id="task_<%= task.id %>">
+              <td><%= link_to task.title, subject_task_path(@subject.id, task.id) %></td>
+              <td>
+                <%= link_to image_tag("/images/delete.png", :title => "Excluir"), subject_task_path(@subject.id, task.id), :method => "delete", :confirm => "Excluir #{task.title}?" %> |
+                <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_task_path(@subject.id, task.id) %>
+              </td>
+            </tr>
+          <% end %>
+        </table>
+      <% end %>
+    </td>
+
+    <td></td>
+    <td class="subject_images">
+      <%= image_tag "/images/task.png" %>
+      <p>
+        <%= link_to image_tag("/images/add.png", :title => "Nova Tarefa") + "Nova Tarefa", new_subject_task_path(@subject.id) %>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<br/><br/><br/>
+
+<table>
+  <tr>
+    <td class="subject_images">
+      <%= image_tag "/images/record.png" %>
+      <p>
+        <%= link_to image_tag("/images/add.png", :title => "Novo Registro") + "Novo Registro", new_subject_record_path(@subject.id) %>
+      </p>
+    </td>
+
+    <td>
+      <% unless @records.empty? %>
+        <h2> Registros </h2>
+        <table id="records">
+          <% @records.each do |record| %>
+            <tr id="record_<%= record.id %>">
+              <td><%= link_to record.title, subject_record_path(@subject.id, record.id) %></td>
+              <td>
+                <%= link_to image_tag("/images/delete.png", :title => "Excluir"), subject_record_path(@subject.id, record.id), :method => "delete", :confirm => "Excluir #{record.title}?" %> |
+                <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_record_path(@subject.id, record.id) %>
+              </td>
+            </tr>
+          <% end %>
+        </table>
+      <% end %>
+    </td>
+  </tr>
+</table>
+
 <br/><br/><br/>
 

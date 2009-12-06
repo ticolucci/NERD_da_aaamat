@@ -2,7 +2,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../../spec_helper')
 
 describe "/subjects/show" do
   fixtures :subjects, :tasks, :events, :records
-  
+
   before :each do
     assigns[:subject] = @subject = subjects(:bife)
     assigns[:tasks] = @tasks = [tasks(:falar_com_diretor)]
@@ -11,7 +11,7 @@ describe "/subjects/show" do
     render :layout => "application"
   end
 
-  it "should render all attributes" do
+  it "should render title" do
     response.should have_tag("h1", subjects(:bife).title)
   end
 
@@ -83,3 +83,4 @@ describe "/subjects/show" do
     content_for(:top_links).should have_tag("a[href=?]", subject_path(subjects(:bife).id))
   end
 end
+
