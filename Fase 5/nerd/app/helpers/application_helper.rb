@@ -8,4 +8,18 @@ module ApplicationHelper
 
   end
 
+  def parse_for_li_from_links links
+    return "" if links.nil? || links.empty?
+
+    links = links.split ("</a>")
+    res = ""
+    links.each do |link|
+      res << "<li>"
+      res << link
+      res << "</a></li>"
+    end
+    res
+  end
+
 end
+

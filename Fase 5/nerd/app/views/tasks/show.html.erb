@@ -9,8 +9,8 @@
 <% end %>
 
 <% content_for :top_links do %>
-    <%= link_to image_tag("/images/delete.png", :title => "Excluir"), subject_task_path(@subject.id, @task.id), :method => "delete", :confirm => "Excluir #{@task.title}?"%>
-    <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_task_path(@subject.id, @task.id) %>
+  <%= link_to image_tag("/images/delete.png") + "Excluir Tarefa", subject_task_path(@subject.id, @task.id), :method => "delete", :confirm => "Excluir #{@task.title}?"%>
+  <%= link_to image_tag("/images/edit.png") + "Editar Tarefa", edit_subject_task_path(@subject.id, @task.id) %>
 <% end %>
 
 <% content_for :bottom_links do %>
@@ -21,7 +21,7 @@
   <tr>
     <td id="task_corpo">
       <table>
-        <td>
+        <td width=100px>
           <%= image_tag("/images/body.png", :title => "Corpo") %>
         </td>
 
@@ -71,10 +71,10 @@
 
 <table>
   <tr>
-    <td width="79%">
+    <td width=500px>
       <table>
         <tr>
-          <td width="20%">
+          <td width=100px>
             <%= image_tag("/images/members.png", :title => "Responsáveis") %>
           </td>
           <td>
