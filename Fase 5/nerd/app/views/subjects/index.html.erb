@@ -4,21 +4,36 @@
 <% end %>
 
 <% content_for :top_links do %>
-  <%= link_to image_tag("/images/add.png", :title => "Novo") + "Novo", new_subject_path %>
+
   <%= link_to "Gerar Ata", new_ata_path %>
 <% end %>
 
-<table id="subjects">
-  <% @subjects.each do |subject| %>
-    <tr id="<%= subject.id %>">
-      <td> <%= link_to subject.title, subject_path(subject.id) %> </td>
-      <td>
-        <%= link_to image_tag("/images/delete.png", :title => "Excluir"), subject_path(subject.id), :method => "delete", :confirm => "Excluir #{subject.title}?" %> |
-        <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_path(subject.id) %>
-      </td>
-    </tr>
-  <% end %>
-</table>
+<table>
+  <tr>
+    <td width=35px> </td>
+    <td align=center>
+        <%= link_to image_tag("/images/subject.png", :title => "Novo"), new_subject_path %>
+      <p>
+        <%= link_to "Novo Assunto", new_subject_path %>
+      </p>
+    </td>
 
+    <td width=40px> </td>
+    <td>
+      <table id="subjects">
+        <h2> Assuntos </h2>
+        <% @subjects.each do |subject| %>
+          <tr id="<%= subject.id %>">
+            <td width=400px> <%= link_to subject.title, subject_path(subject.id) %> </td>
+            <td>
+              <%= link_to image_tag("/images/delete.png", :title => "Excluir"), subject_path(subject.id), :method => "delete", :confirm => "Excluir #{subject.title}?" %> |
+              <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_path(subject.id) %>
+            </td>
+          </tr>
+        <% end %>
+      </table>
+    </td>
+  </tr>
+</table>
 <br/>
 

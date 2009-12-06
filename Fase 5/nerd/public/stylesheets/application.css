@@ -53,8 +53,13 @@ body{
   background-color: #eff2f3;
 }
 
+h1 {
+  font-family: Helvetica,Arial,sans-serif;
+}
+
 h2 {
-  font-family: Georgia;
+  font-family: Helvetica,Arial,sans-serif;
+  border-bottom:1px solid #E0EAF6;
 }
 
 #liquid-round{
@@ -80,6 +85,7 @@ h2 {
   background:url(/images/rightside.gif) repeat-y right top;
   padding:1px 20px 1px 25px;
   margin:-1px 0 -50px 0;
+  font-family: Helvetica,Arial,sans-serif;
 }
 
 .bottom {
