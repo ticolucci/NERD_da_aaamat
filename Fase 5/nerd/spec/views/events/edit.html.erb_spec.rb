@@ -11,19 +11,19 @@ describe "/events/edit" do
 
   it "should show all the fields" do
     response.should have_tag("form") do
-      with_tag 'p' do
+      with_tag 'td' do
         with_tag 'label', 'Título'
         with_tag 'input', :id => /title/
       end
-      with_tag 'p' do
+      with_tag 'td' do
         with_tag 'label', 'Corpo'
         with_tag 'input', :id => /body/
       end
-      with_tag 'p' do
+      with_tag 'td' do
         with_tag 'label', 'Horário'
         with_tag 'input', :id => /#time/
       end
-      with_tag 'p' do
+      with_tag 'td' do
         with_tag("input", :id => "event_submit")
       end
     end
@@ -42,3 +42,4 @@ describe "/events/edit" do
   end
 
 end
+

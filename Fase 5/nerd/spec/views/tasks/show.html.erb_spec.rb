@@ -16,21 +16,16 @@ describe "/tasks/show" do
   end
 
   it "should show status" do
-    response.should have_tag("h1") do
+    response.should have_tag("td") do
       with_tag("img", :src => /#{@task.status.status_type}/)
     end
   end
 
   it "should show all attributes" do
-    response.should have_tag("div#task_attributes") do
-      with_tag("p", /#{@task.body}/) do
-        with_tag("label", "Corpo:")
-      end
-      with_tag("p", /#{l(@task.due_date)}/) do
-        with_tag("label", "Data limite para realização:")
-      end
-      with_tag("p", /#{l(@task.created_at)}/) do
-        with_tag("label", "Data de criação:")
+    response.should have_tag("table") do
+      have_tag("td", /#{@task.body}/)
+      with_tag("td") do
+        with_tag("label")
       end
       with_tag "ul" do
         with_tag "li", "Lucianna"
@@ -39,6 +34,7 @@ describe "/tasks/show" do
         with_tag "li", "25/12/2009"
       end
     end
+    response.should have_tag("div#created_at", /#{l(@task.created_at)}/)
   end
 
   it "should be able to go to subject" do
@@ -60,3 +56,4 @@ describe "/tasks/show" do
   end
 
 end
+

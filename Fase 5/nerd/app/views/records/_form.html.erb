@@ -1,14 +1,28 @@
 <%= form.error_messages %>
 <%= hidden_field_tag 'record[subject_id]', @subject.id %>
+
 <p>
   <%= form.label :title, "Título" %>
   <%= form.text_field :title %>
 </p>
+
+<table>
+  <tr>
+    <td width="25%">
+      <%= image_tag("/images/body.png", :title => "Corpo") %>
+    </td>
+
+    <td>
+      <%= form.label :body, "Corpo" %>
+      <%= form.text_area :body, :size => "40x3" %>
+    </td>
+  </tr>
+</table>
+
 <p>
-  <%= form.label :body, "Corpo" %>
-  <%= form.text_area :body, :size => "40x3" %>
+  <%= form.submit submit_text %>
 </p>
 
-<%= form.submit submit_text %>
-
+<br/>
 <%= javascript_tag("$('record_title').focus();") %>
+

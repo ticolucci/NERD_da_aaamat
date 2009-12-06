@@ -5,66 +5,118 @@
 <% content_for :title do %>
   <h1>
     <%= @task.title %>
-    <%= link_to_remote image_tag("/images/#{@task.status.status_type}.png", :title => @task.status.status_type.humanize),
-                       {:url => change_status_subjects_task_url(@subject.id, @task.id), :update => 'status_img'},
-                       :id => 'status_img' %>
-    <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_task_path(@subject.id, @task.id) %>
-
   </h1>
 <% end %>
 
 <% content_for :top_links do %>
     <%= link_to image_tag("/images/delete.png", :title => "Excluir"), subject_task_path(@subject.id, @task.id), :method => "delete", :confirm => "Excluir #{@task.title}?"%>
+    <%= link_to image_tag("/images/edit.png", :title => "Editar"), edit_subject_task_path(@subject.id, @task.id) %>
 <% end %>
 
 <% content_for :bottom_links do %>
   <%= link_to "Ir para assunto", subject_path(@subject.id) %>
 <% end %>
 
-<div id="task_attributes">
-  <% unless @task.body.empty? %>
-    <p>
-      <label>Corpo:</label>
-      <%= RedCloth.new(@task.body, [:filter_html]).to_html %>
-    </p>
-  <% end %>
+<table>
+  <tr>
+    <td id="task_corpo">
+      <table>
+        <td>
+          <%= image_tag("/images/body.png", :title => "Corpo") %>
+        </td>
 
-  <% if @task.due_date %>
-    <p>
-      <label>Data limite para realização:</label>
-      <%= l(@task.due_date) %>
-    </p>
-  <% end %>
-  <p>
-    <label>Data de criação:</label>
-    <%= l(@task.created_at) %>
-  </p>
+        <td>
+          <% if @task.body.empty? %>
+            Sem descrição
+          <% else %>
+            <p>
+              <%= RedCloth.new(@task.body, [:filter_html]).to_html %>
+            </p>
+          <% end %>
+        </td>
+      </table>
+    </td>
 
-  <label> Responsáveis: </label>
-  <ul>
-    <% @members.each do |member| %>
-      <li> <%= member.name  %> </li>
-    <% end %>
-  </ul>
+    <td id="status_and_due_date">
+      <table>
+        <tr id="status" align=center>
+            <td colspan=2>
+             <%= link_to_remote image_tag("/images/#{@task.status.status_type}.png", :title => @task.status.status_type.humanize),
+                     {:url => change_status_subjects_task_url(@subject.id, @task.id), :update => 'status_img'},
+                     :id => 'status_img' %>
+            </td>
 
-  <label>
-    Lembretes:
-    <%= link_to_remote image_tag("/images/add.png", :title => "Novo Lembrete"),
-                       {
-                         :url => new_reminder_path(:item_id => @task.id, :item_type => @task.class),
-                         :method => :get,
-                         :update => 'new_reminder'
-                       }
-    %>
-  </label>
-  <ul id="reminders_list">
-    <% @reminders.each do |reminder| %>
-      <li> <%= l(reminder.date) %> </li>
-    <% end %>
-  </ul>
-  <div id="new_reminder">
-  </div>
-</div>
+         </tr>
 
+
+        <% if @task.due_date %>
+          <tr>
+            <td width=10%>
+              <%= image_tag("/images/date.png", :title => "Data Limite") %>
+            </td>
+
+            <td>
+              <%= l(@task.due_date) %>
+            </td>
+          </tr>
+
+        <% end %>
+
+      </table>
+    </td>
+  </tr>
+</table>
 
 <br/><br/>
+
+<table>
+  <tr>
+    <td width="79%">
+      <table>
+        <tr>
+          <td width="20%">
+            <%= image_tag("/images/members.png", :title => "Responsáveis") %>
+          </td>
+          <td>
+            <b> Responsáveis: </b>
+            <% if @members.empty? %>
+               <p> Não há responsáveis por essa tarefa </p>
+            <% else %>
+              <ul>
+                <% @members.each do |member| %>
+                  <li> <%= member.name  %> </li>
+                <% end %>
+              </ul>
+            <% end %>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td>
+        <label>
+        Lembretes:
+        <%= link_to_remote image_tag("/images/add.png", :title => "Novo Lembrete"),
+                           {
+                             :url => new_reminder_path(:item_id => @task.id, :item_type => @task.class),
+                             :method => :get,
+                             :update => 'new_reminder'
+                           }
+        %>
+      </label>
+      <ul id="reminders_list">
+        <% @reminders.each do |reminder| %>
+          <li> <%= l(reminder.date) %> </li>
+        <% end %>
+      </ul>
+      <div id="new_reminder">
+      </div>
+    </td>
+  </tr>
+</table>
+
+<br/><br/>
+
+<div id="created_at">
+  <%= l(@task.created_at) %>
+</div>
+

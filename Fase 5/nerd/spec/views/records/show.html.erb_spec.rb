@@ -14,14 +14,10 @@ describe "/records/show" do
   end
 
   it "should show all attributes" do
-    response.should have_tag("div#record_attributes") do
-      with_tag("p", /#{@record.body}/) do
-        with_tag("label", "Corpo:")
-      end
-      with_tag("p", /#{l(@record.created_at)}/) do
-        with_tag("label", "Data de Criação:")
-      end
+    response.should have_tag("table") do
+      with_tag("td", /#{@record.body}/)
     end
+    response.should have_tag("div#created_at", /#{l(@record.created_at)}/)
   end
 
   it "should be able to go to subject" do
@@ -37,3 +33,4 @@ describe "/records/show" do
   end
 
 end
+

@@ -31,6 +31,10 @@ label.inline{
 	font-weight: normal;
 }
 
+table {
+  table-layout: fixed;
+}
+
 img{
   border: none;
 }
@@ -81,3 +85,28 @@ body{
   position: relative;
   background:url(/images/bottom-right.gif) no-repeat right top;
 }
+
+#created_at {
+ font-size: 8;
+ font-style: italic;
+ text-align: right;
+}
+
+#task_corpo {
+  width: 550px;
+  text-align: left;
+}
+
+#status_and_due_date {
+  align: center;
+  width: 20%;
+}
+
+table#event_body {
+  width: 80%;
+}
+
+table#date_and_time {
+  align: center;
+}
+

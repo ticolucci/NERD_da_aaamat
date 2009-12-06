@@ -11,29 +11,57 @@
   <%= link_to "Ir para assunto", subject_path(@subject.id) %>
 <% end %>
 
-<div id="event_attributes">
-  <% unless @event.body.empty? %>
-    <p>
-      <label>Corpo:</label>
-      <%= RedCloth.new(@event.body, [:filter_html]).to_html %>
-    </p>
-  <% end %>
+<table id="event_attributes">
+  <tr>
+    <td width="75%">
+      <table id="event_body">
+        <tr>
+          <td width="20%">
+            <%= image_tag("/images/body.png", :title => "Corpo") %>
+          </td>
 
-  <% if @event.date %>
-    <p>
-      <label>Data:</label>
-      <%= l(@event.date) %>
-    </p>
-  <% end %>
+          <td>
+            <% if @event.body.empty? %>
+              Sem descrição
+            <% else %>
+              <p>
+                <%= RedCloth.new(@event.body, [:filter_html]).to_html %>
+              </p>
+            <% end %>
+          </td>
+        </tr>
+      </table>
+    </td>
 
-  <% if @event.time %>
-    <p>
-      <label>Horário:</label>
-      <%= l(@event.time, :format => :short) %>
-    </p>
-  <% end %>
-  <p>
-    <label>Data de Criação:</label>
+    <td align="center">
+      <table id="date_and_time">
+        <% if @event.date %>
+          <tr id="event_date">
+            <td>
+              <%= image_tag("/images/date.png", :title => "Data") %>
+              <%= l(@event.date) %>
+            </td>
+          </tr>
+        <% end %>
+
+        <% if @event.time %>
+          <tr id="event_time">
+            <td>
+               <%= image_tag("/images/time.png", :title => "Data") %>
+               <%= l(@event.time, :format => :short) %>
+            </td>
+          </tr>
+        <% end %>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<div id="created_at">
+  <i>
     <%= l(@event.created_at) %>
-  </p>
+  </i>
 </div>
+

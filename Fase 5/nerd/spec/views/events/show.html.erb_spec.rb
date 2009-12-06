@@ -14,20 +14,14 @@ describe "/events/show" do
   end
 
   it "should show all attributes" do
-    response.should have_tag("div#event_attributes") do
-      with_tag("p", /#{@event.body}/) do
-        with_tag("label", "Corpo:")
-      end
-      with_tag("p", /#{l(@event.date)}/) do
-        with_tag("label", "Data:")
-      end
-      with_tag("p", /#{l(@event.time, :format => :short)}/) do
-        with_tag("label", "Horário:")
-      end
-      with_tag("p", /#{l(@event.created_at)}/) do
-        with_tag("label", "Data de Criação:")
-      end
+    response.should have_tag("table#event_body") do
+      with_tag("td", /#{@event.body}/)
     end
+    response.should have_tag("table#date_and_time") do
+      with_tag("td", /#{l(@event.date)}/)
+      with_tag("td", /#{l(@event.time, :format => :short)}/)
+    end
+    response.should have_tag("div#created_at", /#{l(@event.created_at)}/)
   end
 
   it "should be able to go to subject" do
@@ -43,3 +37,4 @@ describe "/events/show" do
   end
 
 end
+

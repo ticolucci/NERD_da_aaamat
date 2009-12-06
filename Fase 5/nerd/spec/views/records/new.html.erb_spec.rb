@@ -11,18 +11,12 @@ describe "/records/new" do
 
   it "should show all the fields" do
     response.should have_tag("form") do
-      with_tag 'p' do
-        with_tag 'label', 'Título'
-        with_tag 'input', :id => /title/
-      end
-      with_tag 'p' do
-        with_tag 'label', 'Corpo'
-        with_tag 'input', :id => /body/
-      end
-      with_tag 'p' do
-        with_tag("input", :id => "record_submit")
-      end
-    end
+      with_tag 'label', 'Título'
+      with_tag 'input', :id => /title/
+      with_tag 'label', 'Corpo'
+      with_tag 'input', :id => /body/
+      with_tag("input", :id => "record_submit")
+     end
   end
 
   it "should have title" do
@@ -38,3 +32,4 @@ describe "/records/new" do
   end
 
 end
+

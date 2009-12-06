@@ -13,28 +13,32 @@ describe "/tasks/new" do
 
   it "should show all the fields" do
     response.should have_tag("form") do
-      with_tag 'p' do
+      with_tag 'tr' do
         with_tag 'label', 'Título'
         with_tag 'input', :id => /title/
       end
-      with_tag 'p' do
-        with_tag 'label', 'Corpo'
-        with_tag 'input', :id => /body/
+      with_tag 'tr' do
+        with_tag 'td' do
+          with_tag 'label', 'Corpo'
+          with_tag 'input', :id => /body/
+        end
+        with_tag 'td' do
+          with_tag 'label', 'Data Limite'
+          with_tag 'input', :id => /due_date/
+        end
       end
-      with_tag 'p' do
-        with_tag 'label', 'Data limite para realização'
-        with_tag 'input', :id => /due_date/
-      end
-      with_tag 'p' do
-        with_tag("input", :id => "task_submit")
-      end
-      with_tag 'table' do
-        with_tag 'tr' do
-          with_tag 'td' do
-            with_tag 'input', :value => @members.first.id
-            with_tag 'label', @members.first.name
+      with_tag 'tr' do
+        with_tag 'table' do
+          with_tag 'tr' do
+            with_tag 'td' do
+              with_tag 'input', :value => @members.first.id
+              with_tag 'label', @members.first.name
+            end
           end
         end
+      end
+      with_tag 'tr' do
+        with_tag("input", :id => "task_submit")
       end
     end
   end
@@ -52,3 +56,4 @@ describe "/tasks/new" do
   end
 
 end
+

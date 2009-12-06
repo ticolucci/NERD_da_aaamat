@@ -1,34 +1,62 @@
 <%= form.error_messages %>
 <%= hidden_field_tag 'task[subject_id]', @subject.id %>
-<p>
-  <%= form.label :title, "Título" %>
-  <%= form.text_field :title %>
-</p>
-<p>
-  <%= form.label :body, "Corpo" %>
-  <%= form.text_area :body, :size => "40x3" %>
-</p>
-<p>
-  <%= form.label :due_date, "Data limite para realização" %>
-  <% due_date = form.object.due_date ? l(form.object.due_date) : nil  %>
-  <%= calendar_field :task, :due_date, due_date, {:date_format=>'%d/%m/%Y', :lang =>  'pt-BR'} %>
-</p>
-<label> Responsáveis: </label>
 <table>
   <tr>
-    <% @members.sort.each_with_index do |member, i| %>
-      <td>
-        <%= check_box_tag "members_ids[]", member.id, @task_members.include?(member), :id => "members_ids_#{member.id}" %>
-        <%= label_tag "members_ids_#{member.id}", member.name, :class => "inline" %>
-      </td>
-      <% if (i + 1) % 5 == 0 %>
-        </tr>
-        <tr>
-      <% end %>
-    <% end %>
+    <%= form.label :title, "Título" %>
+    <%= form.text_field :title, :size => "35" %>
   </tr>
 </table>
 
-<%= form.submit submit_text %>
+<br/><br/>
 
+<table>
+  <tr>
+    <td width="15%">
+      <%= image_tag("/images/body.png", :title => "Corpo") %>
+    </td>
+
+    <td width="400px">
+      <%= form.label :body, "Corpo" %>
+      <%= form.text_area :body, :size => "40x3" %>
+    </td>
+
+    <td>
+      <%= form.label :due_date, "Data Limite" %>
+      <% due_date = form.object.due_date ? l(form.object.due_date) : nil  %>
+      <%= calendar_field :task, :due_date, due_date, {:date_format=>'%d/%m/%Y', :lang =>  'pt-BR'} %>
+    </td>
+  </tr>
+</table>
+
+<br/><br/>
+
+<table>
+  <tr>
+    <td width="30%">
+        <%= image_tag("/images/members.png", :title => "Responsáveis") %> <br/>
+    </td>
+
+    <td>
+      <table>
+        <tr>
+          <% @members.sort.each_with_index do |member, i| %>
+            <td>
+              <%= check_box_tag "members_ids[]", member.id, @task_members.include?(member), :id => "members_ids_#{member.id}" %>
+              <%= label_tag "members_ids_#{member.id}", member.name, :class => "inline" %>
+            </td>
+            <% if (i + 1) % 5 == 0 %>
+              </tr>
+              <tr>
+            <% end %>
+          <% end %>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<br/> <br/>
+
+<%= form.submit submit_text %>
 <%= javascript_tag("$('task_title').focus();") %>
+

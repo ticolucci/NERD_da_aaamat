@@ -11,16 +11,25 @@
   <%= link_to "Ir para assunto", subject_path(@subject.id) %>
 <% end %>
 
-<div id="record_attributes">
-  <% unless @record.body.empty? %>
-    <p>
-      <label>Corpo:</label>
-      <%= RedCloth.new(@record.body, [:filter_html]).to_html %>
-    </p>
-  <% end %>
+<table id="record_attributes">
+  <tr>
+    <td>
+      <%= image_tag("/images/body.png", :title => "Corpo") %>
+    </td>
 
-  <p>
-    <label>Data de Criação:</label>
-    <%= l(@record.created_at) %>
-  </p>
+    <td>
+      <% if @record.body.empty? %>
+        Sem descrição
+      <% else %>
+         <%= RedCloth.new(@record.body, [:filter_html]).to_html %>
+      <% end %>
+    </td>
+  </tr>
+</table>
+
+<br/><br/>
+
+<div id="created_at">
+  <%= l(@record.created_at) %>
 </div>
+
